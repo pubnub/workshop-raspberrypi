@@ -53,7 +53,7 @@ Go to **Menu** > **Preference** > **WiFi Configuration**
 
 1. When you see the WiFi config window, click **Scan**
 2. Find your wireless access point from the list and double-click it. It will open another window.
-3. Enter your passwork in PSK field then click **Add*
+3. Enter your passwork in PSK field then click **Add**
 4. On the first window, click **Connect**
 
 (See: [https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-raspbian](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-raspbian))
@@ -81,11 +81,16 @@ Open Python 2 IDE
 
 Then, in Python Shell,  **File** > **New Window**
 
-In the new window, copy and paste [hello.py](examples/publish.py), and save as `hello.py`
+In the new window, copy and paste [hello.py](https://github.com/pubnub/workshop-raspberrypi/blob/master/examples/hello.py), and save as `hello.py`
 
 Run the script
+
 `$ sudo python hello.py`
 
 ### Monitoring PubNub Data Stream on Console
 
-...
+1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
+2. Type `hello_world` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+3. Click **Subscribe**
+
+![image](images/pubnub-console.png)
