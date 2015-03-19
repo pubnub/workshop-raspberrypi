@@ -24,9 +24,9 @@ The following steps are done on your computer.
 From now on you are working directly on your Raspberry Pi.
 
 1. Insert the formatted SD card in Pi
-2. Plug in your keyboard, mouse (USB) and monitor cables (HDMI photo)
-3. Plug ib your Wi-Fi adapter
-4. plug a USB power, and turn your Pi on
+2. Plug in your USB keyboard, USB mouse, and HDMI monitor cables
+3. Plug in your Wi-Fi adapter
+4. Plug a USB power, and turn your Pi on
 
 After connected to a monitor:
 
@@ -70,7 +70,7 @@ Install Python
 Install pip
 `pi@raspberrypi ~$ sudo apt-get install python-pip`
 
-Then install PubNub
+Then, install PubNub
 `pi@raspberrypi ~$ sudo pip install pubnub`
 
 ### Hello World
@@ -85,7 +85,10 @@ In the new window, copy and paste [hello.py](https://github.com/pubnub/workshop-
 
 Run the script
 
+On terminal:
 `$ sudo python hello.py`
+
+This sends a Hello World message to PubNub data stream.
 
 ### Monitoring PubNub Data Stream on Console
 
@@ -94,3 +97,11 @@ Run the script
 3. Click **Subscribe**
 
 ![image](images/pubnub-console.png)
+
+## What's Next
+
+TBD
+
+...Links to more example code and projects
+...Using Sensors
+---etc.
