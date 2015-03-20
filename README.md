@@ -112,8 +112,11 @@ Now, let's connect some sensors to Raspberry Pi, and learn more about sending an
 
 - Links to the project page
 
-### Using Proximity Sensor
+### Using Ultrasonic Rangefinder Sensor
 
-- Links to the project page
+Measure distances and trigger an alarm using PubNub Pub/Sub Messaging and Raspberry Pi
+
+
+- [Project page: Ultrasonic Rangefinder + Pi + PubNub](ultrasonic_rangefinder_+_pi__+_pubnub.md)
 
 etc.
