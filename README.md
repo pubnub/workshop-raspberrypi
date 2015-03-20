@@ -6,6 +6,8 @@ Step-by-step guide of building a realtime Internet of Things application using s
 
 ## Setting up Raspberry Pi
 
+Skip the Step 0 and go to Step 1, if you have a preloaded SD Card from CanaKit or elsewhere.
+
 ### 0. Formatting an SD Card
 
 The following steps are done on your computer.
@@ -27,6 +29,8 @@ From now on you are working directly on your Raspberry Pi.
 2. Plug in your USB keyboard, USB mouse, and HDMI monitor cables
 3. Plug in your Wi-Fi adapter
 4. Plug a USB power, and turn your Pi on
+
+(Maybe adding a nice photo of Pi with everything attatched here)
 
 After connected to a monitor:
 
@@ -98,10 +102,18 @@ This sends a Hello World message to PubNub data stream.
 
 ![image](images/pubnub-console.png)
 
-## What's Next
+---
 
-TBD
+## Projects
 
-...Links to more example code and projects
-...Using Sensors
----etc.
+Now, let's connect some sensors to Raspberry Pi, and learn more about sending and receiving data to/from the sensors using PubNub APIs!
+
+### Using Motion Sensor
+
+- Links to the project page
+
+### Using Proximity Sensor
+
+- Links to the project page
+
+etc.
