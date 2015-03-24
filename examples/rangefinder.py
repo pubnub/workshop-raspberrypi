@@ -7,6 +7,7 @@ import time
 import sys
 
 
+i = 0
 loopcount = 0
 
 ##------------------------------
@@ -90,10 +91,10 @@ while True:
         print("Distance:",distance,"cm")
         print("Proximity Detected")
 
-        message = {'distance': distance, 'Proximal?': "Proximal!"}
+        message = {'distance': distance, 'Proximity': "True"}
         print pubnub.publish(channel, message)
         time.sleep(1)
-        break
+       
 
 ##If nothing is detected, the sensor continuously sends and listens for a signal, and publishes the distance to your PubNub channel.    
     else:
@@ -101,7 +102,7 @@ while True:
         print("Distance", distance, "cm")
         print("Too Far")
 
-        message = {'distance': distance, 'Proximal?' : 'Nope'}
+        message = {'distance': distance, 'Proximity' : 'False'}
         print pubnub.publish(channel, message)
         
     time.sleep(1)
