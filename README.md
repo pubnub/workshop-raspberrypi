@@ -64,6 +64,8 @@ Go to **Menu** > **Preference** > **WiFi Configuration**
 
 ## Setting up PubNub Python Lib
 
+*(If you wish to code in Node.js, instead of Python, [read the Node.js instruction](examples-nodejs/README.md)!)*
+
 Open LXTerminal
 
 ![image](images/LXTerminal.png)
