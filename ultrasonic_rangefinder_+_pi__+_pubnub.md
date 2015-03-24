@@ -7,9 +7,10 @@
 ### What You'll Need:
 
 1. Raspberry Pi 2, set-up, with accessories (power, wifi, m+kb, monitor, or setup via SSH) (See ReadMe)
-2. An HC-SR04 Ultrasonic Rangefinder
-3. 8 Jumper Wires in 4 colors, with 2 of each color 
-4. 3 1k Ohm Resistors 
+2. An HC-SR04 ultrasonic rangefinder
+3. 8 jumper wires in 4 colors, with 2 of each color 
+4. 1 1k Ohm resistor
+5. 1 2.2k Ohm resistor
 5. A browser or internet-capable smartphone 
 
 ### What You're Building and How It Works:
