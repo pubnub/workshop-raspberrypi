@@ -17,6 +17,11 @@
 ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%201.jpg)
 
 ### Step 2: Wiring Power and Ground Pins on the Pi 
+
+Attach a wire each to the **5v** and **GND** GPIO pins.
+![image](http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/06/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900-1024x341.png)
+
+One configuration may look like this: 
 ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%202.jpg)
 
 ### Step 3: Wiring Input and Output Pins on the Pi
@@ -27,9 +32,9 @@
 
 ### Step 4: Linking PWR and Ground from the Pi to the Sensor 
 
-First, connect your Power to the breadboard's positive rail. In the next space on that rail, connect the sensor's Power (labeled VCC). 
+First, connect your Pi's **Power** to the space in the first row of the breadboard's positive rail. In the second-row space on that rail, connect the sensor's Power (labeled VCC). 
 
-Once that's done, connect your Pi's **Ground wire** to a space on the negative rail. In the next space on this rail, connect the sensor's GND wire. 
+Once that's done, connect your Pi's **Ground wire** to the first row of the negative rail. In the second-row space on this rail, connect the sensor's GND wire. 
 
 It should look something like this: 
 
