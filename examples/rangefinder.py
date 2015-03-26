@@ -12,7 +12,7 @@ loopcount = 0
 
 ##------------------------------
 ## Set up PubNub
-## Put in Pub/Sub and Secret keys
+## Put in Pub/Sub and Secret keys (replace 'demo')
 ## Define your PubNub channel
 ##------------------------------
 publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
