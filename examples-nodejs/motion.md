@@ -4,7 +4,7 @@ PIR sensors sense motion, and are able to detect a change in infrared radiation 
 
 Let's try using a PIR sensor with PubNub to send the realtime data of motions around the sensor!
 
-![image](../images/pir/pir-fullview.jpg)
+![image](../images/PIR/pir-fullview.jpg)
 
 ## Assemble the Circuit
 
@@ -27,7 +27,7 @@ Wire up to the sensor as following:
 
 Note that not all sensor has thr 3-pin connection in the same order, so make sure you wire in the correct pins. The easy way to find out is that look for a power protection IC (looks red in the picture), and one pin next to it should be VCC.
  
-![image](../images/pir/pir-sensor.jpg)
+![image](../images/PIR/pir-sensor.jpg)
 
 Now, plus the other ends of the wires to a breadborad:
 
@@ -35,7 +35,7 @@ Now, plus the other ends of the wires to a breadborad:
 - Black wire (PIR-GND) to a negative rail, next to the red wire
 - Brown wire (PIR-OUT) to any blank rail (row 7, column b, but you can pick any blank)
 
-![image](../images/pir/pir-breadboard.jpg)
+![image](../images/PIR/pir-breadboard.jpg)
 
 ### Wireing up Pi
 
@@ -56,7 +56,7 @@ Then, plug into one end to the breadborad:
 - Black wire (GPIO GND) to a negative rail, next to the red wire
 - Brown wire (GPIO 4) to the same rail as your PIR-OUT
 
-![image](../images/pir/pir-breadboard-pi.jpg)
+![image](../images/PIR/pir-breadboard-pi.jpg)
 
 ## Programming with Node.js
 
