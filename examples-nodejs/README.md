@@ -1,27 +1,34 @@
 ## Setting up PubNub Node.js Lib
 
 
-Open LXTerminal
+Open LXTerminal:
 
 ![image](../images/LXTerminal.png)
 
 Make sure your Pi is up-to-date:
+
 `pi@raspberrypi ~$ sudo apt-get update`
+
 then,
+
 `pi@raspberrypi ~$ sudo apt-get upgrade`
 
-Download Node
+Download Node:
+
 `pi@raspberrypi ~$ wget http://node-arm.herokuapp.com/node_latest_armhf.deb`
 
-once downloaded, install Node
+once downloaded, install Node:
+
 `pi@raspberrypi ~$ sudo dpkg -i node_latest_armhf.deb`
 
-Check if node is successfully installed
+Check if node is successfully installed:
+
 `pi@raspberrypi ~$ node -v`
 
 You should see the Node version number, if it is installed correctly.
 
-Then, install PubNub
+Then, install PubNub:
+
 `pi@raspberrypi ~$ npm install pubnub`
 
 ### Hello World
@@ -37,6 +44,7 @@ In the new window, copy and paste [hello.js](https://github.com/pubnub/workshop-
 Run the script
 
 On terminal:
+
 `$ sudo node hello.js`
 
 This sends a Hello World message to PubNub data stream.
