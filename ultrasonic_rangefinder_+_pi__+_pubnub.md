@@ -56,7 +56,7 @@ One configuration may look like this:
 Next, we will attach wires to two GPIO pins in order to send and recieve signals from the sensor module. 
 Select a wire that matches that attached to the sensor's ECHO pin, and attach it to pin 37 (GPIO26). Next, match your TRIG wire and attach it to pin 38 (GPIO20).
 
-It should look something like this (ECHO = grey; GPIO26, TRIG = violet; GPIO20):
+It should look something like this (ECHO = blue; GPIO26, TRIG = green; GPIO20):
 ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%203.jpg)
 
 #### After steps 2 and 3, check to make sure your Pi's GPIO pins resemble this layout:
