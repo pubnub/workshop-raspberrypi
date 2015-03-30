@@ -170,8 +170,8 @@ The GPIO.BCM option means that you are referring to the pins by the "Broadcom SO
 In our hardware construction, we plugged our TRIG cable into pin 38 (GPIO 20) and our ECHO cable into pin 37 (GPIO 26). So, in our code, we'll add variables to easily reference these values:
 
 ```python
-`TRIG = 20
-`ECHO = 26
+TRIG = 20
+ECHO = 26
 ```
 
 And then we'll configure the correct pins for input and output:
