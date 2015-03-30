@@ -1,18 +1,11 @@
 # Motion Sensor with Raspberry Pi and PubNub
-## Section 1: Building the Hardware
 
-*The motion sensor detects changes in the IR signature around it and triggers a message/alarm using PubNub*
-
-### What you are building and how it works
 
 The PIR sensor measures the IR radiation emitted by objects. The sensor is able to measure changes in the IR signature around it(when an object moves) and hence detect motion. This message can be sent to any device in the world using PubNub. With PubNub, all you need to do is to **publish** on a channel to the PubNub network, which can be **subscribed** to by any other device any where else in the world.
 
 
-# Using a Pyroelectric IR Motion Detector
+## Using a Pyroelectric IR Motion Detector
 
-PIR sensors sense motion, and are able to detect a change in infrared radiation levels of their detection zone (e.g. when a cat enters a room).
-
-Let's try using a PIR sensor with PubNub to send the realtime data of motions around the world!
 
 ![image](../../images/PIR/pir-fullview.jpg)
 
