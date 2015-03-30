@@ -13,6 +13,7 @@
 5. 1 2.2k Ohm resistor
 5. A browser or internet-capable smartphone 
 
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%200.jpg?raw=true)
 ### What You're Building and How It Works:
 
 In this project, you'll build Pi-based ultrasonic rangefinder, which can be easily turned into a proximity alert with PubNub.
@@ -95,7 +96,7 @@ Actually building the voltage divider:
   2. Use your R1 resistor (1k) to link that rail to another blank rail. 
   3. Link this rail to the breadboard's Ground with your R2 resistor (2.2k), leaving at least one space between your R1 and R2 elements. 
   4. In the blank space between resistors, plug in the Pi's GPIO26 wire, linking ECHO to your Pi. 
-![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%207.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%207c.jpg?raw=true)
 
 
 ##That's the entirety of our hardware construction. Now, you're ready to write some code!##
