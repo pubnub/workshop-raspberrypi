@@ -114,3 +114,182 @@ To get there, the overall design of our device has to accomplish 3 main tasks:
 3. Publish range and alarm data over a PubNub channel
 
 With PubNub and GPIO libraries, this simpler than it seems. 
+
+#####Full Code can be found [here.](https://github.com/pubnub/workshop-raspberrypi/blob/master/examples/rangefinder.py)
+
+####1. Setting up the Code####
+
+a. Libraries 
+We'll be importing three libraries to build our device's functionality: GPIO, PubNub, and time. We'll also take the opportuntiy to create a global variable that we'll use to track the number of rangefinding "shots" fired as the program runs.
+
+```python
+from Pubnub import Pubnub 
+import RPi.GPIO as GPIO
+import time`
+
+
+loopcount = 0'
+```
+
+b. PubNub setup
+With the libraries imported, we can now call and calibrate them as we need for our device. 
+
+To set up PubNub Pub-Sub messaging, the project's communication infrastructure, start by adding this code:
+
+```python
+Publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
+subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'demo'
+secret_key = len(sys.argv) > 3 and sys.argv[3] or 'demo'
+cipher_key = len(sys.argv) > 4 and sys.argv[4] or ''
+ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
+
+pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key,secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
+channel = 'Rangefinder'
+```
+
+If you have a [PubNub account](http://www.pubnub.com/get-started/), replace the string 'demo' in *Publish_key* and *subscribe_key*, with your own keys. If not, you can use 'demo,' but common use of this key may result in throttled message speeds. 
+
+The *channel* variable can be named whatever you like. Your Pub key, sub key, and channel name will all be used to transmit and keep track of the data from your Pi. 
+
+c. GPIO Pin Setup
+
+  The sensor module communicates with the Pi by sending electrical signals to specific pins. When recieving no     signal, a pin is read as LOW. When a signal is recieved, that pin switches to HIGH. This binary operation is at the heart of any digital I/O device, including LEDs and stepper motors. For now, we'll deal with it in its simplest form. 
+
+First, we have to point our code to the pins we're using. To do so, add the following to your code:
+
+```python
+GPIO.setmode(GPIO.BCM)
+```
+
+The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, rather than to the pin number. The BCM numbers are those after the "GPIO" in the board overview diagram:
+![image](https://camo.githubusercontent.com/ca1ff23008fb7000828355b50768ae7ce2b83936/687474703a2f2f7777772e72617370626572727970692d7370792e636f2e756b2f77702d636f6e74656e742f75706c6f6164732f323031322f30362f5261737062657272792d50692d4750494f2d4c61796f75742d4d6f64656c2d422d506c75732d726f74617465642d32373030783930302d31303234783334312e706e67)
+
+In our hardware construction, we plugged our TRIG cable into pin 38 (GPIO 20) and our ECHO cable into pin 37 (GPIO 26). So, in our code, we'll add variables to easily reference these values:
+
+```python
+`TRIG = 20
+`ECHO = 26
+```
+
+And then we'll configure the correct pins for input and output:
+
+```python
+print("Distance Measurement in Progess")
+GPIO.setup(TRIG,GPIO.OUT)
+
+GPIO.setup(ECHO,GPIO.IN)`
+```
+
+"TRIG" will be the pin on which a signal is sent to the sensor module, which will trigger the ultrasonic pulse. It's an Output.
+
+"ECHO" receives a signal when the module detects the reflected soundwave, flipping from LOW to HIGH. It's an Input.
+
+####2. Sending the Pulse####
+
+Each shot works by sending a 10-microsecond pulse at around 40khz, marking the time at which the pulse is sent and then, subsequentially, when the reflected signal is detected. To ensure accuracy, we must first settle the trigger and wait:
+
+```python
+GPIO.output(TRIG,False)
+print("Waiting for sensor to settle.")
+
+time.sleep(2)
+```
+We then send the pulse.    
+Because we want to continuously check for range, we nest the entirety of the rangefinding functionality within a 'While' loop:
+
+```python
+while True:
+   GPIO.output(TRIG, True)
+    time.sleep(0.00001)
+    GPIO.output(TRIG, False)
+```
+Here, we're calling GPIO.output to control a previously defined output pin. In this case, we first pass 'TRIG' as an argument to the function. By calling "True" as the second argument, we turn the pin to HIGH and send a signal.
+
+After waiting for 10 microseconds, we call GPIO.output again, but this time set the second argument to False, halting the signal and turning the pin to LOW. 
+
+####3. Waiting for the Echo And Recording the Signal####
+
+Just after we send the pulse, we will create the variable "pulse_start" and set it equal to the current time, all in order to mark the beginning of the time between signal sent and recieved. 
+
+```python
+    print("before pulse start")
+    pulse_start = time.time()
+    while GPIO.input(ECHO)==0:
+        #print("waiting for pulse signal")
+        pulse_start = time.time()
+
+    while GPIO.input(ECHO)==1:
+        pulse_end = time.time()
+    print("after pulse")
+    pulse_duration = pulse_end - pulse_start
+    ```
+    
+When the signal is recieved, our ECHO pin flips to HIGH, reading out as '1' rather than '0' in our code. 
+At this point, we take another time.time reading with a variable named "pulse_end." We claim the final duration by subracting pulse_start from pulse_end. 
+
+####4. Calculating Distance and Sending Data###
+
+Using known values, we can easily turn our pulse_duration value into a measure of distance.
+
+At sea-level, the speed of sound is 34300 centimeters/second, Or:
+**Speed = Distance/Time**. Our time, contained in **pulse_duration**, actually represents the time to *and* back from the detected object. To get the distance from the sensor to that object, we'll need to divide our time in half.
+So:
+
+**34,300 = Distance/Time/2**, or, simplified and flipped: **Distance = 17,150 * time**
+
+In code:
+```python
+  distance = pulse_duration*17150
+  ```
+  
+We then round out the value, for neatness, and print it with the current "shot" number:
+
+```python
+  distance = round(distance, 2)
+    loopcount+=1
+    print('shot #'+str(loopcount))
+    
+```
+
+Finally, we publish the distance data over our PubNub channel, which was defined in Step 1. At this point, we can easily integrate the functionality of a proximity alarm and send two types of messages, depending on the final value of "distance."  
+
+```python
+      if distance <= 10:
+        print("Distance:",distance,"cm")
+        print("Proximity Detected")
+
+        message = {'distance': distance, 'Proximity': "True"}
+        print pubnub.publish(channel, message)
+        time.sleep(1)
+       
+
+##If nothing is detected, the sensor continuously sends and listens for a signal, and publishes the distance to your PubNub channel.    
+    else:
+        print("Time", pulse_duration)
+        print("Distance", distance, "cm")
+        print("Too Far")
+
+        message = {'distance': distance, 'Proximity' : 'False'}
+        print pubnub.publish(channel, message)
+        
+    time.sleep(1)
+    ```
+In both cases, we publish distance and proximity data to our own log.
+
+Because we want the messages to be easily readable by a webpage or another application, we package data in a dictionary, **"message"** with two items: our integer 'distance' and a boolean 'Proximity.' 
+
+When distance is less than or equal to 10, a message is sent with the distance data and Proximity's value set to True. Otherwise, a message is sent with Proximity set to False.
+
+We use the function pubnub.publish to publish to our channel, which is passed via the variable we created as an argument. 
+
+
+The very, very last step is to clean out the pins and halt the process:
+
+```python
+GPIO.cleanup()
+sys.exit()
+```
+
+On the Pi terminal, run the code with the command:
+`sudo python codetitle.py`, and enjoy!
+
