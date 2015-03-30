@@ -109,11 +109,12 @@ Actually building the voltage divider:
 Our device, when completed, will act as a proximity alarm by publishing alert data and distance to a webpage, which can be accessed on any browser-capable device. 
 
 To get there, the overall design of our device has to accomplish 3 main tasks:
-1. Find the range of an object with a pulse of ultrasonic waves
-2. Keep track of when an object enters its proximity 
-3. Publish range and alarm data over a PubNub channel
 
-With PubNub and GPIO libraries, this simpler than it seems. 
+  1. Find the range of an object with a pulse of ultrasonic waves
+  2. Keep track of when an object enters its proximity 
+  3. Publish range and alarm data over a PubNub channel
+
+With PubNub and GPIO libraries, this is simpler than it seems. 
 
 #####Full Code can be found [here.](https://github.com/pubnub/workshop-raspberrypi/blob/master/examples/rangefinder.py)
 
