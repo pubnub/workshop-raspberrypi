@@ -76,7 +76,7 @@ It should look something like this:
 
 Find a blank rail on the breadboard, and plug in your TRIG wire (from the sensor) and GPIO20 wire (from the Pi). These should be the same color. 
 
-![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%206.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder%20Step%206.jpg?raw=true)
 
 ### Step 6: Linking ECHO to GPIO
 
