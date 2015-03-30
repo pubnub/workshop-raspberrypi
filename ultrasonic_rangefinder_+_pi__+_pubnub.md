@@ -99,6 +99,18 @@ Actually building the voltage divider:
 ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step%207c.jpg?raw=true)
 
 
-##That's the entirety of our hardware construction. Now, you're ready to write some code!##
+###That's the entirety of our hardware construction. Now, you're ready to write some code!###
 
 *Based on ["HC-SR04 Ultrasonic Range Sensor on the Raspberry Pi"](http://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi)*
+
+
+##Section 2: Writing the Code##
+
+Our device, when completed, will act as a proximity alarm by publishing alert data and distance to a webpage, which can be accessed on any browser-capable device. 
+
+To get there, the overall design of our device has to accomplish 3 main tasks:
+1. Find the range of an object with a pulse of ultrasonic waves
+2. Keep track of when an object enters its proximity 
+3. Publish range and alarm data over a PubNub channel
+
+With PubNub and GPIO libraries, this simpler than it seems. 
