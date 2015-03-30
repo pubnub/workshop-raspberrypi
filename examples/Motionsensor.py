@@ -16,7 +16,8 @@ ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
 ## -----------------------------------------------------------------------
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
 channel = 'motionsensor'
-message = 'Motion detected'
+message = 'Motion Detected'
+
 
 # Asynchronous usage
 def callback(message):
@@ -28,7 +29,6 @@ PIR_PIN = 7
 GPIO.setup(PIR_PIN, GPIO.IN)
   
 def MOTION(PIR_PIN):
-  print “Motion Detected!”
   pubnub.publish(channel, message, callback=callback, error=callback)
 
 print “PIR Module Test (CTRL+C to exit)”
