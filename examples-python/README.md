@@ -9,5 +9,5 @@
 
 To set up your Raspberry Pi, read [Setting up Raspberry Pi](../README.md).
 
-- [Motion Sensor](/MotionSensor/Motionsensor.py)
+- [Motion Sensor](../examples-python/MotionSensor/Motionsensor.py)
 - Ultrasonic Rangefinder
