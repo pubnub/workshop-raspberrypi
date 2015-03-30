@@ -121,7 +121,8 @@ With PubNub and GPIO libraries, this is simpler than it seems.
 ####1. Setting up the Code####
 
 a. Libraries 
-We'll be importing three libraries to build our device's functionality: GPIO, PubNub, and time. We'll also take the opportuntiy to create a global variable that we'll use to track the number of rangefinding "shots" fired as the program runs.
+
+  We'll be importing three libraries to build our device's functionality: GPIO, PubNub, and time. We'll also take   the opportuntiy to create a global variable that we'll use to track the number of rangefinding "shots" fired as the program runs.
 
 ```python
 from Pubnub import Pubnub 
@@ -133,9 +134,10 @@ loopcount = 0'
 ```
 
 b. PubNub setup
-With the libraries imported, we can now call and calibrate them as we need for our device. 
 
-To set up PubNub Pub-Sub messaging, the project's communication infrastructure, start by adding this code:
+  With the libraries imported, we can now call and calibrate them as we need for our device. 
+
+  To set up PubNub Pub-Sub messaging, the project's communication infrastructure, start by adding this code:
 
 ```python
 Publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
