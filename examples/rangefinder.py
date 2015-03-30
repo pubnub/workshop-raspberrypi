@@ -6,7 +6,6 @@ import RPi.GPIO as GPIO
 import time
 
 
-i = 0
 loopcount = 0
 
 ##------------------------------
