@@ -4,7 +4,6 @@
 from Pubnub import Pubnub 
 import RPi.GPIO as GPIO
 import time
-import sys
 
 
 i = 0
