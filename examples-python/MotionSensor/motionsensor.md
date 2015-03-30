@@ -50,7 +50,7 @@ First, plug into one end to Pi:
 - Black wire to GPIO GND (Pin 6)
 - Brown wire to GPIO 4 (Pin 7)
 
-![image](../images/pi-modelb-gpio.png)
+![image](../../images/pi-modelb-gpio.png)
 
 
 Then, plug into one end to the breadborad:
