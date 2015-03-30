@@ -37,7 +37,7 @@ ECHO transmits back a signal when the sensor detects the reflected pulse.
 
 For now, pick four male-female jumper wires, each a different color, and attach them to the sensor. It should look similar to this: 
 
-![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder%20Labeled.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Rangefinder.Step1.jpg?raw=true)
 
 ### Step 2: Wiring Power and Ground Pins on the Pi 
 
