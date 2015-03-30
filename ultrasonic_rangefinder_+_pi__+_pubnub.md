@@ -226,7 +226,7 @@ Just after we send the pulse, we will create the variable "pulse_start" and set 
     ```
     
 When the signal is recieved, our ECHO pin flips to HIGH, reading out as '1' rather than '0' in our code. 
-At this point, we take another time.time reading with a variable named "pulse_end." We claim the final duration by subracting pulse_start from pulse_end. 
+At this point, we take another time.time reading with a variable named "pulse_end." We find the final duration by subracting pulse_start from pulse_end. 
 
 ####4. Calculating Distance and Sending Data####
 
@@ -241,7 +241,7 @@ So:
 In code:
 ```python
   distance = pulse_duration*17150
-  ```
+```
   
 We then round out the value, for neatness, and print it with the current "shot" number:
 
@@ -249,7 +249,6 @@ We then round out the value, for neatness, and print it with the current "shot" 
   distance = round(distance, 2)
     loopcount+=1
     print('shot #'+str(loopcount))
-    
 ```
 
 Finally, we publish the distance data over our PubNub channel, which was defined in Step 1. At this point, we can easily integrate the functionality of a proximity alarm and send two types of messages, depending on the final value of "distance."  
@@ -262,10 +261,8 @@ Finally, we publish the distance data over our PubNub channel, which was defined
         message = {'distance': distance, 'Proximity': "True"}
         print pubnub.publish(channel, message)
         time.sleep(1)
-       
 
-##If nothing is detected, the sensor continuously sends and listens for a signal, and publishes the distance to your PubNub channel.    
-    else:
+     else:
         print("Time", pulse_duration)
         print("Distance", distance, "cm")
         print("Too Far")
