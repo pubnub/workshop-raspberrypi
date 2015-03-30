@@ -223,7 +223,7 @@ Just after we send the pulse, we will create the variable "pulse_start" and set 
         pulse_end = time.time()
     print("after pulse")
     pulse_duration = pulse_end - pulse_start
-    ```
+```
     
 When the signal is recieved, our ECHO pin flips to HIGH, reading out as '1' rather than '0' in our code. 
 At this point, we take another time.time reading with a variable named "pulse_end." We find the final duration by subracting pulse_start from pulse_end. 
@@ -271,7 +271,7 @@ Finally, we publish the distance data over our PubNub channel, which was defined
         print pubnub.publish(channel, message)
         
     time.sleep(1)
-    ```
+```
 In both cases, we publish distance and proximity data to our own log.
 
 Because we want the messages to be easily readable by a webpage or another application, we package data in a dictionary, **"message"** with two items: our integer 'distance' and a boolean 'Proximity.' 
