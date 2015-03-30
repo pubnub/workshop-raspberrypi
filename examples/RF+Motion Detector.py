@@ -45,10 +45,13 @@ subchannel = 'MotionDetector'
 
 # Asynchronous usage
 def callback(submessage, channel):
-    print("sup")
     print(submessage)
     #loopcount = 0 
     ##Check to see if motion has been detected##
+    ##This line will depend on the nature of the message recieved.
+    ##This demo code assumes that the motion detector will send a dicitonary with one item: 
+    ##a key "motion" with a value of either true (1) or false(0)
+    
     if submessage["motion"] == 1:
     
     ##If so, run Rangefinder code##
@@ -85,7 +88,7 @@ def callback(submessage, channel):
 
         ##Use the distance measurement as a proximity alarm.
         ##Set 'distance' in if-loop to desired alarm distance.
-        ##When the alarm is tripped, the distance and a note are sent as a dictionary in a PubNub message, and the sensor stops searching.
+        ##When the alarm is tripped, the distance and a note are sent as a dictionary in a PubNub message, and the sensor keeps searching.
 
             if distance <= 20:
                 print("Distance:",distance,"cm")
@@ -100,7 +103,7 @@ def callback(submessage, channel):
             else:
                 print("Time:", pulse_duration)
                 print("Distance:", distance, "cm")
-                print("Sorry, Too Far")
+                print("Object is far.")
 
                 message = {'distance': distance, 'Proximity' : 0}
                 print pubnub.publish(channel, message)
@@ -113,6 +116,7 @@ def callback(submessage, channel):
     else:
         print("Nothing detected.")
 
+##These allow PN to communicate connection states and keep you notified. 
 def error(message):
     print("ERROR : " + str(message))
 
