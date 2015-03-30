@@ -27,7 +27,7 @@ Second, we have to pay attention to voltage. The ECHO signal comes at **5 volts*
 ### Step 1: Wiring up the Range Finder
 
 Here is the circuit diagram for the whole device:
-![image](https://www.modmypi.com/image/data/tutorials/hc-sr04/hc-sr04-tut-2.png)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/Rangefinder%20Images/Circuit%20Diagram.png?raw=true)
 
 Paying attention only to the top section for now, you'll see that the rangefinder sensor has four pins: Vcc (power), TRIG, ECHO, and GND  (ground).  
 Vcc powers the module, and GND is used to ground it. 
