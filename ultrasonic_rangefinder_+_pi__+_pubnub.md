@@ -227,7 +227,7 @@ Just after we send the pulse, we will create the variable "pulse_start" and set 
 When the signal is recieved, our ECHO pin flips to HIGH, reading out as '1' rather than '0' in our code. 
 At this point, we take another time.time reading with a variable named "pulse_end." We claim the final duration by subracting pulse_start from pulse_end. 
 
-####4. Calculating Distance and Sending Data###
+####4. Calculating Distance and Sending Data####
 
 Using known values, we can easily turn our pulse_duration value into a measure of distance.
 
