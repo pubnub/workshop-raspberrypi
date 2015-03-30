@@ -1,4 +1,6 @@
-#import Pubnub, GPIO and time libraries
+#This code subcsribes to a PIR Motion Detector's PubNub channel, ##
+##activating a rangefinder when the PIR detects an object.##
+#import Pubnub, GPIO and time libraries##
 
 from Pubnub import Pubnub
 import RPi.GPIO as GPIO
