@@ -127,7 +127,8 @@ a. Libraries
 ```python
 from Pubnub import Pubnub 
 import RPi.GPIO as GPIO
-import time`
+import time
+import sys
 
 
 loopcount = 0'
