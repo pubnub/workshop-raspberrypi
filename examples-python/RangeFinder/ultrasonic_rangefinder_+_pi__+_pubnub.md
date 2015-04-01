@@ -260,7 +260,7 @@ Finally, we publish the distance data over our PubNub channel, which was defined
         print("Distance:",distance,"cm")
         print("Proximity Detected")
 
-        message = {'distance': distance, 'Proximity': "True"}
+        message = {'colummns':[['distance', distance],['Proximity', "True"]]}
         print pubnub.publish(channel, message)
         time.sleep(1)
 
@@ -269,14 +269,14 @@ Finally, we publish the distance data over our PubNub channel, which was defined
         print("Distance", distance, "cm")
         print("Too Far")
 
-        message = {'distance': distance, 'Proximity' : 'False'}
+        message = {'colummns':[['distance', distance],['Proximity', "False"]]}
         print pubnub.publish(channel, message)
         
     time.sleep(1)
 ```
 In both cases, we publish distance and proximity data to our own log.
 
-Because we want the messages to be easily readable by a webpage or another application, we package data in a dictionary, **"message"** with two items: our integer 'distance' and a boolean 'Proximity.' 
+Because we want the messages to be easily readable by the graphing library used on the dashboard, we package our data in 'message' as a dictionary. The key 'columns' is a pointer for the library. The duple ['distance', distance] contains the raw measurement, and the duple ['Proximity','True'/'False'] (depending on distance) allows us to visualize the alarm.  
 
 When distance is less than or equal to 10, a message is sent with the distance data and Proximity's value set to True. Otherwise, a message is sent with Proximity set to False.
 
