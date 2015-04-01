@@ -15,7 +15,7 @@ ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
 ## Initiate Pubnub State
 ## -----------------------------------------------------------------------
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
-channel = 'Rangefinder'
+channel = 'MotionDetector'
 message = {'motion' : 1}
 
 
