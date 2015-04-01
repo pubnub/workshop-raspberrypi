@@ -46,7 +46,7 @@ When you see a prompt, start the GUI.
 
 `pi@raspberrypi ~$ startx`
 
-*If you get the following maggesa, ignore it for now:
+*If you get the following message, ignore it for now:
 GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Cannot determine user of subject*
 
 ### 3. Configuring Wi-Fi
@@ -110,15 +110,5 @@ This sends a Hello World message to PubNub data stream.
 
 Now, let's connect some sensors to Raspberry Pi, and learn more about sending and receiving data to/from the sensors using PubNub APIs!
 
-### Using Motion Sensor
-
-- Links to the project page
-
-### Using Ultrasonic Rangefinder Sensor
-
-Measure distances and trigger an alarm using PubNub Pub/Sub Messaging and Raspberry Pi
-
-
-- [Project page: Ultrasonic Rangefinder + Pi + PubNub](ultrasonic_rangefinder_+_pi__+_pubnub.md)
-
-etc.
+- [Using sensors and program with Python](https://github.com/pubnub/workshop-raspberrypi/tree/master/examples-python)
+- [Using sensors and program with Node.js](https://github.com/pubnub/workshop-raspberrypi/tree/master/examples-nodejs)
