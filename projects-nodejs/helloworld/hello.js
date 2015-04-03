@@ -4,7 +4,7 @@ var pubnub = require('pubnub').init({
 });
 
 var channel = 'hello_world';
-var message = 'Hello World with Node.js from Raspberry Pi 2!';
+var message = 'Hello World from Raspberry Pi 2!';
 
 pubnub.publish({
 	channel : channel,

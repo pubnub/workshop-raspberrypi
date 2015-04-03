@@ -1,0 +1,2889 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 warn package.json pi-node-projects@0.0.1 No repository field.
+5 verbose install where, deps [ '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs',
+5 verbose install   [ 'johnny-five', 'pubnub', 'raspi-io' ] ]
+6 verbose install where, peers [ '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs', [] ]
+7 info preinstall pi-node-projects@0.0.1
+8 verbose already installed skipping johnny-five@^0.8.50 /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs
+9 verbose already installed skipping pubnub@^3.7.8 /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs
+10 silly cache add args [ 'raspi-io@^3.0.1', null ]
+11 verbose cache add spec raspi-io@^3.0.1
+12 silly cache add parsed spec { raw: 'raspi-io@^3.0.1',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'raspi-io',
+12 silly cache add   rawSpec: '^3.0.1',
+12 silly cache add   spec: '>=3.0.1 <4.0.0',
+12 silly cache add   type: 'range' }
+13 verbose addNamed raspi-io@>=3.0.1 <4.0.0
+14 silly addNamed semver.valid null
+15 silly addNamed semver.validRange >=3.0.1 <4.0.0
+16 silly addNameRange { name: 'raspi-io', range: '>=3.0.1 <4.0.0', hasData: false }
+17 silly mapToRegistry name raspi-io
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/raspi-io
+21 verbose addNameRange registry:https://registry.npmjs.org/raspi-io not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/raspi-io
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 4:26:00 PM
+25 verbose request id 32c6b75764db2cad
+26 verbose etag "5YUZ5D2LVQ09N9SNCVWPBY6C8"
+27 http request GET https://registry.npmjs.org/raspi-io
+28 http 304 https://registry.npmjs.org/raspi-io
+29 silly get cb [ 304,
+29 silly get   { date: 'Fri, 03 Apr 2015 23:26:00 GMT',
+29 silly get     server: 'Apache',
+29 silly get     via: '1.1 varnish',
+29 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:00 GMT',
+29 silly get     'cache-control': 'max-age=60',
+29 silly get     etag: '"5YUZ5D2LVQ09N9SNCVWPBY6C8"',
+29 silly get     age: '30',
+29 silly get     'x-served-by': 'cache-lax1421-LAX',
+29 silly get     'x-cache': 'HIT',
+29 silly get     'x-cache-hits': '1',
+29 silly get     'x-timer': 'S1428103560.730520,VS0,VE0',
+29 silly get     vary: 'Accept',
+29 silly get     'content-length': '0',
+29 silly get     'keep-alive': 'timeout=10, max=50',
+29 silly get     connection: 'Keep-Alive' } ]
+30 verbose etag https://registry.npmjs.org/raspi-io from cache
+31 verbose get saving raspi-io to /Users/tomomi/.npm/registry.npmjs.org/raspi-io/.cache.json
+32 silly addNameRange number 2 { name: 'raspi-io', range: '>=3.0.1 <4.0.0', hasData: true }
+33 silly addNameRange versions [ 'raspi-io',
+33 silly addNameRange   [ '0.1.0',
+33 silly addNameRange     '0.1.1',
+33 silly addNameRange     '0.1.2',
+33 silly addNameRange     '0.1.4',
+33 silly addNameRange     '0.1.5',
+33 silly addNameRange     '0.1.7',
+33 silly addNameRange     '0.1.8',
+33 silly addNameRange     '0.1.9',
+33 silly addNameRange     '0.1.10',
+33 silly addNameRange     '0.1.11',
+33 silly addNameRange     '0.1.12',
+33 silly addNameRange     '0.1.13',
+33 silly addNameRange     '0.1.14',
+33 silly addNameRange     '1.0.0',
+33 silly addNameRange     '1.0.1',
+33 silly addNameRange     '1.0.2',
+33 silly addNameRange     '1.0.3',
+33 silly addNameRange     '2.0.0',
+33 silly addNameRange     '2.0.1',
+33 silly addNameRange     '2.0.2',
+33 silly addNameRange     '2.0.3',
+33 silly addNameRange     '2.0.4',
+33 silly addNameRange     '2.0.5',
+33 silly addNameRange     '2.0.6',
+33 silly addNameRange     '2.0.7',
+33 silly addNameRange     '2.1.0',
+33 silly addNameRange     '2.2.0',
+33 silly addNameRange     '2.2.1',
+33 silly addNameRange     '2.2.2',
+33 silly addNameRange     '2.2.3',
+33 silly addNameRange     '3.0.0',
+33 silly addNameRange     '3.0.1',
+33 silly addNameRange     '3.1.0' ] ]
+34 verbose addNamed raspi-io@3.1.0
+35 silly addNamed semver.valid 3.1.0
+36 silly addNamed semver.validRange 3.1.0
+37 silly cache afterAdd raspi-io@3.1.0
+38 verbose afterAdd /Users/tomomi/.npm/raspi-io/3.1.0/package/package.json not in flight; writing
+39 verbose afterAdd /Users/tomomi/.npm/raspi-io/3.1.0/package/package.json written
+40 silly install resolved [ { name: 'raspi-io',
+40 silly install resolved     version: '3.1.0',
+40 silly install resolved     description: 'A Firmata-compatible Raspberry Pi I/O API',
+40 silly install resolved     main: 'lib/index.js',
+40 silly install resolved     repository:
+40 silly install resolved      { type: 'git',
+40 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-io.git' },
+40 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-io',
+40 silly install resolved     keywords: [ 'raspberrypi', 'nodebots', 'robots' ],
+40 silly install resolved     dependencies:
+40 silly install resolved      { raspi: '1.3.0',
+40 silly install resolved        'raspi-board': '2.1.1',
+40 silly install resolved        'raspi-gpio': '1.2.1',
+40 silly install resolved        'raspi-pwm': '1.3.1',
+40 silly install resolved        'raspi-i2c': '1.0.0' },
+40 silly install resolved     devDependencies:
+40 silly install resolved      { del: '^1.1.1',
+40 silly install resolved        gulp: '^3.8.11',
+40 silly install resolved        'gulp-babel': '^4.0.0',
+40 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+40 silly install resolved     scripts: { test: 'node ./test/bootstrap.js' },
+40 silly install resolved     author:
+40 silly install resolved      { name: 'Bryan Hughes',
+40 silly install resolved        email: 'bryan@theoreticalideations.com' },
+40 silly install resolved     contributors: [ [Object], [Object] ],
+40 silly install resolved     license: 'MIT',
+40 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-io/issues' },
+40 silly install resolved     gitHead: '741a21af997b7bdb77374ab6b92af551f3f8feaf',
+40 silly install resolved     _id: 'raspi-io@3.1.0',
+40 silly install resolved     _shasum: 'e618f8c15abeb20b21e48793e446a9c8e512dee7',
+40 silly install resolved     _from: 'raspi-io@>=3.0.1 <4.0.0',
+40 silly install resolved     _npmVersion: '2.7.0',
+40 silly install resolved     _nodeVersion: '1.5.0',
+40 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+40 silly install resolved     maintainers: [ [Object] ],
+40 silly install resolved     dist:
+40 silly install resolved      { shasum: 'e618f8c15abeb20b21e48793e446a9c8e512dee7',
+40 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-io/-/raspi-io-3.1.0.tgz' },
+40 silly install resolved     directories: {},
+40 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-io/-/raspi-io-3.1.0.tgz',
+40 silly install resolved     readme: 'ERROR: No README data found!' } ]
+41 info install raspi-io@3.1.0 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs
+42 info installOne raspi-io@3.1.0
+43 verbose installOne of raspi-io to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs not in flight; installing
+44 verbose lock using /Users/tomomi/.npm/_locks/raspi-io-9292c7d5756d346b.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+45 silly install write writing raspi-io 3.1.0 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+46 silly cache addNamed cb raspi-io@3.1.0
+47 verbose unbuild node_modules/raspi-io
+48 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+49 verbose tar unpack /Users/tomomi/.npm/raspi-io/3.1.0/package.tgz
+50 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+51 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm extractEntry LICENSE
+57 silly gunzTarPerm extractEntry gulpfile.js
+58 silly gunzTarPerm extractEntry index.js
+59 silly gunzTarPerm extractEntry lib/index.js
+60 silly gunzTarPerm extractEntry CHANGELOG.md
+61 info preinstall raspi-io@3.1.0
+62 silly prepareForInstallMany adding raspi@1.3.0 from raspi-io dependencies
+63 silly prepareForInstallMany adding raspi-board@2.1.1 from raspi-io dependencies
+64 silly prepareForInstallMany adding raspi-gpio@1.2.1 from raspi-io dependencies
+65 silly prepareForInstallMany adding raspi-pwm@1.3.1 from raspi-io dependencies
+66 silly prepareForInstallMany adding raspi-i2c@1.0.0 from raspi-io dependencies
+67 silly cache add args [ 'raspi@1.3.0', null ]
+68 verbose cache add spec raspi@1.3.0
+69 silly cache add args [ 'raspi-board@2.1.1', null ]
+70 verbose cache add spec raspi-board@2.1.1
+71 silly cache add parsed spec { raw: 'raspi@1.3.0',
+71 silly cache add   scope: null,
+71 silly cache add   name: 'raspi',
+71 silly cache add   rawSpec: '1.3.0',
+71 silly cache add   spec: '1.3.0',
+71 silly cache add   type: 'version' }
+72 verbose addNamed raspi@1.3.0
+73 silly addNamed semver.valid 1.3.0
+74 silly addNamed semver.validRange 1.3.0
+75 silly mapToRegistry name raspi
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/raspi
+79 verbose addNameVersion registry:https://registry.npmjs.org/raspi not in flight; fetching
+80 silly cache add parsed spec { raw: 'raspi-board@2.1.1',
+80 silly cache add   scope: null,
+80 silly cache add   name: 'raspi-board',
+80 silly cache add   rawSpec: '2.1.1',
+80 silly cache add   spec: '2.1.1',
+80 silly cache add   type: 'version' }
+81 verbose addNamed raspi-board@2.1.1
+82 silly addNamed semver.valid 2.1.1
+83 silly addNamed semver.validRange 2.1.1
+84 silly mapToRegistry name raspi-board
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry uri https://registry.npmjs.org/raspi-board
+88 verbose addNameVersion registry:https://registry.npmjs.org/raspi-board not in flight; fetching
+89 silly cache add args [ 'raspi-gpio@1.2.1', null ]
+90 verbose cache add spec raspi-gpio@1.2.1
+91 silly cache add parsed spec { raw: 'raspi-gpio@1.2.1',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'raspi-gpio',
+91 silly cache add   rawSpec: '1.2.1',
+91 silly cache add   spec: '1.2.1',
+91 silly cache add   type: 'version' }
+92 verbose addNamed raspi-gpio@1.2.1
+93 silly addNamed semver.valid 1.2.1
+94 silly addNamed semver.validRange 1.2.1
+95 silly mapToRegistry name raspi-gpio
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry uri https://registry.npmjs.org/raspi-gpio
+99 verbose addNameVersion registry:https://registry.npmjs.org/raspi-gpio not in flight; fetching
+100 silly cache add args [ 'raspi-pwm@1.3.1', null ]
+101 verbose cache add spec raspi-pwm@1.3.1
+102 silly cache add parsed spec { raw: 'raspi-pwm@1.3.1',
+102 silly cache add   scope: null,
+102 silly cache add   name: 'raspi-pwm',
+102 silly cache add   rawSpec: '1.3.1',
+102 silly cache add   spec: '1.3.1',
+102 silly cache add   type: 'version' }
+103 verbose addNamed raspi-pwm@1.3.1
+104 silly addNamed semver.valid 1.3.1
+105 silly addNamed semver.validRange 1.3.1
+106 silly mapToRegistry name raspi-pwm
+107 silly mapToRegistry using default registry
+108 silly mapToRegistry registry https://registry.npmjs.org/
+109 silly mapToRegistry uri https://registry.npmjs.org/raspi-pwm
+110 verbose addNameVersion registry:https://registry.npmjs.org/raspi-pwm not in flight; fetching
+111 silly cache add args [ 'raspi-i2c@1.0.0', null ]
+112 verbose cache add spec raspi-i2c@1.0.0
+113 silly cache add parsed spec { raw: 'raspi-i2c@1.0.0',
+113 silly cache add   scope: null,
+113 silly cache add   name: 'raspi-i2c',
+113 silly cache add   rawSpec: '1.0.0',
+113 silly cache add   spec: '1.0.0',
+113 silly cache add   type: 'version' }
+114 verbose addNamed raspi-i2c@1.0.0
+115 silly addNamed semver.valid 1.0.0
+116 silly addNamed semver.validRange 1.0.0
+117 silly mapToRegistry name raspi-i2c
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry uri https://registry.npmjs.org/raspi-i2c
+121 verbose addNameVersion registry:https://registry.npmjs.org/raspi-i2c not in flight; fetching
+122 verbose request uri https://registry.npmjs.org/raspi-board
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 4:26:00 PM
+125 verbose etag "5LENV6ACKRU6EBYY0JUL7XKLS"
+126 http request GET https://registry.npmjs.org/raspi-board
+127 verbose request uri https://registry.npmjs.org/raspi
+128 verbose request no auth needed
+129 info attempt registry request try #1 at 4:26:00 PM
+130 verbose etag "7NGAPUWKUEZTSI1THY9NJLDJA"
+131 http request GET https://registry.npmjs.org/raspi
+132 verbose request uri https://registry.npmjs.org/raspi-gpio
+133 verbose request no auth needed
+134 info attempt registry request try #1 at 4:26:00 PM
+135 verbose etag "6YDFFXEVOKMTYN4GB19Q3JK4W"
+136 http request GET https://registry.npmjs.org/raspi-gpio
+137 verbose request uri https://registry.npmjs.org/raspi-i2c
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 4:26:00 PM
+140 verbose etag "ERNEY0VYQLU586BVSCBHCHFBL"
+141 http request GET https://registry.npmjs.org/raspi-i2c
+142 verbose request uri https://registry.npmjs.org/raspi-pwm
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 4:26:00 PM
+145 verbose etag "A31NZ23VA0ZAAN3KKG1FLUG8Q"
+146 http request GET https://registry.npmjs.org/raspi-pwm
+147 http 304 https://registry.npmjs.org/raspi
+148 silly get cb [ 304,
+148 silly get   { date: 'Fri, 03 Apr 2015 23:26:00 GMT',
+148 silly get     server: 'Apache',
+148 silly get     via: '1.1 varnish',
+148 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:00 GMT',
+148 silly get     'cache-control': 'max-age=60',
+148 silly get     etag: '"7NGAPUWKUEZTSI1THY9NJLDJA"',
+148 silly get     age: '30',
+148 silly get     'x-served-by': 'cache-lax1434-LAX',
+148 silly get     'x-cache': 'HIT',
+148 silly get     'x-cache-hits': '1',
+148 silly get     'x-timer': 'S1428103560.951821,VS0,VE0',
+148 silly get     vary: 'Accept',
+148 silly get     'content-length': '0',
+148 silly get     'keep-alive': 'timeout=10, max=50',
+148 silly get     connection: 'Keep-Alive' } ]
+149 verbose etag https://registry.npmjs.org/raspi from cache
+150 verbose get saving raspi to /Users/tomomi/.npm/registry.npmjs.org/raspi/.cache.json
+151 http 304 https://registry.npmjs.org/raspi-gpio
+152 silly get cb [ 304,
+152 silly get   { date: 'Fri, 03 Apr 2015 23:26:00 GMT',
+152 silly get     server: 'Apache',
+152 silly get     via: '1.1 varnish',
+152 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:00 GMT',
+152 silly get     'cache-control': 'max-age=60',
+152 silly get     etag: '"6YDFFXEVOKMTYN4GB19Q3JK4W"',
+152 silly get     age: '30',
+152 silly get     'x-served-by': 'cache-lax1420-LAX',
+152 silly get     'x-cache': 'HIT',
+152 silly get     'x-cache-hits': '1',
+152 silly get     'x-timer': 'S1428103560.952668,VS0,VE0',
+152 silly get     vary: 'Accept',
+152 silly get     'content-length': '0',
+152 silly get     'keep-alive': 'timeout=10, max=50',
+152 silly get     connection: 'Keep-Alive' } ]
+153 verbose etag https://registry.npmjs.org/raspi-gpio from cache
+154 verbose get saving raspi-gpio to /Users/tomomi/.npm/registry.npmjs.org/raspi-gpio/.cache.json
+155 http 304 https://registry.npmjs.org/raspi-board
+156 silly get cb [ 304,
+156 silly get   { date: 'Fri, 03 Apr 2015 23:26:00 GMT',
+156 silly get     server: 'Apache',
+156 silly get     via: '1.1 varnish',
+156 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:00 GMT',
+156 silly get     'cache-control': 'max-age=60',
+156 silly get     etag: '"5LENV6ACKRU6EBYY0JUL7XKLS"',
+156 silly get     age: '30',
+156 silly get     'x-served-by': 'cache-lax1435-LAX',
+156 silly get     'x-cache': 'HIT',
+156 silly get     'x-cache-hits': '1',
+156 silly get     'x-timer': 'S1428103560.953774,VS0,VE0',
+156 silly get     vary: 'Accept',
+156 silly get     'content-length': '0',
+156 silly get     'keep-alive': 'timeout=10, max=50',
+156 silly get     connection: 'Keep-Alive' } ]
+157 verbose etag https://registry.npmjs.org/raspi-board from cache
+158 verbose get saving raspi-board to /Users/tomomi/.npm/registry.npmjs.org/raspi-board/.cache.json
+159 http 304 https://registry.npmjs.org/raspi-pwm
+160 silly get cb [ 304,
+160 silly get   { date: 'Fri, 03 Apr 2015 23:26:00 GMT',
+160 silly get     server: 'Apache',
+160 silly get     via: '1.1 varnish',
+160 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:00 GMT',
+160 silly get     'cache-control': 'max-age=60',
+160 silly get     etag: '"A31NZ23VA0ZAAN3KKG1FLUG8Q"',
+160 silly get     age: '30',
+160 silly get     'x-served-by': 'cache-lax1432-LAX',
+160 silly get     'x-cache': 'HIT',
+160 silly get     'x-cache-hits': '1',
+160 silly get     'x-timer': 'S1428103560.955050,VS0,VE0',
+160 silly get     vary: 'Accept',
+160 silly get     'content-length': '0',
+160 silly get     'keep-alive': 'timeout=10, max=50',
+160 silly get     connection: 'Keep-Alive' } ]
+161 verbose etag https://registry.npmjs.org/raspi-pwm from cache
+162 verbose get saving raspi-pwm to /Users/tomomi/.npm/registry.npmjs.org/raspi-pwm/.cache.json
+163 http 304 https://registry.npmjs.org/raspi-i2c
+164 silly get cb [ 304,
+164 silly get   { date: 'Fri, 03 Apr 2015 23:26:00 GMT',
+164 silly get     server: 'Apache',
+164 silly get     via: '1.1 varnish',
+164 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:00 GMT',
+164 silly get     'cache-control': 'max-age=60',
+164 silly get     etag: '"ERNEY0VYQLU586BVSCBHCHFBL"',
+164 silly get     age: '30',
+164 silly get     'x-served-by': 'cache-lax1423-LAX',
+164 silly get     'x-cache': 'HIT',
+164 silly get     'x-cache-hits': '1',
+164 silly get     'x-timer': 'S1428103560.954890,VS0,VE0',
+164 silly get     vary: 'Accept',
+164 silly get     'content-length': '0',
+164 silly get     'keep-alive': 'timeout=10, max=50',
+164 silly get     connection: 'Keep-Alive' } ]
+165 verbose etag https://registry.npmjs.org/raspi-i2c from cache
+166 verbose get saving raspi-i2c to /Users/tomomi/.npm/registry.npmjs.org/raspi-i2c/.cache.json
+167 silly cache afterAdd raspi-board@2.1.1
+168 verbose afterAdd /Users/tomomi/.npm/raspi-board/2.1.1/package/package.json not in flight; writing
+169 silly cache afterAdd raspi-i2c@1.0.0
+170 verbose afterAdd /Users/tomomi/.npm/raspi-i2c/1.0.0/package/package.json not in flight; writing
+171 silly cache afterAdd raspi@1.3.0
+172 verbose afterAdd /Users/tomomi/.npm/raspi/1.3.0/package/package.json not in flight; writing
+173 silly cache afterAdd raspi-pwm@1.3.1
+174 verbose afterAdd /Users/tomomi/.npm/raspi-pwm/1.3.1/package/package.json not in flight; writing
+175 silly cache afterAdd raspi-gpio@1.2.1
+176 verbose afterAdd /Users/tomomi/.npm/raspi-gpio/1.2.1/package/package.json not in flight; writing
+177 verbose afterAdd /Users/tomomi/.npm/raspi-board/2.1.1/package/package.json written
+178 verbose afterAdd /Users/tomomi/.npm/raspi/1.3.0/package/package.json written
+179 verbose afterAdd /Users/tomomi/.npm/raspi-i2c/1.0.0/package/package.json written
+180 verbose afterAdd /Users/tomomi/.npm/raspi-pwm/1.3.1/package/package.json written
+181 verbose afterAdd /Users/tomomi/.npm/raspi-gpio/1.2.1/package/package.json written
+182 silly install resolved [ { name: 'raspi-board',
+182 silly install resolved     version: '2.1.1',
+182 silly install resolved     description: 'Pin mapping functionality for the Raspberry Pi in Node.js',
+182 silly install resolved     main: 'lib/index.js',
+182 silly install resolved     scripts: { test: 'jasmine-node tests.spec.js' },
+182 silly install resolved     devDependencies:
+182 silly install resolved      { del: '^1.1.1',
+182 silly install resolved        gulp: '^3.8.11',
+182 silly install resolved        'gulp-babel': '^4.0.0',
+182 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+182 silly install resolved     repository:
+182 silly install resolved      { type: 'git',
+182 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-board.git' },
+182 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+182 silly install resolved     author:
+182 silly install resolved      { name: 'Bryan Hughes',
+182 silly install resolved        email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     license: 'MIT',
+182 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-board/issues' },
+182 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-board',
+182 silly install resolved     gitHead: 'fca13c3d5bd210c0f7f3da363887e8e740ae2112',
+182 silly install resolved     _id: 'raspi-board@2.1.1',
+182 silly install resolved     _shasum: '3ce49ba07d0865d3f5a7108f5684853edfcac203',
+182 silly install resolved     _from: 'raspi-board@2.1.1',
+182 silly install resolved     _npmVersion: '2.7.0',
+182 silly install resolved     _nodeVersion: '1.5.0',
+182 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     maintainers: [ [Object] ],
+182 silly install resolved     dist:
+182 silly install resolved      { shasum: '3ce49ba07d0865d3f5a7108f5684853edfcac203',
+182 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-board/-/raspi-board-2.1.1.tgz' },
+182 silly install resolved     directories: {},
+182 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-board/-/raspi-board-2.1.1.tgz',
+182 silly install resolved     readme: 'ERROR: No README data found!' },
+182 silly install resolved   { name: 'raspi',
+182 silly install resolved     version: '1.3.0',
+182 silly install resolved     description: 'Provides access to Raspberry Pi peripherals from Node.js',
+182 silly install resolved     main: 'lib/index.js',
+182 silly install resolved     scripts:
+182 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+182 silly install resolved        install: 'node-gyp rebuild' },
+182 silly install resolved     repository:
+182 silly install resolved      { type: 'git',
+182 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi.git' },
+182 silly install resolved     keywords: [ 'raspberry pi', 'robotics', 'nodebots' ],
+182 silly install resolved     author:
+182 silly install resolved      { name: 'Bryan Hughes',
+182 silly install resolved        email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     license: 'MIT',
+182 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi/issues' },
+182 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi',
+182 silly install resolved     dependencies: { nan: '1.6.x', 'raspi-wiringpi': '^1.0.4' },
+182 silly install resolved     devDependencies:
+182 silly install resolved      { del: '^1.1.1',
+182 silly install resolved        gulp: '^3.8.11',
+182 silly install resolved        'gulp-babel': '^4.0.0',
+182 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+182 silly install resolved     gypfile: true,
+182 silly install resolved     gitHead: 'b630da3cc8052b4f1438094f911a19780ffd12ac',
+182 silly install resolved     _id: 'raspi@1.3.0',
+182 silly install resolved     _shasum: 'ad0785d909cd1205fa1992fbce22978befbb8e94',
+182 silly install resolved     _from: 'raspi@1.3.0',
+182 silly install resolved     _npmVersion: '2.5.1',
+182 silly install resolved     _nodeVersion: '1.3.0',
+182 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     maintainers: [ [Object] ],
+182 silly install resolved     dist:
+182 silly install resolved      { shasum: 'ad0785d909cd1205fa1992fbce22978befbb8e94',
+182 silly install resolved        tarball: 'http://registry.npmjs.org/raspi/-/raspi-1.3.0.tgz' },
+182 silly install resolved     directories: {},
+182 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi/-/raspi-1.3.0.tgz',
+182 silly install resolved     readme: 'ERROR: No README data found!' },
+182 silly install resolved   { name: 'raspi-i2c',
+182 silly install resolved     version: '1.0.0',
+182 silly install resolved     description: 'Provides access to I2C on the Raspberry Pi from Node.js ',
+182 silly install resolved     main: 'lib/index.js',
+182 silly install resolved     dependencies:
+182 silly install resolved      { 'i2c-bus': '^0.11.0',
+182 silly install resolved        'raspi-board': '2.1.1',
+182 silly install resolved        'raspi-peripheral': '1.1.1',
+182 silly install resolved        'ini-builder': '^1.0.2',
+182 silly install resolved        execSync: '^1.0.2' },
+182 silly install resolved     optionalDependencies: { execSync: '^1.0.2' },
+182 silly install resolved     devDependencies:
+182 silly install resolved      { del: '^1.1.1',
+182 silly install resolved        gulp: '^3.8.11',
+182 silly install resolved        'gulp-babel': '^4.0.0',
+182 silly install resolved        'gulp-sourcemaps': '^1.5.0' },
+182 silly install resolved     scripts:
+182 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+182 silly install resolved        postinstall: 'echo "Enabling I2C at boot time, you may be asked for your password" && sudo script/enable_i2c.js' },
+182 silly install resolved     config: { 'unsafe-perm': true },
+182 silly install resolved     repository:
+182 silly install resolved      { type: 'git',
+182 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-i2c.git' },
+182 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+182 silly install resolved     author:
+182 silly install resolved      { name: 'Bryan Hughes',
+182 silly install resolved        email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     contributors: [ [Object], [Object] ],
+182 silly install resolved     license: 'MIT',
+182 silly install resolved     gypfile: true,
+182 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-i2c/issues' },
+182 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-i2c',
+182 silly install resolved     gitHead: 'a3f9b2522e7bedfe121bdd3cd200c548903a1128',
+182 silly install resolved     _id: 'raspi-i2c@1.0.0',
+182 silly install resolved     _shasum: '65c5b0f2bab8c39a5f2dbc32332e189946ad0e75',
+182 silly install resolved     _from: 'raspi-i2c@1.0.0',
+182 silly install resolved     _npmVersion: '2.7.0',
+182 silly install resolved     _nodeVersion: '1.5.0',
+182 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     maintainers: [ [Object] ],
+182 silly install resolved     dist:
+182 silly install resolved      { shasum: '65c5b0f2bab8c39a5f2dbc32332e189946ad0e75',
+182 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-i2c/-/raspi-i2c-1.0.0.tgz' },
+182 silly install resolved     directories: {},
+182 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-i2c/-/raspi-i2c-1.0.0.tgz',
+182 silly install resolved     readme: 'ERROR: No README data found!' },
+182 silly install resolved   { name: 'raspi-pwm',
+182 silly install resolved     version: '1.3.1',
+182 silly install resolved     description: 'Provides access to PWM on the Raspberry Pi as part of the Raspi.js library suite',
+182 silly install resolved     main: 'lib/index.js',
+182 silly install resolved     dependencies: { nan: '1.6.x', 'raspi-peripheral': '1.1.1' },
+182 silly install resolved     devDependencies:
+182 silly install resolved      { del: '^1.1.1',
+182 silly install resolved        gulp: '^3.8.11',
+182 silly install resolved        'gulp-babel': '^4.0.0',
+182 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+182 silly install resolved     scripts:
+182 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+182 silly install resolved        install: 'node-gyp rebuild' },
+182 silly install resolved     repository:
+182 silly install resolved      { type: 'git',
+182 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-pwm.git' },
+182 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+182 silly install resolved     author:
+182 silly install resolved      { name: 'Bryan Hughes',
+182 silly install resolved        email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     license: 'MIT',
+182 silly install resolved     gypfile: true,
+182 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-pwm/issues' },
+182 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-pwm',
+182 silly install resolved     gitHead: '4a13f423f8178226a9e9d92227fdb89159db3001',
+182 silly install resolved     _id: 'raspi-pwm@1.3.1',
+182 silly install resolved     _shasum: '52d0e25f4d704d679b1e5f06d1ad722db95a266a',
+182 silly install resolved     _from: 'raspi-pwm@1.3.1',
+182 silly install resolved     _npmVersion: '2.7.0',
+182 silly install resolved     _nodeVersion: '1.5.0',
+182 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     maintainers: [ [Object] ],
+182 silly install resolved     dist:
+182 silly install resolved      { shasum: '52d0e25f4d704d679b1e5f06d1ad722db95a266a',
+182 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-pwm/-/raspi-pwm-1.3.1.tgz' },
+182 silly install resolved     directories: {},
+182 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-pwm/-/raspi-pwm-1.3.1.tgz',
+182 silly install resolved     readme: 'ERROR: No README data found!' },
+182 silly install resolved   { name: 'raspi-gpio',
+182 silly install resolved     version: '1.2.1',
+182 silly install resolved     description: 'Provides access to GPIO on the Raspberry Pi from Node.js',
+182 silly install resolved     main: 'lib/index.js',
+182 silly install resolved     dependencies: { nan: '1.6.x', 'raspi-peripheral': '1.1.1' },
+182 silly install resolved     devDependencies:
+182 silly install resolved      { del: '^1.1.1',
+182 silly install resolved        gulp: '^3.8.11',
+182 silly install resolved        'gulp-babel': '^4.0.0',
+182 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+182 silly install resolved     scripts:
+182 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+182 silly install resolved        install: 'node-gyp rebuild' },
+182 silly install resolved     repository:
+182 silly install resolved      { type: 'git',
+182 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-gpio.git' },
+182 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+182 silly install resolved     author:
+182 silly install resolved      { name: 'Bryan Hughes',
+182 silly install resolved        email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     license: 'MIT',
+182 silly install resolved     gypfile: true,
+182 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-gpio/issues' },
+182 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-gpio',
+182 silly install resolved     gitHead: '4ea91096c0c6750b0d15873faebe5fae37babd30',
+182 silly install resolved     _id: 'raspi-gpio@1.2.1',
+182 silly install resolved     _shasum: '2fa7906a01e922f4a2dcc329cd0a2c3a99ec6277',
+182 silly install resolved     _from: 'raspi-gpio@1.2.1',
+182 silly install resolved     _npmVersion: '2.7.0',
+182 silly install resolved     _nodeVersion: '1.5.0',
+182 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+182 silly install resolved     maintainers: [ [Object] ],
+182 silly install resolved     dist:
+182 silly install resolved      { shasum: '2fa7906a01e922f4a2dcc329cd0a2c3a99ec6277',
+182 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-gpio/-/raspi-gpio-1.2.1.tgz' },
+182 silly install resolved     directories: {},
+182 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-gpio/-/raspi-gpio-1.2.1.tgz',
+182 silly install resolved     readme: 'ERROR: No README data found!' } ]
+183 info install raspi-board@2.1.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+184 info install raspi@1.3.0 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+185 info install raspi-i2c@1.0.0 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+186 info install raspi-pwm@1.3.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+187 info install raspi-gpio@1.2.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+188 info installOne raspi-board@2.1.1
+189 verbose installOne of raspi-board to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io not in flight; installing
+190 info installOne raspi@1.3.0
+191 verbose installOne of raspi to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io not in flight; installing
+192 info installOne raspi-i2c@1.0.0
+193 verbose installOne of raspi-i2c to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io not in flight; installing
+194 info installOne raspi-pwm@1.3.1
+195 verbose installOne of raspi-pwm to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io not in flight; installing
+196 info installOne raspi-gpio@1.2.1
+197 verbose installOne of raspi-gpio to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io not in flight; installing
+198 verbose lock using /Users/tomomi/.npm/_locks/raspi-board-293c17aa33f8e033.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+199 verbose lock using /Users/tomomi/.npm/_locks/raspi-pwm-d341ceb4dafac9e0.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+200 silly install write writing raspi-board 2.1.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+201 silly cache addNamed cb raspi-board@2.1.1
+202 verbose unbuild node_modules/raspi-io/node_modules/raspi-board
+203 verbose lock using /Users/tomomi/.npm/_locks/raspi-i2c-4d16279ed51d85c8.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+204 silly install write writing raspi-pwm 1.3.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+205 silly cache addNamed cb raspi-pwm@1.3.1
+206 verbose unbuild node_modules/raspi-io/node_modules/raspi-pwm
+207 verbose lock using /Users/tomomi/.npm/_locks/raspi-gpio-8c631012304f3251.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+208 verbose lock using /Users/tomomi/.npm/_locks/raspi-e9f7887201d9b484.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+209 silly install write writing raspi-i2c 1.0.0 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+210 silly cache addNamed cb raspi-i2c@1.0.0
+211 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c
+212 silly install write writing raspi-gpio 1.2.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+213 silly cache addNamed cb raspi-gpio@1.2.1
+214 verbose unbuild node_modules/raspi-io/node_modules/raspi-gpio
+215 silly install write writing raspi 1.3.0 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+216 silly cache addNamed cb raspi@1.3.0
+217 verbose unbuild node_modules/raspi-io/node_modules/raspi
+218 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+219 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+220 verbose tar unpack /Users/tomomi/.npm/raspi-board/2.1.1/package.tgz
+221 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+222 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+223 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+224 verbose tar unpack /Users/tomomi/.npm/raspi-pwm/1.3.1/package.tgz
+225 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+226 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+227 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+228 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+229 silly gunzTarPerm modes [ '755', '644' ]
+230 verbose tar unpack /Users/tomomi/.npm/raspi-i2c/1.0.0/package.tgz
+231 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+232 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+233 silly gunzTarPerm modes [ '755', '644' ]
+234 verbose tar unpack /Users/tomomi/.npm/raspi-gpio/1.2.1/package.tgz
+235 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+236 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+237 verbose tar unpack /Users/tomomi/.npm/raspi/1.3.0/package.tgz
+238 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+239 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+240 silly gunzTarPerm modes [ '755', '644' ]
+241 silly gunzTarPerm modes [ '755', '644' ]
+242 silly gunzTarPerm modes [ '755', '644' ]
+243 silly gunzTarPerm extractEntry package.json
+244 silly gunzTarPerm extractEntry package.json
+245 silly gunzTarPerm extractEntry package.json
+246 silly gunzTarPerm extractEntry package.json
+247 silly gunzTarPerm extractEntry package.json
+248 silly gunzTarPerm extractEntry .npmignore
+249 silly gunzTarPerm extractEntry README.md
+250 silly gunzTarPerm extractEntry .npmignore
+251 silly gunzTarPerm extractEntry README.md
+252 silly gunzTarPerm extractEntry .npmignore
+253 silly gunzTarPerm extractEntry README.md
+254 silly gunzTarPerm extractEntry .npmignore
+255 silly gunzTarPerm extractEntry README.md
+256 silly gunzTarPerm extractEntry .npmignore
+257 silly gunzTarPerm extractEntry README.md
+258 silly gunzTarPerm extractEntry LICENSE
+259 silly gunzTarPerm extractEntry tests.spec.js
+260 silly gunzTarPerm extractEntry LICENSE
+261 silly gunzTarPerm extractEntry gulpfile.js
+262 silly gunzTarPerm extractEntry LICENSE
+263 silly gunzTarPerm extractEntry gulpfile.js
+264 silly gunzTarPerm extractEntry LICENSE
+265 silly gunzTarPerm extractEntry gulpfile.js
+266 silly gunzTarPerm extractEntry LICENSE
+267 silly gunzTarPerm extractEntry index.js
+268 silly gunzTarPerm extractEntry index.js
+269 silly gunzTarPerm extractEntry gulpfile.js
+270 silly gunzTarPerm extractEntry CHANGELOG.md
+271 silly gunzTarPerm extractEntry lib/index.js
+272 silly gunzTarPerm extractEntry index.js
+273 silly gunzTarPerm extractEntry CHANGELOG.md
+274 silly gunzTarPerm extractEntry lib/index.js
+275 silly gunzTarPerm extractEntry binding.gyp
+276 silly gunzTarPerm extractEntry src/addon.cc
+277 silly gunzTarPerm extractEntry src/init.cc
+278 silly gunzTarPerm extractEntry src/init.h
+279 silly gunzTarPerm extractEntry src/read.cc
+280 silly gunzTarPerm extractEntry src/read.h
+281 silly gunzTarPerm extractEntry src/write.cc
+282 silly gunzTarPerm extractEntry src/write.h
+283 silly gunzTarPerm extractEntry index.js
+284 silly gunzTarPerm extractEntry binding.gyp
+285 silly gunzTarPerm extractEntry index.js
+286 silly gunzTarPerm extractEntry binding.gyp
+287 silly gunzTarPerm extractEntry gulpfile.js
+288 silly gunzTarPerm extractEntry lib/index.js
+289 silly gunzTarPerm extractEntry CHANGELOG.md
+290 silly gunzTarPerm extractEntry src/addon.cc
+291 silly gunzTarPerm extractEntry src/init.cc
+292 silly gunzTarPerm extractEntry src/init.h
+293 silly gunzTarPerm extractEntry src/write.cc
+294 silly gunzTarPerm extractEntry src/write.h
+295 silly gunzTarPerm extractEntry lib/index.js
+296 silly gunzTarPerm extractEntry script/enable_i2c.js
+297 silly gunzTarPerm extractEntry lib/index.js
+298 silly gunzTarPerm extractEntry CHANGELOG.md
+299 silly gunzTarPerm extractEntry src/addon.cc
+300 silly gunzTarPerm extractEntry src/init.cc
+301 silly gunzTarPerm extractEntry src/init.h
+302 silly gunzTarPerm extractEntry test/ds1621-sync.js
+303 silly gunzTarPerm extractEntry test/ds1621.js
+304 silly gunzTarPerm extractEntry test/errors.js
+305 info preinstall raspi@1.3.0
+306 silly prepareForInstallMany adding nan@1.6.x from raspi dependencies
+307 silly prepareForInstallMany adding raspi-wiringpi@^1.0.4 from raspi dependencies
+308 silly cache add args [ 'nan@1.6.x', null ]
+309 verbose cache add spec nan@1.6.x
+310 silly cache add parsed spec { raw: 'nan@1.6.x',
+310 silly cache add   scope: null,
+310 silly cache add   name: 'nan',
+310 silly cache add   rawSpec: '1.6.x',
+310 silly cache add   spec: '>=1.6.0 <1.7.0',
+310 silly cache add   type: 'range' }
+311 verbose addNamed nan@>=1.6.0 <1.7.0
+312 silly addNamed semver.valid null
+313 silly addNamed semver.validRange >=1.6.0 <1.7.0
+314 silly addNameRange { name: 'nan', range: '>=1.6.0 <1.7.0', hasData: false }
+315 silly mapToRegistry name nan
+316 silly mapToRegistry using default registry
+317 silly mapToRegistry registry https://registry.npmjs.org/
+318 silly mapToRegistry uri https://registry.npmjs.org/nan
+319 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+320 silly cache add args [ 'raspi-wiringpi@^1.0.4', null ]
+321 verbose cache add spec raspi-wiringpi@^1.0.4
+322 silly cache add parsed spec { raw: 'raspi-wiringpi@^1.0.4',
+322 silly cache add   scope: null,
+322 silly cache add   name: 'raspi-wiringpi',
+322 silly cache add   rawSpec: '^1.0.4',
+322 silly cache add   spec: '>=1.0.4 <2.0.0',
+322 silly cache add   type: 'range' }
+323 verbose addNamed raspi-wiringpi@>=1.0.4 <2.0.0
+324 silly addNamed semver.valid null
+325 silly addNamed semver.validRange >=1.0.4 <2.0.0
+326 silly addNameRange { name: 'raspi-wiringpi',
+326 silly addNameRange   range: '>=1.0.4 <2.0.0',
+326 silly addNameRange   hasData: false }
+327 silly mapToRegistry name raspi-wiringpi
+328 silly mapToRegistry using default registry
+329 silly mapToRegistry registry https://registry.npmjs.org/
+330 silly mapToRegistry uri https://registry.npmjs.org/raspi-wiringpi
+331 verbose addNameRange registry:https://registry.npmjs.org/raspi-wiringpi not in flight; fetching
+332 info preinstall raspi-board@2.1.1
+333 info preinstall raspi-pwm@1.3.1
+334 verbose request uri https://registry.npmjs.org/nan
+335 verbose request no auth needed
+336 info attempt registry request try #1 at 4:26:00 PM
+337 verbose etag "2RVNOBUBIPFCFHXKKPTSTKGB8"
+338 http request GET https://registry.npmjs.org/nan
+339 verbose request uri https://registry.npmjs.org/raspi-wiringpi
+340 verbose request no auth needed
+341 info attempt registry request try #1 at 4:26:00 PM
+342 verbose etag "DBC0O31VQ25FECLGWGTY1J0VB"
+343 http request GET https://registry.npmjs.org/raspi-wiringpi
+344 silly install resolved []
+345 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+346 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+347 verbose linkStuff [ false,
+347 verbose linkStuff   false,
+347 verbose linkStuff   false,
+347 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules' ]
+348 info linkStuff raspi-board@2.1.1
+349 verbose linkBins raspi-board@2.1.1
+350 verbose linkMans raspi-board@2.1.1
+351 verbose rebuildBundles raspi-board@2.1.1
+352 silly prepareForInstallMany adding nan@1.6.x from raspi-pwm dependencies
+353 silly prepareForInstallMany adding raspi-peripheral@1.1.1 from raspi-pwm dependencies
+354 info install raspi-board@2.1.1
+355 silly cache add args [ 'nan@1.6.x', null ]
+356 verbose cache add spec nan@1.6.x
+357 silly cache add args [ 'raspi-peripheral@1.1.1', null ]
+358 verbose cache add spec raspi-peripheral@1.1.1
+359 silly cache add parsed spec { raw: 'nan@1.6.x',
+359 silly cache add   scope: null,
+359 silly cache add   name: 'nan',
+359 silly cache add   rawSpec: '1.6.x',
+359 silly cache add   spec: '>=1.6.0 <1.7.0',
+359 silly cache add   type: 'range' }
+360 verbose addNamed nan@>=1.6.0 <1.7.0
+361 silly addNamed semver.valid null
+362 silly addNamed semver.validRange >=1.6.0 <1.7.0
+363 silly addNameRange { name: 'nan', range: '>=1.6.0 <1.7.0', hasData: false }
+364 silly mapToRegistry name nan
+365 silly mapToRegistry using default registry
+366 silly mapToRegistry registry https://registry.npmjs.org/
+367 silly mapToRegistry uri https://registry.npmjs.org/nan
+368 verbose addNameRange registry:https://registry.npmjs.org/nan already in flight; waiting
+369 silly cache add parsed spec { raw: 'raspi-peripheral@1.1.1',
+369 silly cache add   scope: null,
+369 silly cache add   name: 'raspi-peripheral',
+369 silly cache add   rawSpec: '1.1.1',
+369 silly cache add   spec: '1.1.1',
+369 silly cache add   type: 'version' }
+370 verbose addNamed raspi-peripheral@1.1.1
+371 silly addNamed semver.valid 1.1.1
+372 silly addNamed semver.validRange 1.1.1
+373 silly mapToRegistry name raspi-peripheral
+374 silly mapToRegistry using default registry
+375 silly mapToRegistry registry https://registry.npmjs.org/
+376 silly mapToRegistry uri https://registry.npmjs.org/raspi-peripheral
+377 verbose addNameVersion registry:https://registry.npmjs.org/raspi-peripheral not in flight; fetching
+378 info postinstall raspi-board@2.1.1
+379 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-board-293c17aa33f8e033.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-board
+380 verbose request uri https://registry.npmjs.org/raspi-peripheral
+381 verbose request no auth needed
+382 info attempt registry request try #1 at 4:26:00 PM
+383 verbose etag "4EXB6PETC3BS31DLK146PMO45"
+384 http request GET https://registry.npmjs.org/raspi-peripheral
+385 info preinstall raspi-gpio@1.2.1
+386 silly prepareForInstallMany adding nan@1.6.x from raspi-gpio dependencies
+387 silly prepareForInstallMany adding raspi-peripheral@1.1.1 from raspi-gpio dependencies
+388 info preinstall raspi-i2c@1.0.0
+389 silly cache add args [ 'nan@1.6.x', null ]
+390 verbose cache add spec nan@1.6.x
+391 silly cache add args [ 'raspi-peripheral@1.1.1', null ]
+392 verbose cache add spec raspi-peripheral@1.1.1
+393 silly cache add parsed spec { raw: 'nan@1.6.x',
+393 silly cache add   scope: null,
+393 silly cache add   name: 'nan',
+393 silly cache add   rawSpec: '1.6.x',
+393 silly cache add   spec: '>=1.6.0 <1.7.0',
+393 silly cache add   type: 'range' }
+394 verbose addNamed nan@>=1.6.0 <1.7.0
+395 silly addNamed semver.valid null
+396 silly addNamed semver.validRange >=1.6.0 <1.7.0
+397 silly addNameRange { name: 'nan', range: '>=1.6.0 <1.7.0', hasData: false }
+398 silly mapToRegistry name nan
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry uri https://registry.npmjs.org/nan
+402 verbose addNameRange registry:https://registry.npmjs.org/nan already in flight; waiting
+403 silly cache add parsed spec { raw: 'raspi-peripheral@1.1.1',
+403 silly cache add   scope: null,
+403 silly cache add   name: 'raspi-peripheral',
+403 silly cache add   rawSpec: '1.1.1',
+403 silly cache add   spec: '1.1.1',
+403 silly cache add   type: 'version' }
+404 verbose addNamed raspi-peripheral@1.1.1
+405 silly addNamed semver.valid 1.1.1
+406 silly addNamed semver.validRange 1.1.1
+407 silly mapToRegistry name raspi-peripheral
+408 silly mapToRegistry using default registry
+409 silly mapToRegistry registry https://registry.npmjs.org/
+410 silly mapToRegistry uri https://registry.npmjs.org/raspi-peripheral
+411 verbose addNameVersion registry:https://registry.npmjs.org/raspi-peripheral already in flight; waiting
+412 silly prepareForInstallMany adding i2c-bus@^0.11.0 from raspi-i2c dependencies
+413 silly prepareForInstallMany adding raspi-peripheral@1.1.1 from raspi-i2c dependencies
+414 silly prepareForInstallMany adding ini-builder@^1.0.2 from raspi-i2c dependencies
+415 silly prepareForInstallMany adding execSync@^1.0.2 from raspi-i2c dependencies
+416 silly cache add args [ 'i2c-bus@^0.11.0', null ]
+417 verbose cache add spec i2c-bus@^0.11.0
+418 silly cache add args [ 'raspi-peripheral@1.1.1', null ]
+419 verbose cache add spec raspi-peripheral@1.1.1
+420 silly cache add parsed spec { raw: 'i2c-bus@^0.11.0',
+420 silly cache add   scope: null,
+420 silly cache add   name: 'i2c-bus',
+420 silly cache add   rawSpec: '^0.11.0',
+420 silly cache add   spec: '>=0.11.0 <0.12.0',
+420 silly cache add   type: 'range' }
+421 verbose addNamed i2c-bus@>=0.11.0 <0.12.0
+422 silly addNamed semver.valid null
+423 silly addNamed semver.validRange >=0.11.0 <0.12.0
+424 silly addNameRange { name: 'i2c-bus', range: '>=0.11.0 <0.12.0', hasData: false }
+425 silly mapToRegistry name i2c-bus
+426 silly mapToRegistry using default registry
+427 silly mapToRegistry registry https://registry.npmjs.org/
+428 silly mapToRegistry uri https://registry.npmjs.org/i2c-bus
+429 verbose addNameRange registry:https://registry.npmjs.org/i2c-bus not in flight; fetching
+430 silly cache add parsed spec { raw: 'raspi-peripheral@1.1.1',
+430 silly cache add   scope: null,
+430 silly cache add   name: 'raspi-peripheral',
+430 silly cache add   rawSpec: '1.1.1',
+430 silly cache add   spec: '1.1.1',
+430 silly cache add   type: 'version' }
+431 verbose addNamed raspi-peripheral@1.1.1
+432 silly addNamed semver.valid 1.1.1
+433 silly addNamed semver.validRange 1.1.1
+434 silly mapToRegistry name raspi-peripheral
+435 silly mapToRegistry using default registry
+436 silly mapToRegistry registry https://registry.npmjs.org/
+437 silly mapToRegistry uri https://registry.npmjs.org/raspi-peripheral
+438 verbose addNameVersion registry:https://registry.npmjs.org/raspi-peripheral already in flight; waiting
+439 silly cache add args [ 'ini-builder@^1.0.2', null ]
+440 verbose cache add spec ini-builder@^1.0.2
+441 silly cache add parsed spec { raw: 'ini-builder@^1.0.2',
+441 silly cache add   scope: null,
+441 silly cache add   name: 'ini-builder',
+441 silly cache add   rawSpec: '^1.0.2',
+441 silly cache add   spec: '>=1.0.2 <2.0.0',
+441 silly cache add   type: 'range' }
+442 verbose addNamed ini-builder@>=1.0.2 <2.0.0
+443 silly addNamed semver.valid null
+444 silly addNamed semver.validRange >=1.0.2 <2.0.0
+445 silly addNameRange { name: 'ini-builder', range: '>=1.0.2 <2.0.0', hasData: false }
+446 silly mapToRegistry name ini-builder
+447 silly mapToRegistry using default registry
+448 silly mapToRegistry registry https://registry.npmjs.org/
+449 silly mapToRegistry uri https://registry.npmjs.org/ini-builder
+450 verbose addNameRange registry:https://registry.npmjs.org/ini-builder not in flight; fetching
+451 silly cache add args [ 'execSync@^1.0.2', null ]
+452 verbose cache add spec execSync@^1.0.2
+453 silly cache add parsed spec { raw: 'execSync@^1.0.2',
+453 silly cache add   scope: null,
+453 silly cache add   name: 'execSync',
+453 silly cache add   rawSpec: '^1.0.2',
+453 silly cache add   spec: '>=1.0.2 <2.0.0',
+453 silly cache add   type: 'range' }
+454 verbose addNamed execSync@>=1.0.2 <2.0.0
+455 silly addNamed semver.valid null
+456 silly addNamed semver.validRange >=1.0.2 <2.0.0
+457 silly addNameRange { name: 'execSync', range: '>=1.0.2 <2.0.0', hasData: false }
+458 silly mapToRegistry name execSync
+459 silly mapToRegistry using default registry
+460 silly mapToRegistry registry https://registry.npmjs.org/
+461 silly mapToRegistry uri https://registry.npmjs.org/execSync
+462 verbose addNameRange registry:https://registry.npmjs.org/execSync not in flight; fetching
+463 verbose request uri https://registry.npmjs.org/i2c-bus
+464 verbose request no auth needed
+465 info attempt registry request try #1 at 4:26:00 PM
+466 verbose etag "942GZU7MBDKMUTSET7TFQ0K6I"
+467 http request GET https://registry.npmjs.org/i2c-bus
+468 verbose request uri https://registry.npmjs.org/ini-builder
+469 verbose request no auth needed
+470 info attempt registry request try #1 at 4:26:00 PM
+471 verbose etag "6E4TJ5CW2JKCUJ15TZ2OG1HRD"
+472 http request GET https://registry.npmjs.org/ini-builder
+473 verbose request uri https://registry.npmjs.org/execSync
+474 verbose request no auth needed
+475 info attempt registry request try #1 at 4:26:00 PM
+476 verbose etag "2O9JTCJECD0FZL8FH333FLW4Y"
+477 http request GET https://registry.npmjs.org/execSync
+478 http 304 https://registry.npmjs.org/nan
+479 silly get cb [ 304,
+479 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+479 silly get     server: 'Apache',
+479 silly get     via: '1.1 varnish',
+479 silly get     'last-modified': 'Fri, 03 Apr 2015 23:25:43 GMT',
+479 silly get     'cache-control': 'max-age=60',
+479 silly get     etag: '"2RVNOBUBIPFCFHXKKPTSTKGB8"',
+479 silly get     age: '36',
+479 silly get     'x-served-by': 'cache-lax1424-LAX',
+479 silly get     'x-cache': 'HIT',
+479 silly get     'x-cache-hits': '3',
+479 silly get     'x-timer': 'S1428103561.207227,VS0,VE0',
+479 silly get     vary: 'Accept',
+479 silly get     'content-length': '0',
+479 silly get     'keep-alive': 'timeout=10, max=50',
+479 silly get     connection: 'Keep-Alive' } ]
+480 verbose etag https://registry.npmjs.org/nan from cache
+481 verbose get saving nan to /Users/tomomi/.npm/registry.npmjs.org/nan/.cache.json
+482 silly addNameRange number 2 { name: 'nan', range: '>=1.6.0 <1.7.0', hasData: true }
+483 silly addNameRange versions [ 'nan',
+483 silly addNameRange   [ '0.3.0-wip',
+483 silly addNameRange     '0.3.0-wip2',
+483 silly addNameRange     '0.3.0',
+483 silly addNameRange     '0.3.1',
+483 silly addNameRange     '0.3.2',
+483 silly addNameRange     '0.4.0',
+483 silly addNameRange     '0.4.1',
+483 silly addNameRange     '0.4.2',
+483 silly addNameRange     '0.4.3',
+483 silly addNameRange     '0.4.4',
+483 silly addNameRange     '0.5.0',
+483 silly addNameRange     '0.5.1',
+483 silly addNameRange     '0.5.2',
+483 silly addNameRange     '0.6.0',
+483 silly addNameRange     '0.7.0',
+483 silly addNameRange     '0.7.1',
+483 silly addNameRange     '0.8.0',
+483 silly addNameRange     '1.0.0',
+483 silly addNameRange     '1.1.0',
+483 silly addNameRange     '1.1.1',
+483 silly addNameRange     '1.1.2',
+483 silly addNameRange     '1.2.0',
+483 silly addNameRange     '1.3.0',
+483 silly addNameRange     '1.4.0',
+483 silly addNameRange     '1.4.1',
+483 silly addNameRange     '1.5.0',
+483 silly addNameRange     '1.4.2',
+483 silly addNameRange     '1.4.3',
+483 silly addNameRange     '1.5.1',
+483 silly addNameRange     '1.5.2',
+483 silly addNameRange     '1.6.0',
+483 silly addNameRange     '1.5.3',
+483 silly addNameRange     '1.6.1',
+483 silly addNameRange     '1.6.2',
+483 silly addNameRange     '1.7.0' ] ]
+484 verbose addNamed nan@1.6.2
+485 silly addNamed semver.valid 1.6.2
+486 silly addNamed semver.validRange 1.6.2
+487 silly addNameRange number 2 { name: 'nan', range: '>=1.6.0 <1.7.0', hasData: true }
+488 silly addNameRange versions [ 'nan',
+488 silly addNameRange   [ '0.3.0-wip',
+488 silly addNameRange     '0.3.0-wip2',
+488 silly addNameRange     '0.3.0',
+488 silly addNameRange     '0.3.1',
+488 silly addNameRange     '0.3.2',
+488 silly addNameRange     '0.4.0',
+488 silly addNameRange     '0.4.1',
+488 silly addNameRange     '0.4.2',
+488 silly addNameRange     '0.4.3',
+488 silly addNameRange     '0.4.4',
+488 silly addNameRange     '0.5.0',
+488 silly addNameRange     '0.5.1',
+488 silly addNameRange     '0.5.2',
+488 silly addNameRange     '0.6.0',
+488 silly addNameRange     '0.7.0',
+488 silly addNameRange     '0.7.1',
+488 silly addNameRange     '0.8.0',
+488 silly addNameRange     '1.0.0',
+488 silly addNameRange     '1.1.0',
+488 silly addNameRange     '1.1.1',
+488 silly addNameRange     '1.1.2',
+488 silly addNameRange     '1.2.0',
+488 silly addNameRange     '1.3.0',
+488 silly addNameRange     '1.4.0',
+488 silly addNameRange     '1.4.1',
+488 silly addNameRange     '1.5.0',
+488 silly addNameRange     '1.4.2',
+488 silly addNameRange     '1.4.3',
+488 silly addNameRange     '1.5.1',
+488 silly addNameRange     '1.5.2',
+488 silly addNameRange     '1.6.0',
+488 silly addNameRange     '1.5.3',
+488 silly addNameRange     '1.6.1',
+488 silly addNameRange     '1.6.2',
+488 silly addNameRange     '1.7.0' ] ]
+489 verbose addNamed nan@1.6.2
+490 silly addNamed semver.valid 1.6.2
+491 silly addNamed semver.validRange 1.6.2
+492 silly addNameRange number 2 { name: 'nan', range: '>=1.6.0 <1.7.0', hasData: true }
+493 silly addNameRange versions [ 'nan',
+493 silly addNameRange   [ '0.3.0-wip',
+493 silly addNameRange     '0.3.0-wip2',
+493 silly addNameRange     '0.3.0',
+493 silly addNameRange     '0.3.1',
+493 silly addNameRange     '0.3.2',
+493 silly addNameRange     '0.4.0',
+493 silly addNameRange     '0.4.1',
+493 silly addNameRange     '0.4.2',
+493 silly addNameRange     '0.4.3',
+493 silly addNameRange     '0.4.4',
+493 silly addNameRange     '0.5.0',
+493 silly addNameRange     '0.5.1',
+493 silly addNameRange     '0.5.2',
+493 silly addNameRange     '0.6.0',
+493 silly addNameRange     '0.7.0',
+493 silly addNameRange     '0.7.1',
+493 silly addNameRange     '0.8.0',
+493 silly addNameRange     '1.0.0',
+493 silly addNameRange     '1.1.0',
+493 silly addNameRange     '1.1.1',
+493 silly addNameRange     '1.1.2',
+493 silly addNameRange     '1.2.0',
+493 silly addNameRange     '1.3.0',
+493 silly addNameRange     '1.4.0',
+493 silly addNameRange     '1.4.1',
+493 silly addNameRange     '1.5.0',
+493 silly addNameRange     '1.4.2',
+493 silly addNameRange     '1.4.3',
+493 silly addNameRange     '1.5.1',
+493 silly addNameRange     '1.5.2',
+493 silly addNameRange     '1.6.0',
+493 silly addNameRange     '1.5.3',
+493 silly addNameRange     '1.6.1',
+493 silly addNameRange     '1.6.2',
+493 silly addNameRange     '1.7.0' ] ]
+494 verbose addNamed nan@1.6.2
+495 silly addNamed semver.valid 1.6.2
+496 silly addNamed semver.validRange 1.6.2
+497 silly cache afterAdd nan@1.6.2
+498 verbose afterAdd /Users/tomomi/.npm/nan/1.6.2/package/package.json not in flight; writing
+499 silly cache afterAdd nan@1.6.2
+500 verbose afterAdd /Users/tomomi/.npm/nan/1.6.2/package/package.json already in flight; not writing
+501 silly cache afterAdd nan@1.6.2
+502 verbose afterAdd /Users/tomomi/.npm/nan/1.6.2/package/package.json already in flight; not writing
+503 http 304 https://registry.npmjs.org/raspi-peripheral
+504 silly get cb [ 304,
+504 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+504 silly get     server: 'Apache',
+504 silly get     via: '1.1 varnish',
+504 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+504 silly get     'cache-control': 'max-age=60',
+504 silly get     etag: '"4EXB6PETC3BS31DLK146PMO45"',
+504 silly get     age: '29',
+504 silly get     'x-served-by': 'cache-lax1421-LAX',
+504 silly get     'x-cache': 'HIT',
+504 silly get     'x-cache-hits': '1',
+504 silly get     'x-timer': 'S1428103561.223523,VS0,VE0',
+504 silly get     vary: 'Accept',
+504 silly get     'content-length': '0',
+504 silly get     'keep-alive': 'timeout=10, max=50',
+504 silly get     connection: 'Keep-Alive' } ]
+505 verbose etag https://registry.npmjs.org/raspi-peripheral from cache
+506 verbose get saving raspi-peripheral to /Users/tomomi/.npm/registry.npmjs.org/raspi-peripheral/.cache.json
+507 http 304 https://registry.npmjs.org/raspi-wiringpi
+508 silly get cb [ 304,
+508 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+508 silly get     server: 'Apache',
+508 silly get     via: '1.1 varnish',
+508 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+508 silly get     'cache-control': 'max-age=60',
+508 silly get     etag: '"DBC0O31VQ25FECLGWGTY1J0VB"',
+508 silly get     age: '29',
+508 silly get     'x-served-by': 'cache-lax1431-LAX',
+508 silly get     'x-cache': 'HIT',
+508 silly get     'x-cache-hits': '1',
+508 silly get     'x-timer': 'S1428103561.224542,VS0,VE0',
+508 silly get     vary: 'Accept',
+508 silly get     'content-length': '0',
+508 silly get     'keep-alive': 'timeout=10, max=50',
+508 silly get     connection: 'Keep-Alive' } ]
+509 verbose etag https://registry.npmjs.org/raspi-wiringpi from cache
+510 verbose get saving raspi-wiringpi to /Users/tomomi/.npm/registry.npmjs.org/raspi-wiringpi/.cache.json
+511 verbose afterAdd /Users/tomomi/.npm/nan/1.6.2/package/package.json written
+512 silly addNameRange number 2 { name: 'raspi-wiringpi',
+512 silly addNameRange   range: '>=1.0.4 <2.0.0',
+512 silly addNameRange   hasData: true }
+513 silly addNameRange versions [ 'raspi-wiringpi',
+513 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4' ] ]
+514 verbose addNamed raspi-wiringpi@1.0.4
+515 silly addNamed semver.valid 1.0.4
+516 silly addNamed semver.validRange 1.0.4
+517 silly cache afterAdd raspi-peripheral@1.1.1
+518 verbose afterAdd /Users/tomomi/.npm/raspi-peripheral/1.1.1/package/package.json not in flight; writing
+519 silly cache afterAdd raspi-peripheral@1.1.1
+520 verbose afterAdd /Users/tomomi/.npm/raspi-peripheral/1.1.1/package/package.json already in flight; not writing
+521 silly cache afterAdd raspi-peripheral@1.1.1
+522 verbose afterAdd /Users/tomomi/.npm/raspi-peripheral/1.1.1/package/package.json already in flight; not writing
+523 silly cache afterAdd raspi-wiringpi@1.0.4
+524 verbose afterAdd /Users/tomomi/.npm/raspi-wiringpi/1.0.4/package/package.json not in flight; writing
+525 verbose afterAdd /Users/tomomi/.npm/raspi-peripheral/1.1.1/package/package.json written
+526 silly install resolved [ { name: 'nan',
+526 silly install resolved     version: '1.6.2',
+526 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+526 silly install resolved     main: 'include_dirs.js',
+526 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+526 silly install resolved     scripts:
+526 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+526 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+526 silly install resolved     contributors:
+526 silly install resolved      [ [Object],
+526 silly install resolved        [Object],
+526 silly install resolved        [Object],
+526 silly install resolved        [Object],
+526 silly install resolved        [Object],
+526 silly install resolved        [Object],
+526 silly install resolved        [Object] ],
+526 silly install resolved     devDependencies:
+526 silly install resolved      { bindings: '~1.2.1',
+526 silly install resolved        'node-gyp': '~1.0.2',
+526 silly install resolved        pangyp: '~2.0.1',
+526 silly install resolved        tap: '~0.5.0',
+526 silly install resolved        xtend: '~4.0.0' },
+526 silly install resolved     license: 'MIT',
+526 silly install resolved     gitHead: 'ab0e5eed8d4aa36111bf8f44cf75644ece327e98',
+526 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+526 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+526 silly install resolved     _id: 'nan@1.6.2',
+526 silly install resolved     _shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+526 silly install resolved     _from: 'nan@>=1.6.0 <1.7.0',
+526 silly install resolved     _npmVersion: '2.0.0',
+526 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+526 silly install resolved     maintainers: [ [Object], [Object] ],
+526 silly install resolved     dist:
+526 silly install resolved      { shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+526 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.6.2.tgz' },
+526 silly install resolved     directories: {},
+526 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.6.2.tgz',
+526 silly install resolved     readme: 'ERROR: No README data found!' },
+526 silly install resolved   { name: 'raspi-peripheral',
+526 silly install resolved     version: '1.1.1',
+526 silly install resolved     description: 'Provides a base class and pin management functions for the Raspi.js library suite',
+526 silly install resolved     main: 'lib/index.js',
+526 silly install resolved     devDependencies:
+526 silly install resolved      { del: '^1.1.1',
+526 silly install resolved        gulp: '^3.8.11',
+526 silly install resolved        'gulp-babel': '^4.0.0',
+526 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+526 silly install resolved     dependencies: { 'raspi-board': '2.1.1' },
+526 silly install resolved     scripts: { test: 'jasmine-node tests.spec.js' },
+526 silly install resolved     repository:
+526 silly install resolved      { type: 'git',
+526 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-peripheral.git' },
+526 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+526 silly install resolved     author:
+526 silly install resolved      { name: 'Bryan Hughes',
+526 silly install resolved        email: 'bryan@theoreticalideations.com' },
+526 silly install resolved     license: 'MIT',
+526 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-peripheral/issues' },
+526 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-peripheral',
+526 silly install resolved     gitHead: 'f480332e157ba23ff709d97b2311d678194b3a40',
+526 silly install resolved     _id: 'raspi-peripheral@1.1.1',
+526 silly install resolved     _shasum: '41d024e7fe054938bcd2ca15e1064b42d6132349',
+526 silly install resolved     _from: 'raspi-peripheral@1.1.1',
+526 silly install resolved     _npmVersion: '2.7.0',
+526 silly install resolved     _nodeVersion: '1.5.0',
+526 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+526 silly install resolved     maintainers: [ [Object] ],
+526 silly install resolved     dist:
+526 silly install resolved      { shasum: '41d024e7fe054938bcd2ca15e1064b42d6132349',
+526 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-peripheral/-/raspi-peripheral-1.1.1.tgz' },
+526 silly install resolved     directories: {},
+526 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-peripheral/-/raspi-peripheral-1.1.1.tgz',
+526 silly install resolved     readme: 'ERROR: No README data found!' } ]
+527 info install nan@1.6.2 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+528 info install raspi-peripheral@1.1.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+529 info installOne nan@1.6.2
+530 verbose installOne of nan to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm not in flight; installing
+531 info installOne raspi-peripheral@1.1.1
+532 verbose installOne of raspi-peripheral to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm not in flight; installing
+533 silly install resolved [ { name: 'nan',
+533 silly install resolved     version: '1.6.2',
+533 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+533 silly install resolved     main: 'include_dirs.js',
+533 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+533 silly install resolved     scripts:
+533 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+533 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+533 silly install resolved     contributors:
+533 silly install resolved      [ [Object],
+533 silly install resolved        [Object],
+533 silly install resolved        [Object],
+533 silly install resolved        [Object],
+533 silly install resolved        [Object],
+533 silly install resolved        [Object],
+533 silly install resolved        [Object] ],
+533 silly install resolved     devDependencies:
+533 silly install resolved      { bindings: '~1.2.1',
+533 silly install resolved        'node-gyp': '~1.0.2',
+533 silly install resolved        pangyp: '~2.0.1',
+533 silly install resolved        tap: '~0.5.0',
+533 silly install resolved        xtend: '~4.0.0' },
+533 silly install resolved     license: 'MIT',
+533 silly install resolved     gitHead: 'ab0e5eed8d4aa36111bf8f44cf75644ece327e98',
+533 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+533 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+533 silly install resolved     _id: 'nan@1.6.2',
+533 silly install resolved     _shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+533 silly install resolved     _from: 'nan@>=1.6.0 <1.7.0',
+533 silly install resolved     _npmVersion: '2.0.0',
+533 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+533 silly install resolved     maintainers: [ [Object], [Object] ],
+533 silly install resolved     dist:
+533 silly install resolved      { shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+533 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.6.2.tgz' },
+533 silly install resolved     directories: {},
+533 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.6.2.tgz',
+533 silly install resolved     readme: 'ERROR: No README data found!' },
+533 silly install resolved   { name: 'raspi-peripheral',
+533 silly install resolved     version: '1.1.1',
+533 silly install resolved     description: 'Provides a base class and pin management functions for the Raspi.js library suite',
+533 silly install resolved     main: 'lib/index.js',
+533 silly install resolved     devDependencies:
+533 silly install resolved      { del: '^1.1.1',
+533 silly install resolved        gulp: '^3.8.11',
+533 silly install resolved        'gulp-babel': '^4.0.0',
+533 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+533 silly install resolved     dependencies: { 'raspi-board': '2.1.1' },
+533 silly install resolved     scripts: { test: 'jasmine-node tests.spec.js' },
+533 silly install resolved     repository:
+533 silly install resolved      { type: 'git',
+533 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-peripheral.git' },
+533 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+533 silly install resolved     author:
+533 silly install resolved      { name: 'Bryan Hughes',
+533 silly install resolved        email: 'bryan@theoreticalideations.com' },
+533 silly install resolved     license: 'MIT',
+533 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-peripheral/issues' },
+533 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-peripheral',
+533 silly install resolved     gitHead: 'f480332e157ba23ff709d97b2311d678194b3a40',
+533 silly install resolved     _id: 'raspi-peripheral@1.1.1',
+533 silly install resolved     _shasum: '41d024e7fe054938bcd2ca15e1064b42d6132349',
+533 silly install resolved     _from: 'raspi-peripheral@1.1.1',
+533 silly install resolved     _npmVersion: '2.7.0',
+533 silly install resolved     _nodeVersion: '1.5.0',
+533 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+533 silly install resolved     maintainers: [ [Object] ],
+533 silly install resolved     dist:
+533 silly install resolved      { shasum: '41d024e7fe054938bcd2ca15e1064b42d6132349',
+533 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-peripheral/-/raspi-peripheral-1.1.1.tgz' },
+533 silly install resolved     directories: {},
+533 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-peripheral/-/raspi-peripheral-1.1.1.tgz',
+533 silly install resolved     readme: 'ERROR: No README data found!' } ]
+534 info install nan@1.6.2 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+535 info install raspi-peripheral@1.1.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+536 info installOne nan@1.6.2
+537 verbose installOne of nan to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio not in flight; installing
+538 info installOne raspi-peripheral@1.1.1
+539 verbose installOne of raspi-peripheral to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio not in flight; installing
+540 verbose afterAdd /Users/tomomi/.npm/raspi-wiringpi/1.0.4/package/package.json written
+541 silly install resolved [ { name: 'nan',
+541 silly install resolved     version: '1.6.2',
+541 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+541 silly install resolved     main: 'include_dirs.js',
+541 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+541 silly install resolved     scripts:
+541 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+541 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+541 silly install resolved     contributors:
+541 silly install resolved      [ [Object],
+541 silly install resolved        [Object],
+541 silly install resolved        [Object],
+541 silly install resolved        [Object],
+541 silly install resolved        [Object],
+541 silly install resolved        [Object],
+541 silly install resolved        [Object] ],
+541 silly install resolved     devDependencies:
+541 silly install resolved      { bindings: '~1.2.1',
+541 silly install resolved        'node-gyp': '~1.0.2',
+541 silly install resolved        pangyp: '~2.0.1',
+541 silly install resolved        tap: '~0.5.0',
+541 silly install resolved        xtend: '~4.0.0' },
+541 silly install resolved     license: 'MIT',
+541 silly install resolved     gitHead: 'ab0e5eed8d4aa36111bf8f44cf75644ece327e98',
+541 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+541 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+541 silly install resolved     _id: 'nan@1.6.2',
+541 silly install resolved     _shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+541 silly install resolved     _from: 'nan@>=1.6.0 <1.7.0',
+541 silly install resolved     _npmVersion: '2.0.0',
+541 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+541 silly install resolved     maintainers: [ [Object], [Object] ],
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: '2657d1c43b00f1e847e083832285b7d8f5ba8ec8',
+541 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.6.2.tgz' },
+541 silly install resolved     directories: {},
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.6.2.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' },
+541 silly install resolved   { name: 'raspi-wiringpi',
+541 silly install resolved     version: '1.0.4',
+541 silly install resolved     description: 'NPM wrapper around Wiring Pi so it can be easily installed via NPM or added as a package.json dependency',
+541 silly install resolved     scripts:
+541 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+541 silly install resolved        install: 'sh install-wiringpi.sh' },
+541 silly install resolved     repository:
+541 silly install resolved      { type: 'git',
+541 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-wiringpi.git' },
+541 silly install resolved     keywords: [ 'raspberry pi', 'robotics', 'nodebots', 'wiringpi' ],
+541 silly install resolved     author:
+541 silly install resolved      { name: 'Bryan Hughes',
+541 silly install resolved        email: 'bryan@theoreticalideations.com' },
+541 silly install resolved     contributors: [ [Object], [Object] ],
+541 silly install resolved     license: 'MIT',
+541 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-wiringpi/issues' },
+541 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-wiringpi',
+541 silly install resolved     gitHead: '9d0bed3e30872381989387c0334a99b8bdb48884',
+541 silly install resolved     _id: 'raspi-wiringpi@1.0.4',
+541 silly install resolved     _shasum: '392f0f0a03470c49a5f0ef7c27afdbacf34c9d23',
+541 silly install resolved     _from: 'raspi-wiringpi@>=1.0.4 <2.0.0',
+541 silly install resolved     _npmVersion: '1.4.28',
+541 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+541 silly install resolved     maintainers: [ [Object] ],
+541 silly install resolved     dist:
+541 silly install resolved      { shasum: '392f0f0a03470c49a5f0ef7c27afdbacf34c9d23',
+541 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-wiringpi/-/raspi-wiringpi-1.0.4.tgz' },
+541 silly install resolved     directories: {},
+541 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-wiringpi/-/raspi-wiringpi-1.0.4.tgz',
+541 silly install resolved     readme: 'ERROR: No README data found!' } ]
+542 info install nan@1.6.2 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+543 info install raspi-wiringpi@1.0.4 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+544 info installOne nan@1.6.2
+545 verbose installOne of nan to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi not in flight; installing
+546 info installOne raspi-wiringpi@1.0.4
+547 verbose installOne of raspi-wiringpi to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi not in flight; installing
+548 verbose lock using /Users/tomomi/.npm/_locks/nan-461a97ddad9bf51e.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+549 verbose lock using /Users/tomomi/.npm/_locks/nan-70f90bdf8ed69a63.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+550 verbose lock using /Users/tomomi/.npm/_locks/raspi-peripheral-338dfe4a2946eafa.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+551 silly install write writing nan 1.6.2 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+552 silly cache addNamed cb nan@1.6.2
+553 verbose unbuild node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+554 silly install write writing nan 1.6.2 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+555 silly cache addNamed cb nan@1.6.2
+556 verbose unbuild node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+557 silly install write writing raspi-peripheral 1.1.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+558 silly cache addNamed cb raspi-peripheral@1.1.1
+559 verbose unbuild node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+560 verbose lock using /Users/tomomi/.npm/_locks/raspi-peripheral-44331e0d223da35a.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+561 verbose lock using /Users/tomomi/.npm/_locks/nan-d7936a1724016bf4.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+562 verbose lock using /Users/tomomi/.npm/_locks/raspi-wiringpi-17813b2ac76dcfa2.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+563 silly install write writing raspi-peripheral 1.1.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+564 silly cache addNamed cb raspi-peripheral@1.1.1
+565 verbose unbuild node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+566 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+567 silly install write writing nan 1.6.2 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+568 silly cache addNamed cb nan@1.6.2
+569 verbose unbuild node_modules/raspi-io/node_modules/raspi/node_modules/nan
+570 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+571 silly install write writing raspi-wiringpi 1.0.4 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+572 silly cache addNamed cb raspi-wiringpi@1.0.4
+573 verbose unbuild node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+574 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+575 verbose tar unpack /Users/tomomi/.npm/nan/1.6.2/package.tgz
+576 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+577 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+578 verbose tar unpack /Users/tomomi/.npm/nan/1.6.2/package.tgz
+579 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+580 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+581 verbose tar unpack /Users/tomomi/.npm/raspi-peripheral/1.1.1/package.tgz
+582 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+583 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+584 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+585 silly gunzTarPerm modes [ '755', '644' ]
+586 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+587 silly gunzTarPerm modes [ '755', '644' ]
+588 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+589 silly gunzTarPerm modes [ '755', '644' ]
+590 verbose tar unpack /Users/tomomi/.npm/raspi-peripheral/1.1.1/package.tgz
+591 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+592 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+593 verbose tar unpack /Users/tomomi/.npm/nan/1.6.2/package.tgz
+594 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+595 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+596 verbose tar unpack /Users/tomomi/.npm/raspi-wiringpi/1.0.4/package.tgz
+597 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+598 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+599 silly gunzTarPerm modes [ '755', '644' ]
+600 silly gunzTarPerm modes [ '755', '644' ]
+601 silly gunzTarPerm modes [ '755', '644' ]
+602 silly gunzTarPerm extractEntry package.json
+603 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+604 silly gunzTarPerm extractEntry package.json
+605 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+606 silly gunzTarPerm extractEntry package.json
+607 silly gunzTarPerm extractEntry package.json
+608 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+609 silly gunzTarPerm extractEntry package.json
+610 silly gunzTarPerm extractEntry package.json
+611 silly gunzTarPerm extractEntry include_dirs.js
+612 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+613 silly gunzTarPerm extractEntry LICENSE.md
+614 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+615 silly gunzTarPerm extractEntry include_dirs.js
+616 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+617 silly gunzTarPerm extractEntry LICENSE.md
+618 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+619 silly gunzTarPerm extractEntry .npmignore
+620 silly gunzTarPerm extractEntry README.md
+621 silly gunzTarPerm extractEntry include_dirs.js
+622 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+623 silly gunzTarPerm extractEntry LICENSE.md
+624 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+625 silly gunzTarPerm extractEntry .npmignore
+626 silly gunzTarPerm extractEntry README.md
+627 silly gunzTarPerm extractEntry .npmignore
+628 silly gunzTarPerm extractEntry README.md
+629 http 304 https://registry.npmjs.org/execSync
+630 silly get cb [ 304,
+630 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+630 silly get     server: 'Apache',
+630 silly get     via: '1.1 varnish',
+630 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+630 silly get     'cache-control': 'max-age=60',
+630 silly get     etag: '"2O9JTCJECD0FZL8FH333FLW4Y"',
+630 silly get     age: '29',
+630 silly get     'x-served-by': 'cache-lax1424-LAX',
+630 silly get     'x-cache': 'HIT',
+630 silly get     'x-cache-hits': '1',
+630 silly get     'x-timer': 'S1428103561.248000,VS0,VE0',
+630 silly get     vary: 'Accept',
+630 silly get     'content-length': '0',
+630 silly get     'keep-alive': 'timeout=10, max=50',
+630 silly get     connection: 'Keep-Alive' } ]
+631 verbose etag https://registry.npmjs.org/execSync from cache
+632 verbose get saving execSync to /Users/tomomi/.npm/registry.npmjs.org/execSync/.cache.json
+633 http 304 https://registry.npmjs.org/i2c-bus
+634 silly get cb [ 304,
+634 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+634 silly get     server: 'Apache',
+634 silly get     via: '1.1 varnish',
+634 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+634 silly get     'cache-control': 'max-age=60',
+634 silly get     etag: '"942GZU7MBDKMUTSET7TFQ0K6I"',
+634 silly get     age: '29',
+634 silly get     'x-served-by': 'cache-lax1423-LAX',
+634 silly get     'x-cache': 'HIT',
+634 silly get     'x-cache-hits': '1',
+634 silly get     'x-timer': 'S1428103561.250533,VS0,VE0',
+634 silly get     vary: 'Accept',
+634 silly get     'content-length': '0',
+634 silly get     'keep-alive': 'timeout=10, max=50',
+634 silly get     connection: 'Keep-Alive' } ]
+635 verbose etag https://registry.npmjs.org/i2c-bus from cache
+636 verbose get saving i2c-bus to /Users/tomomi/.npm/registry.npmjs.org/i2c-bus/.cache.json
+637 http 304 https://registry.npmjs.org/ini-builder
+638 silly get cb [ 304,
+638 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+638 silly get     server: 'Apache',
+638 silly get     via: '1.1 varnish',
+638 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+638 silly get     'cache-control': 'max-age=60',
+638 silly get     etag: '"6E4TJ5CW2JKCUJ15TZ2OG1HRD"',
+638 silly get     age: '29',
+638 silly get     'x-served-by': 'cache-lax1435-LAX',
+638 silly get     'x-cache': 'HIT',
+638 silly get     'x-cache-hits': '1',
+638 silly get     'x-timer': 'S1428103561.255482,VS0,VE0',
+638 silly get     vary: 'Accept',
+638 silly get     'content-length': '0',
+638 silly get     'keep-alive': 'timeout=10, max=50',
+638 silly get     connection: 'Keep-Alive' } ]
+639 verbose etag https://registry.npmjs.org/ini-builder from cache
+640 verbose get saving ini-builder to /Users/tomomi/.npm/registry.npmjs.org/ini-builder/.cache.json
+641 silly gunzTarPerm extractEntry .dntrc
+642 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+643 silly gunzTarPerm extractEntry appveyor.yml
+644 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+645 silly gunzTarPerm extractEntry LICENSE
+646 silly gunzTarPerm extractEntry tests.spec.js
+647 silly gunzTarPerm extractEntry .dntrc
+648 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+649 silly gunzTarPerm extractEntry appveyor.yml
+650 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+651 silly gunzTarPerm extractEntry LICENSE
+652 silly gunzTarPerm extractEntry tests.spec.js
+653 silly gunzTarPerm extractEntry .dntrc
+654 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+655 silly gunzTarPerm extractEntry appveyor.yml
+656 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+657 silly gunzTarPerm extractEntry LICENSE
+658 silly gunzTarPerm extractEntry CHANGELOG.md
+659 silly addNameRange number 2 { name: 'i2c-bus', range: '>=0.11.0 <0.12.0', hasData: true }
+660 silly addNameRange versions [ 'i2c-bus',
+660 silly addNameRange   [ '0.1.0',
+660 silly addNameRange     '0.2.0',
+660 silly addNameRange     '0.3.0',
+660 silly addNameRange     '0.4.0',
+660 silly addNameRange     '0.5.0',
+660 silly addNameRange     '0.6.0',
+660 silly addNameRange     '0.7.0',
+660 silly addNameRange     '0.8.0',
+660 silly addNameRange     '0.9.0',
+660 silly addNameRange     '0.10.0',
+660 silly addNameRange     '0.11.0',
+660 silly addNameRange     '0.11.1' ] ]
+661 verbose addNamed i2c-bus@0.11.1
+662 silly addNamed semver.valid 0.11.1
+663 silly addNamed semver.validRange 0.11.1
+664 silly addNameRange number 2 { name: 'execSync', range: '>=1.0.2 <2.0.0', hasData: true }
+665 silly addNameRange versions [ 'execSync',
+665 silly addNameRange   [ '0.0.1',
+665 silly addNameRange     '0.0.2',
+665 silly addNameRange     '0.0.3',
+665 silly addNameRange     '0.0.4',
+665 silly addNameRange     '1.0.0-pre',
+665 silly addNameRange     '1.0.1-pre',
+665 silly addNameRange     '1.0.2' ] ]
+666 verbose addNamed execSync@1.0.2
+667 silly addNamed semver.valid 1.0.2
+668 silly addNamed semver.validRange 1.0.2
+669 silly addNameRange number 2 { name: 'ini-builder', range: '>=1.0.2 <2.0.0', hasData: true }
+670 silly addNameRange versions [ 'ini-builder', [ '1.0.0', '1.0.1', '1.0.2', '1.0.3' ] ]
+671 verbose addNamed ini-builder@1.0.3
+672 silly addNamed semver.valid 1.0.3
+673 silly addNamed semver.validRange 1.0.3
+674 silly gunzTarPerm extractEntry nan.h
+675 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+676 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+677 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+678 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+679 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+680 silly gunzTarPerm extractEntry nan_new.h
+681 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+682 silly gunzTarPerm extractEntry nan_string_bytes.h
+683 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+684 silly gunzTarPerm extractEntry CHANGELOG.md
+685 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+686 silly cache afterAdd i2c-bus@0.11.1
+687 verbose afterAdd /Users/tomomi/.npm/i2c-bus/0.11.1/package/package.json not in flight; writing
+688 silly gunzTarPerm extractEntry nan.h
+689 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+690 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+691 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+692 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+693 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+694 silly gunzTarPerm extractEntry nan_new.h
+695 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+696 silly gunzTarPerm extractEntry nan_string_bytes.h
+697 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+698 silly gunzTarPerm extractEntry CHANGELOG.md
+699 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+700 silly gunzTarPerm extractEntry index.js
+701 silly gunzTarPerm extractEntry gulpfile.js
+702 silly gunzTarPerm extractEntry CHANGELOG.md
+703 silly gunzTarPerm extractEntry lib/index.js
+704 silly cache afterAdd execSync@1.0.2
+705 verbose afterAdd /Users/tomomi/.npm/execSync/1.0.2/package/package.json not in flight; writing
+706 silly gunzTarPerm extractEntry nan.h
+707 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+708 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+709 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+710 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+711 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+712 silly gunzTarPerm extractEntry nan_new.h
+713 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+714 silly gunzTarPerm extractEntry nan_string_bytes.h
+715 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+716 silly gunzTarPerm extractEntry CHANGELOG.md
+717 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+718 silly gunzTarPerm extractEntry index.js
+719 silly gunzTarPerm extractEntry gulpfile.js
+720 silly gunzTarPerm extractEntry CHANGELOG.md
+721 silly gunzTarPerm extractEntry lib/index.js
+722 silly gunzTarPerm extractEntry install-wiringpi.sh
+723 silly cache afterAdd ini-builder@1.0.3
+724 verbose afterAdd /Users/tomomi/.npm/ini-builder/1.0.3/package/package.json not in flight; writing
+725 verbose afterAdd /Users/tomomi/.npm/i2c-bus/0.11.1/package/package.json written
+726 verbose afterAdd /Users/tomomi/.npm/execSync/1.0.2/package/package.json written
+727 verbose afterAdd /Users/tomomi/.npm/ini-builder/1.0.3/package/package.json written
+728 silly install resolved [ { name: 'raspi-peripheral',
+728 silly install resolved     version: '1.1.1',
+728 silly install resolved     description: 'Provides a base class and pin management functions for the Raspi.js library suite',
+728 silly install resolved     main: 'lib/index.js',
+728 silly install resolved     devDependencies:
+728 silly install resolved      { del: '^1.1.1',
+728 silly install resolved        gulp: '^3.8.11',
+728 silly install resolved        'gulp-babel': '^4.0.0',
+728 silly install resolved        'gulp-sourcemaps': '^1.3.0' },
+728 silly install resolved     dependencies: { 'raspi-board': '2.1.1' },
+728 silly install resolved     scripts: { test: 'jasmine-node tests.spec.js' },
+728 silly install resolved     repository:
+728 silly install resolved      { type: 'git',
+728 silly install resolved        url: 'https://github.com/bryan-m-hughes/raspi-peripheral.git' },
+728 silly install resolved     keywords: [ 'nodebots', 'robotics', 'raspberry pi' ],
+728 silly install resolved     author:
+728 silly install resolved      { name: 'Bryan Hughes',
+728 silly install resolved        email: 'bryan@theoreticalideations.com' },
+728 silly install resolved     license: 'MIT',
+728 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/raspi-peripheral/issues' },
+728 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/raspi-peripheral',
+728 silly install resolved     gitHead: 'f480332e157ba23ff709d97b2311d678194b3a40',
+728 silly install resolved     _id: 'raspi-peripheral@1.1.1',
+728 silly install resolved     _shasum: '41d024e7fe054938bcd2ca15e1064b42d6132349',
+728 silly install resolved     _from: 'raspi-peripheral@1.1.1',
+728 silly install resolved     _npmVersion: '2.7.0',
+728 silly install resolved     _nodeVersion: '1.5.0',
+728 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+728 silly install resolved     maintainers: [ [Object] ],
+728 silly install resolved     dist:
+728 silly install resolved      { shasum: '41d024e7fe054938bcd2ca15e1064b42d6132349',
+728 silly install resolved        tarball: 'http://registry.npmjs.org/raspi-peripheral/-/raspi-peripheral-1.1.1.tgz' },
+728 silly install resolved     directories: {},
+728 silly install resolved     _resolved: 'https://registry.npmjs.org/raspi-peripheral/-/raspi-peripheral-1.1.1.tgz',
+728 silly install resolved     readme: 'ERROR: No README data found!' },
+728 silly install resolved   { name: 'i2c-bus',
+728 silly install resolved     version: '0.11.1',
+728 silly install resolved     description: 'I2C serial computer bus access',
+728 silly install resolved     main: 'i2c-bus.js',
+728 silly install resolved     directories: { example: 'example', test: 'test' },
+728 silly install resolved     scripts:
+728 silly install resolved      { test: 'echo "Tests can only be run manually from the command line." && exit 1',
+728 silly install resolved        install: 'node-gyp rebuild' },
+728 silly install resolved     repository: { type: 'git', url: 'https://github.com/fivdi/i2c-bus.git' },
+728 silly install resolved     engines: { node: '>=0.10.0' },
+728 silly install resolved     dependencies: { bindings: '~1.2.1', nan: '~1.7.0' },
+728 silly install resolved     devDependencies: { async: '~0.9.0' },
+728 silly install resolved     keywords: [ 'i2c', 'smbus', 'linux' ],
+728 silly install resolved     author: { name: 'fivdi' },
+728 silly install resolved     license: 'MIT',
+728 silly install resolved     gypfile: true,
+728 silly install resolved     gitHead: 'c1456865cf3e230fdab61d11fcdf3927b4d6b120',
+728 silly install resolved     bugs: { url: 'https://github.com/fivdi/i2c-bus/issues' },
+728 silly install resolved     homepage: 'https://github.com/fivdi/i2c-bus',
+728 silly install resolved     _id: 'i2c-bus@0.11.1',
+728 silly install resolved     _shasum: '5307a4a80c7537d94b62b9a1fd7f155866ab9687',
+728 silly install resolved     _from: 'i2c-bus@>=0.11.0 <0.12.0',
+728 silly install resolved     _npmVersion: '2.1.18',
+728 silly install resolved     _nodeVersion: '1.0.2',
+728 silly install resolved     _npmUser: { name: 'fivdi', email: 'bdscooke@gmail.com' },
+728 silly install resolved     maintainers: [ [Object] ],
+728 silly install resolved     dist:
+728 silly install resolved      { shasum: '5307a4a80c7537d94b62b9a1fd7f155866ab9687',
+728 silly install resolved        tarball: 'http://registry.npmjs.org/i2c-bus/-/i2c-bus-0.11.1.tgz' },
+728 silly install resolved     _resolved: 'https://registry.npmjs.org/i2c-bus/-/i2c-bus-0.11.1.tgz',
+728 silly install resolved     readme: 'ERROR: No README data found!' },
+728 silly install resolved   { author: { name: 'Mario Gutierrez', email: 'mario@mgutz.com' },
+728 silly install resolved     name: 'execSync',
+728 silly install resolved     description: 'Node\'s missing execSync.',
+728 silly install resolved     version: '1.0.2',
+728 silly install resolved     license: 'MIT',
+728 silly install resolved     dependencies: { temp: '~0.5.1' },
+728 silly install resolved     devDependencies: { chai: '~1.5.0', mocha: '~1.9.0' },
+728 silly install resolved     optionalDependencies: {},
+728 silly install resolved     engines: { node: '*' },
+728 silly install resolved     scripts: { test: 'mocha test/unixSpec', install: 'node install.js' },
+728 silly install resolved     repository: { type: 'git', url: 'https://github.com/mgutz/execSync.git' },
+728 silly install resolved     gitHead: '265f9c336f5800990b8329fd6bc74da096719c4d',
+728 silly install resolved     bugs: { url: 'https://github.com/mgutz/execSync/issues' },
+728 silly install resolved     homepage: 'https://github.com/mgutz/execSync',
+728 silly install resolved     _id: 'execSync@1.0.2',
+728 silly install resolved     _shasum: '1f42eda582225180053224ecdd3fd1960fdb3139',
+728 silly install resolved     _from: 'execSync@>=1.0.2 <2.0.0',
+728 silly install resolved     _npmVersion: '1.4.23',
+728 silly install resolved     _npmUser: { name: 'mgutz', email: 'mario@mgutz.com' },
+728 silly install resolved     maintainers: [ [Object] ],
+728 silly install resolved     dist:
+728 silly install resolved      { shasum: '1f42eda582225180053224ecdd3fd1960fdb3139',
+728 silly install resolved        tarball: 'http://registry.npmjs.org/execSync/-/execSync-1.0.2.tgz' },
+728 silly install resolved     directories: {},
+728 silly install resolved     _resolved: 'https://registry.npmjs.org/execSync/-/execSync-1.0.2.tgz',
+728 silly install resolved     readme: 'ERROR: No README data found!' },
+728 silly install resolved   { name: 'ini-builder',
+728 silly install resolved     version: '1.0.3',
+728 silly install resolved     description: 'Node.js module for reading and writing INI and *NIX config files',
+728 silly install resolved     main: 'index.js',
+728 silly install resolved     directories: { test: 'test' },
+728 silly install resolved     scripts: { test: 'nodeunit test/test.js' },
+728 silly install resolved     repository:
+728 silly install resolved      { type: 'git',
+728 silly install resolved        url: 'https://github.com/bryan-m-hughes/ini-builder.git' },
+728 silly install resolved     keywords: [ 'ini', 'config files' ],
+728 silly install resolved     author:
+728 silly install resolved      { name: 'Bryan Hughes',
+728 silly install resolved        email: 'bryan@theoreticalideations.com' },
+728 silly install resolved     license: 'MIT',
+728 silly install resolved     bugs: { url: 'https://github.com/bryan-m-hughes/ini-builder/issues' },
+728 silly install resolved     homepage: 'https://github.com/bryan-m-hughes/ini-builder',
+728 silly install resolved     gitHead: 'a338c979ecf526cbb5e3941607d817966e89f7a1',
+728 silly install resolved     _id: 'ini-builder@1.0.3',
+728 silly install resolved     _shasum: 'f9d8172bebb992b22bb306a268ef31aa1c9850c6',
+728 silly install resolved     _from: 'ini-builder@>=1.0.2 <2.0.0',
+728 silly install resolved     _npmVersion: '2.7.0',
+728 silly install resolved     _nodeVersion: '1.5.0',
+728 silly install resolved     _npmUser: { name: 'nebrius', email: 'bryan@theoreticalideations.com' },
+728 silly install resolved     maintainers: [ [Object] ],
+728 silly install resolved     dist:
+728 silly install resolved      { shasum: 'f9d8172bebb992b22bb306a268ef31aa1c9850c6',
+728 silly install resolved        tarball: 'http://registry.npmjs.org/ini-builder/-/ini-builder-1.0.3.tgz' },
+728 silly install resolved     _resolved: 'https://registry.npmjs.org/ini-builder/-/ini-builder-1.0.3.tgz',
+728 silly install resolved     readme: 'ERROR: No README data found!' } ]
+729 info install raspi-peripheral@1.1.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+730 info install i2c-bus@0.11.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+731 info install execSync@1.0.2 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+732 info install ini-builder@1.0.3 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+733 info installOne raspi-peripheral@1.1.1
+734 verbose installOne of raspi-peripheral to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c not in flight; installing
+735 info installOne i2c-bus@0.11.1
+736 verbose installOne of i2c-bus to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c not in flight; installing
+737 info installOne execSync@1.0.2
+738 verbose installOne of execSync to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c not in flight; installing
+739 info installOne ini-builder@1.0.3
+740 verbose installOne of ini-builder to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c not in flight; installing
+741 verbose lock using /Users/tomomi/.npm/_locks/raspi-peripheral-a8f2de490200725c.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+742 verbose lock using /Users/tomomi/.npm/_locks/i2c-bus-be584179e20bd243.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+743 verbose lock using /Users/tomomi/.npm/_locks/execSync-e6563b0ff6874e22.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+744 verbose lock using /Users/tomomi/.npm/_locks/ini-builder-5bda23012e156c66.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+745 silly install write writing raspi-peripheral 1.1.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+746 silly cache addNamed cb raspi-peripheral@1.1.1
+747 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+748 silly install write writing i2c-bus 0.11.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+749 silly cache addNamed cb i2c-bus@0.11.1
+750 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+751 silly install write writing execSync 1.0.2 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+752 silly cache addNamed cb execSync@1.0.2
+753 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+754 silly install write writing ini-builder 1.0.3 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+755 silly cache addNamed cb ini-builder@1.0.3
+756 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+757 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+758 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+759 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+760 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+761 verbose tar unpack /Users/tomomi/.npm/raspi-peripheral/1.1.1/package.tgz
+762 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+763 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+764 verbose tar unpack /Users/tomomi/.npm/i2c-bus/0.11.1/package.tgz
+765 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+766 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+767 verbose tar unpack /Users/tomomi/.npm/execSync/1.0.2/package.tgz
+768 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+769 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+770 verbose tar unpack /Users/tomomi/.npm/ini-builder/1.0.3/package.tgz
+771 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+772 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+773 silly gunzTarPerm modes [ '755', '644' ]
+774 silly gunzTarPerm modes [ '755', '644' ]
+775 silly gunzTarPerm modes [ '755', '644' ]
+776 silly gunzTarPerm modes [ '755', '644' ]
+777 silly gunzTarPerm extractEntry package.json
+778 silly gunzTarPerm extractEntry package.json
+779 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+780 silly gunzTarPerm extractEntry package.json
+781 silly gunzTarPerm extractEntry package.json
+782 silly gunzTarPerm extractEntry .npmignore
+783 silly gunzTarPerm extractEntry README.md
+784 silly gunzTarPerm extractEntry .npmignore
+785 silly gunzTarPerm extractEntry README.md
+786 silly gunzTarPerm extractEntry .npmignore
+787 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+788 silly gunzTarPerm extractEntry README.md
+789 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+790 silly gunzTarPerm extractEntry .npmignore
+791 silly gunzTarPerm extractEntry README.md
+792 silly gunzTarPerm extractEntry LICENSE
+793 silly gunzTarPerm extractEntry tests.spec.js
+794 silly gunzTarPerm extractEntry LICENSE
+795 silly gunzTarPerm extractEntry index.js
+796 silly gunzTarPerm extractEntry LICENSE
+797 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+798 silly gunzTarPerm extractEntry LICENSE
+799 silly gunzTarPerm extractEntry index.js
+800 silly gunzTarPerm extractEntry install.js
+801 silly gunzTarPerm extractEntry binding.gyp
+802 silly gunzTarPerm extractEntry index.js
+803 silly gunzTarPerm extractEntry gulpfile.js
+804 silly gunzTarPerm extractEntry CHANGELOG.md
+805 silly gunzTarPerm extractEntry lib/index.js
+806 silly gunzTarPerm extractEntry i2c-bus.js
+807 silly gunzTarPerm extractEntry doc/raspberry-pi-i2c.md
+808 silly gunzTarPerm modified mode [ 'doc/raspberry-pi-i2c.md', 436, 420 ]
+809 silly gunzTarPerm extractEntry History.md
+810 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+811 silly gunzTarPerm extractEntry CHANGELOG.md
+812 info preinstall raspi-wiringpi@1.0.4
+813 silly gunzTarPerm extractEntry src/shell.cpp
+814 silly gunzTarPerm extractEntry test/unixSpec.js
+815 silly install resolved []
+816 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+817 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+818 verbose linkStuff [ false,
+818 verbose linkStuff   false,
+818 verbose linkStuff   false,
+818 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules' ]
+819 info linkStuff raspi-wiringpi@1.0.4
+820 verbose linkBins raspi-wiringpi@1.0.4
+821 verbose linkMans raspi-wiringpi@1.0.4
+822 verbose rebuildBundles raspi-wiringpi@1.0.4
+823 info install raspi-wiringpi@1.0.4
+824 verbose unsafe-perm in lifecycle false
+825 silly gunzTarPerm extractEntry test/winspec.js
+826 silly gunzTarPerm extractEntry win32/v0.10/shell.node
+827 silly gunzTarPerm extractEntry test/test.js
+828 silly gunzTarPerm extractEntry test.ini
+829 silly gunzTarPerm extractEntry win32/v0.8/shell.node
+830 silly gunzTarPerm extractEntry todo
+831 silly gunzTarPerm modified mode [ 'todo', 436, 420 ]
+832 silly gunzTarPerm extractEntry binding.gyp
+833 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+834 silly gunzTarPerm extractEntry src/sendbyte.cc
+835 silly gunzTarPerm modified mode [ 'src/sendbyte.cc', 436, 420 ]
+836 silly gunzTarPerm extractEntry src/i2c-dev.h
+837 silly gunzTarPerm modified mode [ 'src/i2c-dev.h', 436, 420 ]
+838 silly gunzTarPerm extractEntry src/i2cfuncs.cc
+839 silly gunzTarPerm modified mode [ 'src/i2cfuncs.cc', 436, 420 ]
+840 info raspi-wiringpi@1.0.4 Failed to exec install script
+841 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-wiringpi-17813b2ac76dcfa2.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+842 info preinstall raspi-peripheral@1.1.1
+843 info preinstall raspi-peripheral@1.1.1
+844 silly install resolved []
+845 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+846 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+847 verbose linkStuff [ false,
+847 verbose linkStuff   false,
+847 verbose linkStuff   false,
+847 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules' ]
+848 info linkStuff raspi-peripheral@1.1.1
+849 verbose linkBins raspi-peripheral@1.1.1
+850 verbose linkMans raspi-peripheral@1.1.1
+851 verbose rebuildBundles raspi-peripheral@1.1.1
+852 silly install resolved []
+853 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+854 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+855 verbose linkStuff [ false,
+855 verbose linkStuff   false,
+855 verbose linkStuff   false,
+855 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules' ]
+856 info linkStuff raspi-peripheral@1.1.1
+857 verbose linkBins raspi-peripheral@1.1.1
+858 verbose linkMans raspi-peripheral@1.1.1
+859 verbose rebuildBundles raspi-peripheral@1.1.1
+860 info install raspi-peripheral@1.1.1
+861 info install raspi-peripheral@1.1.1
+862 info postinstall raspi-peripheral@1.1.1
+863 info postinstall raspi-peripheral@1.1.1
+864 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-peripheral-338dfe4a2946eafa.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/raspi-peripheral
+865 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-peripheral-44331e0d223da35a.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/raspi-peripheral
+866 silly gunzTarPerm extractEntry src/i2cfuncs.h
+867 silly gunzTarPerm modified mode [ 'src/i2cfuncs.h', 436, 420 ]
+868 silly gunzTarPerm extractEntry src/readblock.cc
+869 silly gunzTarPerm modified mode [ 'src/readblock.cc', 436, 420 ]
+870 info preinstall ini-builder@1.0.3
+871 silly gunzTarPerm extractEntry src/readblock.h
+872 silly gunzTarPerm modified mode [ 'src/readblock.h', 436, 420 ]
+873 silly gunzTarPerm extractEntry src/readbyte.cc
+874 silly gunzTarPerm modified mode [ 'src/readbyte.cc', 436, 420 ]
+875 silly install resolved []
+876 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+877 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+878 verbose linkStuff [ false,
+878 verbose linkStuff   false,
+878 verbose linkStuff   false,
+878 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules' ]
+879 info linkStuff ini-builder@1.0.3
+880 verbose linkBins ini-builder@1.0.3
+881 verbose linkMans ini-builder@1.0.3
+882 verbose rebuildBundles ini-builder@1.0.3
+883 info install ini-builder@1.0.3
+884 info postinstall ini-builder@1.0.3
+885 verbose unlock done using /Users/tomomi/.npm/_locks/ini-builder-5bda23012e156c66.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/ini-builder
+886 silly gunzTarPerm extractEntry src/readbyte.h
+887 silly gunzTarPerm modified mode [ 'src/readbyte.h', 436, 420 ]
+888 silly gunzTarPerm extractEntry src/readi2cblock.cc
+889 silly gunzTarPerm modified mode [ 'src/readi2cblock.cc', 436, 420 ]
+890 info preinstall raspi-peripheral@1.1.1
+891 silly install resolved []
+892 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+893 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+894 verbose linkStuff [ false,
+894 verbose linkStuff   false,
+894 verbose linkStuff   false,
+894 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules' ]
+895 info linkStuff raspi-peripheral@1.1.1
+896 verbose linkBins raspi-peripheral@1.1.1
+897 verbose linkMans raspi-peripheral@1.1.1
+898 verbose rebuildBundles raspi-peripheral@1.1.1
+899 info install raspi-peripheral@1.1.1
+900 silly gunzTarPerm extractEntry src/readi2cblock.h
+901 silly gunzTarPerm modified mode [ 'src/readi2cblock.h', 436, 420 ]
+902 silly gunzTarPerm extractEntry src/readword.cc
+903 silly gunzTarPerm modified mode [ 'src/readword.cc', 436, 420 ]
+904 info postinstall raspi-peripheral@1.1.1
+905 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-peripheral-a8f2de490200725c.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/raspi-peripheral
+906 silly gunzTarPerm extractEntry src/readword.h
+907 silly gunzTarPerm modified mode [ 'src/readword.h', 436, 420 ]
+908 silly gunzTarPerm extractEntry src/receivebyte.cc
+909 silly gunzTarPerm modified mode [ 'src/receivebyte.cc', 436, 420 ]
+910 silly gunzTarPerm extractEntry src/receivebyte.h
+911 silly gunzTarPerm modified mode [ 'src/receivebyte.h', 436, 420 ]
+912 silly gunzTarPerm extractEntry src/i2c.cc
+913 silly gunzTarPerm modified mode [ 'src/i2c.cc', 436, 420 ]
+914 silly gunzTarPerm extractEntry src/sendbyte.h
+915 silly gunzTarPerm modified mode [ 'src/sendbyte.h', 436, 420 ]
+916 silly gunzTarPerm extractEntry src/setaddr.cc
+917 silly gunzTarPerm modified mode [ 'src/setaddr.cc', 436, 420 ]
+918 silly gunzTarPerm extractEntry src/setaddr.h
+919 silly gunzTarPerm modified mode [ 'src/setaddr.h', 436, 420 ]
+920 silly gunzTarPerm extractEntry src/util.h
+921 silly gunzTarPerm modified mode [ 'src/util.h', 436, 420 ]
+922 silly gunzTarPerm extractEntry src/writeblock.cc
+923 silly gunzTarPerm modified mode [ 'src/writeblock.cc', 436, 420 ]
+924 silly gunzTarPerm extractEntry src/writeblock.h
+925 silly gunzTarPerm modified mode [ 'src/writeblock.h', 436, 420 ]
+926 silly gunzTarPerm extractEntry src/writebyte.cc
+927 silly gunzTarPerm modified mode [ 'src/writebyte.cc', 436, 420 ]
+928 silly gunzTarPerm extractEntry src/writebyte.h
+929 silly gunzTarPerm modified mode [ 'src/writebyte.h', 436, 420 ]
+930 silly gunzTarPerm extractEntry src/writei2cblock.cc
+931 silly gunzTarPerm modified mode [ 'src/writei2cblock.cc', 436, 420 ]
+932 silly gunzTarPerm extractEntry src/writei2cblock.h
+933 silly gunzTarPerm modified mode [ 'src/writei2cblock.h', 436, 420 ]
+934 silly gunzTarPerm extractEntry src/writequick.cc
+935 silly gunzTarPerm modified mode [ 'src/writequick.cc', 436, 420 ]
+936 silly gunzTarPerm extractEntry src/writequick.h
+937 silly gunzTarPerm modified mode [ 'src/writequick.h', 436, 420 ]
+938 silly gunzTarPerm extractEntry src/writeword.cc
+939 silly gunzTarPerm modified mode [ 'src/writeword.cc', 436, 420 ]
+940 silly gunzTarPerm extractEntry src/writeword.h
+941 silly gunzTarPerm modified mode [ 'src/writeword.h', 436, 420 ]
+942 info preinstall nan@1.6.2
+943 info preinstall nan@1.6.2
+944 info preinstall nan@1.6.2
+945 silly install resolved []
+946 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+947 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+948 verbose linkStuff [ false,
+948 verbose linkStuff   false,
+948 verbose linkStuff   false,
+948 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules' ]
+949 info linkStuff nan@1.6.2
+950 verbose linkBins nan@1.6.2
+951 verbose linkMans nan@1.6.2
+952 verbose rebuildBundles nan@1.6.2
+953 silly install resolved []
+954 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+955 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+956 verbose linkStuff [ false,
+956 verbose linkStuff   false,
+956 verbose linkStuff   false,
+956 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules' ]
+957 info linkStuff nan@1.6.2
+958 verbose linkBins nan@1.6.2
+959 verbose linkMans nan@1.6.2
+960 verbose rebuildBundles nan@1.6.2
+961 silly install resolved []
+962 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+963 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+964 verbose linkStuff [ false,
+964 verbose linkStuff   false,
+964 verbose linkStuff   false,
+964 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules' ]
+965 info linkStuff nan@1.6.2
+966 verbose linkBins nan@1.6.2
+967 verbose linkMans nan@1.6.2
+968 verbose rebuildBundles nan@1.6.2
+969 info install nan@1.6.2
+970 info install nan@1.6.2
+971 info install nan@1.6.2
+972 info postinstall nan@1.6.2
+973 info postinstall nan@1.6.2
+974 info postinstall nan@1.6.2
+975 silly gunzTarPerm extractEntry test/async-brute-force-leak-check.js
+976 silly gunzTarPerm modified mode [ 'test/async-brute-force-leak-check.js', 436, 420 ]
+977 silly gunzTarPerm extractEntry test/async-performance.js
+978 silly gunzTarPerm modified mode [ 'test/async-performance.js', 436, 420 ]
+979 verbose unlock done using /Users/tomomi/.npm/_locks/nan-461a97ddad9bf51e.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm/node_modules/nan
+980 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+981 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+982 verbose linkStuff [ false,
+982 verbose linkStuff   false,
+982 verbose linkStuff   false,
+982 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules' ]
+983 info linkStuff raspi-pwm@1.3.1
+984 verbose linkBins raspi-pwm@1.3.1
+985 verbose linkMans raspi-pwm@1.3.1
+986 verbose rebuildBundles raspi-pwm@1.3.1
+987 verbose unlock done using /Users/tomomi/.npm/_locks/nan-70f90bdf8ed69a63.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio/node_modules/nan
+988 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+989 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+990 verbose linkStuff [ false,
+990 verbose linkStuff   false,
+990 verbose linkStuff   false,
+990 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules' ]
+991 info linkStuff raspi-gpio@1.2.1
+992 verbose linkBins raspi-gpio@1.2.1
+993 verbose linkMans raspi-gpio@1.2.1
+994 verbose rebuildBundles raspi-gpio@1.2.1
+995 verbose unlock done using /Users/tomomi/.npm/_locks/nan-d7936a1724016bf4.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/nan
+996 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+997 verbose rebuildBundles [ 'nan', 'raspi-peripheral' ]
+998 info install raspi-pwm@1.3.1
+999 verbose rebuildBundles [ 'nan', 'raspi-peripheral' ]
+1000 info install raspi-gpio@1.2.1
+1001 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-e9f7887201d9b484.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+1002 verbose unsafe-perm in lifecycle false
+1003 silly gunzTarPerm extractEntry test/async.js
+1004 silly gunzTarPerm modified mode [ 'test/async.js', 436, 420 ]
+1005 silly gunzTarPerm extractEntry test/i2c-functionality-available.js
+1006 silly gunzTarPerm modified mode [ 'test/i2c-functionality-available.js', 436, 420 ]
+1007 silly gunzTarPerm extractEntry test/sync-brute-force-leak-check.js
+1008 silly gunzTarPerm modified mode [ 'test/sync-brute-force-leak-check.js', 436, 420 ]
+1009 silly gunzTarPerm extractEntry test/sync-many-instances.js
+1010 silly gunzTarPerm modified mode [ 'test/sync-many-instances.js', 436, 420 ]
+1011 silly gunzTarPerm extractEntry test/sync-performance.js
+1012 silly gunzTarPerm modified mode [ 'test/sync-performance.js', 436, 420 ]
+1013 silly gunzTarPerm extractEntry test/sync-plain-i2c-performance.js
+1014 silly gunzTarPerm modified mode [ 'test/sync-plain-i2c-performance.js', 436, 420 ]
+1015 silly gunzTarPerm extractEntry test/sync.js
+1016 silly gunzTarPerm modified mode [ 'test/sync.js', 436, 420 ]
+1017 silly gunzTarPerm extractEntry test/run-tests
+1018 silly gunzTarPerm modified mode [ 'test/run-tests', 509, 493 ]
+1019 silly gunzTarPerm extractEntry example/ds1621-async.js
+1020 silly gunzTarPerm modified mode [ 'example/ds1621-async.js', 436, 420 ]
+1021 silly gunzTarPerm extractEntry example/ds1621-sync.js
+1022 silly gunzTarPerm modified mode [ 'example/ds1621-sync.js', 436, 420 ]
+1023 silly gunzTarPerm extractEntry example/i2cdetect.js
+1024 silly gunzTarPerm modified mode [ 'example/i2cdetect.js', 436, 420 ]
+1025 silly gunzTarPerm extractEntry example/i2cquickscan.js
+1026 silly gunzTarPerm modified mode [ 'example/i2cquickscan.js', 436, 420 ]
+1027 silly gunzTarPerm extractEntry example/i2cscan.js
+1028 silly gunzTarPerm modified mode [ 'example/i2cscan.js', 436, 420 ]
+1029 silly gunzTarPerm extractEntry example/two-devices.js
+1030 silly gunzTarPerm modified mode [ 'example/two-devices.js', 436, 420 ]
+1031 silly gunzTarPerm extractEntry example/ds1621-bb.png
+1032 silly gunzTarPerm modified mode [ 'example/ds1621-bb.png', 436, 420 ]
+1033 silly gunzTarPerm extractEntry example/ds1621-pi.png
+1034 silly gunzTarPerm modified mode [ 'example/ds1621-pi.png', 436, 420 ]
+1035 info preinstall execSync@1.0.2
+1036 silly prepareForInstallMany adding temp@~0.5.1 from execSync dependencies
+1037 silly cache add args [ 'temp@~0.5.1', null ]
+1038 verbose cache add spec temp@~0.5.1
+1039 silly cache add parsed spec { raw: 'temp@~0.5.1',
+1039 silly cache add   scope: null,
+1039 silly cache add   name: 'temp',
+1039 silly cache add   rawSpec: '~0.5.1',
+1039 silly cache add   spec: '>=0.5.1 <0.6.0',
+1039 silly cache add   type: 'range' }
+1040 verbose addNamed temp@>=0.5.1 <0.6.0
+1041 silly addNamed semver.valid null
+1042 silly addNamed semver.validRange >=0.5.1 <0.6.0
+1043 silly addNameRange { name: 'temp', range: '>=0.5.1 <0.6.0', hasData: false }
+1044 silly mapToRegistry name temp
+1045 silly mapToRegistry using default registry
+1046 silly mapToRegistry registry https://registry.npmjs.org/
+1047 silly mapToRegistry uri https://registry.npmjs.org/temp
+1048 verbose addNameRange registry:https://registry.npmjs.org/temp not in flight; fetching
+1049 verbose request uri https://registry.npmjs.org/temp
+1050 verbose request no auth needed
+1051 info attempt registry request try #1 at 4:26:01 PM
+1052 verbose etag "AMK03ILK5LUS5U68T59UW3XWP"
+1053 http request GET https://registry.npmjs.org/temp
+1054 info preinstall i2c-bus@0.11.1
+1055 silly prepareForInstallMany adding bindings@~1.2.1 from i2c-bus dependencies
+1056 silly prepareForInstallMany adding nan@~1.7.0 from i2c-bus dependencies
+1057 silly cache add args [ 'bindings@~1.2.1', null ]
+1058 verbose cache add spec bindings@~1.2.1
+1059 silly cache add args [ 'nan@~1.7.0', null ]
+1060 verbose cache add spec nan@~1.7.0
+1061 silly cache add parsed spec { raw: 'bindings@~1.2.1',
+1061 silly cache add   scope: null,
+1061 silly cache add   name: 'bindings',
+1061 silly cache add   rawSpec: '~1.2.1',
+1061 silly cache add   spec: '>=1.2.1 <1.3.0',
+1061 silly cache add   type: 'range' }
+1062 verbose addNamed bindings@>=1.2.1 <1.3.0
+1063 silly addNamed semver.valid null
+1064 silly addNamed semver.validRange >=1.2.1 <1.3.0
+1065 silly addNameRange { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: false }
+1066 silly mapToRegistry name bindings
+1067 silly mapToRegistry using default registry
+1068 silly mapToRegistry registry https://registry.npmjs.org/
+1069 silly mapToRegistry uri https://registry.npmjs.org/bindings
+1070 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+1071 silly cache add parsed spec { raw: 'nan@~1.7.0',
+1071 silly cache add   scope: null,
+1071 silly cache add   name: 'nan',
+1071 silly cache add   rawSpec: '~1.7.0',
+1071 silly cache add   spec: '>=1.7.0 <1.8.0',
+1071 silly cache add   type: 'range' }
+1072 verbose addNamed nan@>=1.7.0 <1.8.0
+1073 silly addNamed semver.valid null
+1074 silly addNamed semver.validRange >=1.7.0 <1.8.0
+1075 silly addNameRange { name: 'nan', range: '>=1.7.0 <1.8.0', hasData: false }
+1076 silly mapToRegistry name nan
+1077 silly mapToRegistry using default registry
+1078 silly mapToRegistry registry https://registry.npmjs.org/
+1079 silly mapToRegistry uri https://registry.npmjs.org/nan
+1080 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+1081 verbose request uri https://registry.npmjs.org/bindings
+1082 verbose request no auth needed
+1083 info attempt registry request try #1 at 4:26:01 PM
+1084 verbose etag "5997G8NY1OJEMZ1HNHL7VBX5J"
+1085 http request GET https://registry.npmjs.org/bindings
+1086 verbose get https://registry.npmjs.org/nan not expired, no request
+1087 silly addNameRange number 2 { name: 'nan', range: '>=1.7.0 <1.8.0', hasData: true }
+1088 silly addNameRange versions [ 'nan',
+1088 silly addNameRange   [ '0.3.0-wip',
+1088 silly addNameRange     '0.3.0-wip2',
+1088 silly addNameRange     '0.3.0',
+1088 silly addNameRange     '0.3.1',
+1088 silly addNameRange     '0.3.2',
+1088 silly addNameRange     '0.4.0',
+1088 silly addNameRange     '0.4.1',
+1088 silly addNameRange     '0.4.2',
+1088 silly addNameRange     '0.4.3',
+1088 silly addNameRange     '0.4.4',
+1088 silly addNameRange     '0.5.0',
+1088 silly addNameRange     '0.5.1',
+1088 silly addNameRange     '0.5.2',
+1088 silly addNameRange     '0.6.0',
+1088 silly addNameRange     '0.7.0',
+1088 silly addNameRange     '0.7.1',
+1088 silly addNameRange     '0.8.0',
+1088 silly addNameRange     '1.0.0',
+1088 silly addNameRange     '1.1.0',
+1088 silly addNameRange     '1.1.1',
+1088 silly addNameRange     '1.1.2',
+1088 silly addNameRange     '1.2.0',
+1088 silly addNameRange     '1.3.0',
+1088 silly addNameRange     '1.4.0',
+1088 silly addNameRange     '1.4.1',
+1088 silly addNameRange     '1.5.0',
+1088 silly addNameRange     '1.4.2',
+1088 silly addNameRange     '1.4.3',
+1088 silly addNameRange     '1.5.1',
+1088 silly addNameRange     '1.5.2',
+1088 silly addNameRange     '1.6.0',
+1088 silly addNameRange     '1.5.3',
+1088 silly addNameRange     '1.6.1',
+1088 silly addNameRange     '1.6.2',
+1088 silly addNameRange     '1.7.0' ] ]
+1089 verbose addNamed nan@1.7.0
+1090 silly addNamed semver.valid 1.7.0
+1091 silly addNamed semver.validRange 1.7.0
+1092 silly cache afterAdd nan@1.7.0
+1093 verbose afterAdd /Users/tomomi/.npm/nan/1.7.0/package/package.json not in flight; writing
+1094 verbose afterAdd /Users/tomomi/.npm/nan/1.7.0/package/package.json written
+1095 http 304 https://registry.npmjs.org/temp
+1096 silly get cb [ 304,
+1096 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+1096 silly get     server: 'Apache',
+1096 silly get     via: '1.1 varnish',
+1096 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+1096 silly get     'cache-control': 'max-age=60',
+1096 silly get     etag: '"AMK03ILK5LUS5U68T59UW3XWP"',
+1096 silly get     age: '0',
+1096 silly get     'x-served-by': 'cache-lax1435-LAX',
+1096 silly get     'x-cache': 'HIT',
+1096 silly get     'x-cache-hits': '1',
+1096 silly get     'x-timer': 'S1428103561.645633,VS0,VE75',
+1096 silly get     vary: 'Accept',
+1096 silly get     'content-length': '0',
+1096 silly get     'keep-alive': 'timeout=10, max=50',
+1096 silly get     connection: 'Keep-Alive' } ]
+1097 verbose etag https://registry.npmjs.org/temp from cache
+1098 verbose get saving temp to /Users/tomomi/.npm/registry.npmjs.org/temp/.cache.json
+1099 silly addNameRange number 2 { name: 'temp', range: '>=0.5.1 <0.6.0', hasData: true }
+1100 silly addNameRange versions [ 'temp',
+1100 silly addNameRange   [ '0.2.0',
+1100 silly addNameRange     '0.3.0',
+1100 silly addNameRange     '0.4.0',
+1100 silly addNameRange     '0.5.0',
+1100 silly addNameRange     '0.5.1',
+1100 silly addNameRange     '0.6.0',
+1100 silly addNameRange     '0.7.0',
+1100 silly addNameRange     '0.8.0',
+1100 silly addNameRange     '0.8.1' ] ]
+1101 verbose addNamed temp@0.5.1
+1102 silly addNamed semver.valid 0.5.1
+1103 silly addNamed semver.validRange 0.5.1
+1104 silly cache afterAdd temp@0.5.1
+1105 verbose afterAdd /Users/tomomi/.npm/temp/0.5.1/package/package.json not in flight; writing
+1106 verbose afterAdd /Users/tomomi/.npm/temp/0.5.1/package/package.json written
+1107 silly install resolved [ { name: 'temp',
+1107 silly install resolved     description: 'Temporary files and directories',
+1107 silly install resolved     tags:
+1107 silly install resolved      [ 'temporary',
+1107 silly install resolved        'temp',
+1107 silly install resolved        'tempfile',
+1107 silly install resolved        'tempdir',
+1107 silly install resolved        'tmpfile',
+1107 silly install resolved        'tmpdir',
+1107 silly install resolved        'security' ],
+1107 silly install resolved     version: '0.5.1',
+1107 silly install resolved     author: { name: 'Bruce Williams', email: 'bruce@codefluency.com' },
+1107 silly install resolved     directories: { lib: 'lib' },
+1107 silly install resolved     engines: [ 'node >=0.8.0' ],
+1107 silly install resolved     main: './lib/temp',
+1107 silly install resolved     dependencies: { rimraf: '~2.1.4' },
+1107 silly install resolved     devDependencies: {},
+1107 silly install resolved     repository: { type: 'git', url: 'git://github.com/bruce/node-temp.git' },
+1107 silly install resolved     _id: 'temp@0.5.1',
+1107 silly install resolved     dist:
+1107 silly install resolved      { shasum: '77ab19c79aa7b593cbe4fac2441768cad987b8df',
+1107 silly install resolved        tarball: 'http://registry.npmjs.org/temp/-/temp-0.5.1.tgz' },
+1107 silly install resolved     _npmVersion: '1.2.0',
+1107 silly install resolved     _npmUser: { name: 'bruce', email: 'bruce@codefluency.com' },
+1107 silly install resolved     maintainers: [ [Object] ],
+1107 silly install resolved     _shasum: '77ab19c79aa7b593cbe4fac2441768cad987b8df',
+1107 silly install resolved     _resolved: 'https://registry.npmjs.org/temp/-/temp-0.5.1.tgz',
+1107 silly install resolved     _from: 'temp@>=0.5.1 <0.6.0',
+1107 silly install resolved     bugs: { url: 'https://github.com/bruce/node-temp/issues' },
+1107 silly install resolved     readme: 'ERROR: No README data found!',
+1107 silly install resolved     homepage: 'https://github.com/bruce/node-temp' } ]
+1108 info install temp@0.5.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+1109 info installOne temp@0.5.1
+1110 verbose installOne of temp to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync not in flight; installing
+1111 verbose lock using /Users/tomomi/.npm/_locks/temp-4d8ad628e39a516a.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1112 silly install write writing temp 0.5.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1113 silly cache addNamed cb temp@0.5.1
+1114 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1115 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1116 verbose tar unpack /Users/tomomi/.npm/temp/0.5.1/package.tgz
+1117 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1118 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1119 silly gunzTarPerm modes [ '755', '644' ]
+1120 silly gunzTarPerm extractEntry package.json
+1121 silly gunzTarPerm extractEntry .npmignore
+1122 silly gunzTarPerm extractEntry README.md
+1123 silly gunzTarPerm extractEntry LICENSE
+1124 silly gunzTarPerm extractEntry examples/grepcount.js
+1125 silly gunzTarPerm extractEntry examples/pdfcreator.js
+1126 silly gunzTarPerm extractEntry lib/temp.js
+1127 http 304 https://registry.npmjs.org/bindings
+1128 silly get cb [ 304,
+1128 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+1128 silly get     server: 'Apache',
+1128 silly get     via: '1.1 varnish',
+1128 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+1128 silly get     'cache-control': 'max-age=60',
+1128 silly get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+1128 silly get     age: '28',
+1128 silly get     'x-served-by': 'cache-lax1422-LAX',
+1128 silly get     'x-cache': 'HIT',
+1128 silly get     'x-cache-hits': '1',
+1128 silly get     'x-timer': 'S1428103561.744099,VS0,VE0',
+1128 silly get     vary: 'Accept',
+1128 silly get     'content-length': '0',
+1128 silly get     'keep-alive': 'timeout=10, max=50',
+1128 silly get     connection: 'Keep-Alive' } ]
+1129 verbose etag https://registry.npmjs.org/bindings from cache
+1130 verbose get saving bindings to /Users/tomomi/.npm/registry.npmjs.org/bindings/.cache.json
+1131 silly gunzTarPerm extractEntry temp-0.5.1.tgz
+1132 silly gunzTarPerm extractEntry test/temp-test.js
+1133 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: true }
+1134 silly addNameRange versions [ 'bindings',
+1134 silly addNameRange   [ '0.0.1',
+1134 silly addNameRange     '0.1.0',
+1134 silly addNameRange     '0.1.1',
+1134 silly addNameRange     '0.2.0',
+1134 silly addNameRange     '0.2.1',
+1134 silly addNameRange     '0.2.2',
+1134 silly addNameRange     '0.2.3',
+1134 silly addNameRange     '0.2.4',
+1134 silly addNameRange     '0.3.0',
+1134 silly addNameRange     '0.4.0',
+1134 silly addNameRange     '1.0.0',
+1134 silly addNameRange     '1.1.0',
+1134 silly addNameRange     '1.1.1',
+1134 silly addNameRange     '1.2.0',
+1134 silly addNameRange     '1.2.1' ] ]
+1135 verbose addNamed bindings@1.2.1
+1136 silly addNamed semver.valid 1.2.1
+1137 silly addNamed semver.validRange 1.2.1
+1138 silly cache afterAdd bindings@1.2.1
+1139 verbose afterAdd /Users/tomomi/.npm/bindings/1.2.1/package/package.json not in flight; writing
+1140 verbose afterAdd /Users/tomomi/.npm/bindings/1.2.1/package/package.json written
+1141 silly install resolved [ { name: 'nan',
+1141 silly install resolved     version: '1.7.0',
+1141 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+1141 silly install resolved     main: 'include_dirs.js',
+1141 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+1141 silly install resolved     scripts:
+1141 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+1141 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+1141 silly install resolved     contributors:
+1141 silly install resolved      [ [Object],
+1141 silly install resolved        [Object],
+1141 silly install resolved        [Object],
+1141 silly install resolved        [Object],
+1141 silly install resolved        [Object],
+1141 silly install resolved        [Object],
+1141 silly install resolved        [Object] ],
+1141 silly install resolved     devDependencies:
+1141 silly install resolved      { bindings: '~1.2.1',
+1141 silly install resolved        'node-gyp': '~1.0.2',
+1141 silly install resolved        pangyp: '~2.0.1',
+1141 silly install resolved        tap: '~0.5.0',
+1141 silly install resolved        xtend: '~4.0.0' },
+1141 silly install resolved     license: 'MIT',
+1141 silly install resolved     gitHead: '550efb5dde5cb6bf79db87ab48dce850e56e971a',
+1141 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+1141 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+1141 silly install resolved     _id: 'nan@1.7.0',
+1141 silly install resolved     _shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+1141 silly install resolved     _from: 'nan@>=1.7.0 <1.8.0',
+1141 silly install resolved     _npmVersion: '2.5.1',
+1141 silly install resolved     _nodeVersion: '0.12.0',
+1141 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+1141 silly install resolved     maintainers: [ [Object], [Object] ],
+1141 silly install resolved     dist:
+1141 silly install resolved      { shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+1141 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.7.0.tgz' },
+1141 silly install resolved     directories: {},
+1141 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz',
+1141 silly install resolved     readme: 'ERROR: No README data found!' },
+1141 silly install resolved   { name: 'bindings',
+1141 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+1141 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+1141 silly install resolved     version: '1.2.1',
+1141 silly install resolved     author:
+1141 silly install resolved      { name: 'Nathan Rajlich',
+1141 silly install resolved        email: 'nathan@tootallnate.net',
+1141 silly install resolved        url: 'http://tootallnate.net' },
+1141 silly install resolved     repository:
+1141 silly install resolved      { type: 'git',
+1141 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+1141 silly install resolved     main: './bindings.js',
+1141 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+1141 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+1141 silly install resolved     license: 'MIT',
+1141 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+1141 silly install resolved     _id: 'bindings@1.2.1',
+1141 silly install resolved     scripts: {},
+1141 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+1141 silly install resolved     _from: 'bindings@>=1.2.1 <1.3.0',
+1141 silly install resolved     _npmVersion: '1.4.14',
+1141 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+1141 silly install resolved     maintainers: [ [Object], [Object] ],
+1141 silly install resolved     dist:
+1141 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+1141 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+1141 silly install resolved     directories: {},
+1141 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+1141 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1142 info install nan@1.7.0 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1143 info install bindings@1.2.1 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1144 info installOne nan@1.7.0
+1145 verbose installOne of nan to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus not in flight; installing
+1146 info installOne bindings@1.2.1
+1147 verbose installOne of bindings to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus not in flight; installing
+1148 verbose lock using /Users/tomomi/.npm/_locks/bindings-36884e964ed13bc3.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1149 verbose lock using /Users/tomomi/.npm/_locks/nan-aacc9d05a07ea4f8.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1150 silly install write writing bindings 1.2.1 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1151 silly cache addNamed cb bindings@1.2.1
+1152 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1153 silly install write writing nan 1.7.0 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1154 silly cache addNamed cb nan@1.7.0
+1155 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1156 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1157 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1158 verbose tar unpack /Users/tomomi/.npm/bindings/1.2.1/package.tgz
+1159 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1160 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1161 verbose tar unpack /Users/tomomi/.npm/nan/1.7.0/package.tgz
+1162 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1163 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1164 silly gunzTarPerm modes [ '755', '644' ]
+1165 silly gunzTarPerm modes [ '755', '644' ]
+1166 silly gunzTarPerm extractEntry package.json
+1167 silly gunzTarPerm extractEntry package.json
+1168 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1169 silly gunzTarPerm extractEntry README.md
+1170 silly gunzTarPerm extractEntry bindings.js
+1171 silly gunzTarPerm extractEntry include_dirs.js
+1172 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+1173 silly gunzTarPerm extractEntry LICENSE.md
+1174 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+1175 silly gunzTarPerm extractEntry .dntrc
+1176 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+1177 silly gunzTarPerm extractEntry appveyor.yml
+1178 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+1179 silly gunzTarPerm extractEntry nan.h
+1180 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+1181 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+1182 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+1183 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+1184 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+1185 silly gunzTarPerm extractEntry nan_new.h
+1186 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+1187 silly gunzTarPerm extractEntry nan_string_bytes.h
+1188 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+1189 silly gunzTarPerm extractEntry CHANGELOG.md
+1190 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+1191 info preinstall temp@0.5.1
+1192 info preinstall bindings@1.2.1
+1193 silly prepareForInstallMany adding rimraf@~2.1.4 from temp dependencies
+1194 silly cache add args [ 'rimraf@~2.1.4', null ]
+1195 verbose cache add spec rimraf@~2.1.4
+1196 silly cache add parsed spec { raw: 'rimraf@~2.1.4',
+1196 silly cache add   scope: null,
+1196 silly cache add   name: 'rimraf',
+1196 silly cache add   rawSpec: '~2.1.4',
+1196 silly cache add   spec: '>=2.1.4 <2.2.0',
+1196 silly cache add   type: 'range' }
+1197 verbose addNamed rimraf@>=2.1.4 <2.2.0
+1198 silly addNamed semver.valid null
+1199 silly addNamed semver.validRange >=2.1.4 <2.2.0
+1200 silly addNameRange { name: 'rimraf', range: '>=2.1.4 <2.2.0', hasData: false }
+1201 silly mapToRegistry name rimraf
+1202 silly mapToRegistry using default registry
+1203 silly mapToRegistry registry https://registry.npmjs.org/
+1204 silly mapToRegistry uri https://registry.npmjs.org/rimraf
+1205 verbose addNameRange registry:https://registry.npmjs.org/rimraf not in flight; fetching
+1206 silly install resolved []
+1207 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1208 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1209 verbose linkStuff [ false,
+1209 verbose linkStuff   false,
+1209 verbose linkStuff   false,
+1209 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules' ]
+1210 info linkStuff bindings@1.2.1
+1211 verbose linkBins bindings@1.2.1
+1212 verbose linkMans bindings@1.2.1
+1213 verbose rebuildBundles bindings@1.2.1
+1214 info install bindings@1.2.1
+1215 info postinstall bindings@1.2.1
+1216 verbose request uri https://registry.npmjs.org/rimraf
+1217 verbose request no auth needed
+1218 info attempt registry request try #1 at 4:26:01 PM
+1219 verbose etag "3Q4JZH6I4AM1WBR3WTW98PVYG"
+1220 http request GET https://registry.npmjs.org/rimraf
+1221 verbose unlock done using /Users/tomomi/.npm/_locks/bindings-36884e964ed13bc3.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/bindings
+1222 info preinstall nan@1.7.0
+1223 silly install resolved []
+1224 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1225 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1226 verbose linkStuff [ false,
+1226 verbose linkStuff   false,
+1226 verbose linkStuff   false,
+1226 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules' ]
+1227 info linkStuff nan@1.7.0
+1228 verbose linkBins nan@1.7.0
+1229 verbose linkMans nan@1.7.0
+1230 verbose rebuildBundles nan@1.7.0
+1231 info install nan@1.7.0
+1232 info postinstall nan@1.7.0
+1233 verbose unlock done using /Users/tomomi/.npm/_locks/nan-aacc9d05a07ea4f8.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus/node_modules/nan
+1234 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1235 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1236 verbose linkStuff [ false,
+1236 verbose linkStuff   false,
+1236 verbose linkStuff   false,
+1236 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules' ]
+1237 info linkStuff i2c-bus@0.11.1
+1238 verbose linkBins i2c-bus@0.11.1
+1239 verbose linkMans i2c-bus@0.11.1
+1240 verbose rebuildBundles i2c-bus@0.11.1
+1241 verbose rebuildBundles [ 'bindings', 'nan' ]
+1242 info install i2c-bus@0.11.1
+1243 http 304 https://registry.npmjs.org/rimraf
+1244 silly get cb [ 304,
+1244 silly get   { date: 'Fri, 03 Apr 2015 23:26:01 GMT',
+1244 silly get     server: 'Apache',
+1244 silly get     via: '1.1 varnish',
+1244 silly get     'last-modified': 'Fri, 03 Apr 2015 23:26:01 GMT',
+1244 silly get     'cache-control': 'max-age=60',
+1244 silly get     etag: '"3Q4JZH6I4AM1WBR3WTW98PVYG"',
+1244 silly get     age: '4',
+1244 silly get     'x-served-by': 'cache-lax1435-LAX',
+1244 silly get     'x-cache': 'HIT',
+1244 silly get     'x-cache-hits': '1',
+1244 silly get     'x-timer': 'S1428103561.895776,VS0,VE0',
+1244 silly get     vary: 'Accept',
+1244 silly get     'content-length': '0',
+1244 silly get     'keep-alive': 'timeout=10, max=50',
+1244 silly get     connection: 'Keep-Alive' } ]
+1245 verbose etag https://registry.npmjs.org/rimraf from cache
+1246 verbose get saving rimraf to /Users/tomomi/.npm/registry.npmjs.org/rimraf/.cache.json
+1247 silly addNameRange number 2 { name: 'rimraf', range: '>=2.1.4 <2.2.0', hasData: true }
+1248 silly addNameRange versions [ 'rimraf',
+1248 silly addNameRange   [ '1.0.0',
+1248 silly addNameRange     '1.0.1',
+1248 silly addNameRange     '1.0.2',
+1248 silly addNameRange     '1.0.4',
+1248 silly addNameRange     '1.0.5',
+1248 silly addNameRange     '1.0.6',
+1248 silly addNameRange     '1.0.7',
+1248 silly addNameRange     '1.0.8',
+1248 silly addNameRange     '1.0.9',
+1248 silly addNameRange     '2.0.0',
+1248 silly addNameRange     '2.0.1',
+1248 silly addNameRange     '2.0.2',
+1248 silly addNameRange     '2.0.3',
+1248 silly addNameRange     '2.1.0',
+1248 silly addNameRange     '2.1.1',
+1248 silly addNameRange     '2.1.2',
+1248 silly addNameRange     '2.1.3',
+1248 silly addNameRange     '2.1.4',
+1248 silly addNameRange     '2.2.0',
+1248 silly addNameRange     '2.2.1',
+1248 silly addNameRange     '2.2.2',
+1248 silly addNameRange     '2.2.3',
+1248 silly addNameRange     '2.2.4',
+1248 silly addNameRange     '2.2.5',
+1248 silly addNameRange     '2.2.6',
+1248 silly addNameRange     '2.2.8',
+1248 silly addNameRange     '2.3.0',
+1248 silly addNameRange     '2.3.1',
+1248 silly addNameRange     '2.3.2' ] ]
+1249 verbose addNamed rimraf@2.1.4
+1250 silly addNamed semver.valid 2.1.4
+1251 silly addNamed semver.validRange 2.1.4
+1252 silly cache afterAdd rimraf@2.1.4
+1253 verbose afterAdd /Users/tomomi/.npm/rimraf/2.1.4/package/package.json not in flight; writing
+1254 verbose afterAdd /Users/tomomi/.npm/rimraf/2.1.4/package/package.json written
+1255 silly install resolved [ { name: 'rimraf',
+1255 silly install resolved     version: '2.1.4',
+1255 silly install resolved     main: 'rimraf.js',
+1255 silly install resolved     description: 'A deep deletion module for node (like `rm -rf`)',
+1255 silly install resolved     author:
+1255 silly install resolved      { name: 'Isaac Z. Schlueter',
+1255 silly install resolved        email: 'i@izs.me',
+1255 silly install resolved        url: 'http://blog.izs.me/' },
+1255 silly install resolved     license:
+1255 silly install resolved      { type: 'MIT',
+1255 silly install resolved        url: 'https://github.com/isaacs/rimraf/raw/master/LICENSE' },
+1255 silly install resolved     optionalDependencies: { 'graceful-fs': '~1' },
+1255 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/rimraf.git' },
+1255 silly install resolved     scripts: { test: 'cd test && bash run.sh' },
+1255 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+1255 silly install resolved     _id: 'rimraf@2.1.4',
+1255 silly install resolved     dependencies: { 'graceful-fs': '~1' },
+1255 silly install resolved     dist:
+1255 silly install resolved      { shasum: '5a6eb62eeda068f51ede50f29b3e5cd22f3d9bb2',
+1255 silly install resolved        tarball: 'http://registry.npmjs.org/rimraf/-/rimraf-2.1.4.tgz' },
+1255 silly install resolved     _from: 'rimraf@>=2.1.4 <2.2.0',
+1255 silly install resolved     _npmVersion: '1.2.7',
+1255 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1255 silly install resolved     maintainers: [ [Object] ],
+1255 silly install resolved     directories: {},
+1255 silly install resolved     _shasum: '5a6eb62eeda068f51ede50f29b3e5cd22f3d9bb2',
+1255 silly install resolved     _resolved: 'https://registry.npmjs.org/rimraf/-/rimraf-2.1.4.tgz',
+1255 silly install resolved     bugs: { url: 'https://github.com/isaacs/rimraf/issues' },
+1255 silly install resolved     readme: 'ERROR: No README data found!',
+1255 silly install resolved     homepage: 'https://github.com/isaacs/rimraf' } ]
+1256 info install rimraf@2.1.4 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1257 info installOne rimraf@2.1.4
+1258 verbose installOne of rimraf to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp not in flight; installing
+1259 verbose lock using /Users/tomomi/.npm/_locks/rimraf-928498d67028fc14.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1260 silly install write writing rimraf 2.1.4 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1261 silly cache addNamed cb rimraf@2.1.4
+1262 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1263 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1264 verbose tar unpack /Users/tomomi/.npm/rimraf/2.1.4/package.tgz
+1265 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1266 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1267 silly gunzTarPerm modes [ '755', '644' ]
+1268 silly gunzTarPerm extractEntry package.json
+1269 silly gunzTarPerm extractEntry README.md
+1270 silly gunzTarPerm extractEntry LICENSE
+1271 silly gunzTarPerm extractEntry rimraf.js
+1272 silly gunzTarPerm extractEntry AUTHORS
+1273 silly gunzTarPerm extractEntry test/test-async.js
+1274 silly gunzTarPerm extractEntry test/test-sync.js
+1275 silly gunzTarPerm extractEntry test/run.sh
+1276 silly gunzTarPerm extractEntry test/setup.sh
+1277 info preinstall rimraf@2.1.4
+1278 silly prepareForInstallMany adding graceful-fs@~1 from rimraf dependencies
+1279 silly cache add args [ 'graceful-fs@~1', null ]
+1280 verbose cache add spec graceful-fs@~1
+1281 silly cache add parsed spec { raw: 'graceful-fs@~1',
+1281 silly cache add   scope: null,
+1281 silly cache add   name: 'graceful-fs',
+1281 silly cache add   rawSpec: '~1',
+1281 silly cache add   spec: '>=1.0.0 <2.0.0',
+1281 silly cache add   type: 'range' }
+1282 verbose addNamed graceful-fs@>=1.0.0 <2.0.0
+1283 silly addNamed semver.valid null
+1284 silly addNamed semver.validRange >=1.0.0 <2.0.0
+1285 silly addNameRange { name: 'graceful-fs', range: '>=1.0.0 <2.0.0', hasData: false }
+1286 silly mapToRegistry name graceful-fs
+1287 silly mapToRegistry using default registry
+1288 silly mapToRegistry registry https://registry.npmjs.org/
+1289 silly mapToRegistry uri https://registry.npmjs.org/graceful-fs
+1290 verbose addNameRange registry:https://registry.npmjs.org/graceful-fs not in flight; fetching
+1291 verbose request uri https://registry.npmjs.org/graceful-fs
+1292 verbose request no auth needed
+1293 info attempt registry request try #1 at 4:26:01 PM
+1294 verbose etag "8PYCNJP4YJ2562I5BLSHXHX9W"
+1295 http request GET https://registry.npmjs.org/graceful-fs
+1296 http 304 https://registry.npmjs.org/graceful-fs
+1297 silly get cb [ 304,
+1297 silly get   { date: 'Fri, 03 Apr 2015 23:26:02 GMT',
+1297 silly get     server: 'Apache',
+1297 silly get     via: '1.1 varnish',
+1297 silly get     'last-modified': 'Fri, 03 Apr 2015 23:25:40 GMT',
+1297 silly get     'cache-control': 'max-age=60',
+1297 silly get     etag: '"8PYCNJP4YJ2562I5BLSHXHX9W"',
+1297 silly get     age: '23',
+1297 silly get     'x-served-by': 'cache-lax1435-LAX',
+1297 silly get     'x-cache': 'HIT',
+1297 silly get     'x-cache-hits': '2',
+1297 silly get     'x-timer': 'S1428103562.061852,VS0,VE0',
+1297 silly get     vary: 'Accept',
+1297 silly get     'content-length': '0',
+1297 silly get     'keep-alive': 'timeout=10, max=50',
+1297 silly get     connection: 'Keep-Alive' } ]
+1298 verbose etag https://registry.npmjs.org/graceful-fs from cache
+1299 verbose get saving graceful-fs to /Users/tomomi/.npm/registry.npmjs.org/graceful-fs/.cache.json
+1300 silly addNameRange number 2 { name: 'graceful-fs', range: '>=1.0.0 <2.0.0', hasData: true }
+1301 silly addNameRange versions [ 'graceful-fs',
+1301 silly addNameRange   [ '1.0.0',
+1301 silly addNameRange     '1.0.1',
+1301 silly addNameRange     '1.0.2',
+1301 silly addNameRange     '1.1.0',
+1301 silly addNameRange     '1.1.1',
+1301 silly addNameRange     '1.1.2',
+1301 silly addNameRange     '1.1.3',
+1301 silly addNameRange     '1.1.4',
+1301 silly addNameRange     '1.1.5',
+1301 silly addNameRange     '1.1.6',
+1301 silly addNameRange     '1.1.7',
+1301 silly addNameRange     '1.1.8',
+1301 silly addNameRange     '1.1.9',
+1301 silly addNameRange     '1.1.10',
+1301 silly addNameRange     '1.1.11',
+1301 silly addNameRange     '1.1.12',
+1301 silly addNameRange     '1.1.13',
+1301 silly addNameRange     '1.1.14',
+1301 silly addNameRange     '1.2.0',
+1301 silly addNameRange     '1.2.1',
+1301 silly addNameRange     '1.2.2',
+1301 silly addNameRange     '1.2.3',
+1301 silly addNameRange     '2.0.0',
+1301 silly addNameRange     '2.0.1',
+1301 silly addNameRange     '2.0.2',
+1301 silly addNameRange     '2.0.3',
+1301 silly addNameRange     '3.0.0',
+1301 silly addNameRange     '3.0.1',
+1301 silly addNameRange     '3.0.2',
+1301 silly addNameRange     '3.0.3',
+1301 silly addNameRange     '3.0.4',
+1301 silly addNameRange     '3.0.5',
+1301 silly addNameRange     '3.0.6' ] ]
+1302 verbose addNamed graceful-fs@1.2.3
+1303 silly addNamed semver.valid 1.2.3
+1304 silly addNamed semver.validRange 1.2.3
+1305 silly cache afterAdd graceful-fs@1.2.3
+1306 verbose afterAdd /Users/tomomi/.npm/graceful-fs/1.2.3/package/package.json not in flight; writing
+1307 verbose afterAdd /Users/tomomi/.npm/graceful-fs/1.2.3/package/package.json written
+1308 silly install resolved [ { author:
+1308 silly install resolved      { name: 'Isaac Z. Schlueter',
+1308 silly install resolved        email: 'i@izs.me',
+1308 silly install resolved        url: 'http://blog.izs.me' },
+1308 silly install resolved     name: 'graceful-fs',
+1308 silly install resolved     description: 'A drop-in replacement for fs, making various improvements.',
+1308 silly install resolved     version: '1.2.3',
+1308 silly install resolved     repository:
+1308 silly install resolved      { type: 'git',
+1308 silly install resolved        url: 'git://github.com/isaacs/node-graceful-fs.git' },
+1308 silly install resolved     main: 'graceful-fs.js',
+1308 silly install resolved     engines: { node: '>=0.4.0' },
+1308 silly install resolved     directories: { test: 'test' },
+1308 silly install resolved     scripts: { test: 'tap test/*.js' },
+1308 silly install resolved     keywords:
+1308 silly install resolved      [ 'fs',
+1308 silly install resolved        'module',
+1308 silly install resolved        'reading',
+1308 silly install resolved        'retry',
+1308 silly install resolved        'retries',
+1308 silly install resolved        'queue',
+1308 silly install resolved        'error',
+1308 silly install resolved        'errors',
+1308 silly install resolved        'handling',
+1308 silly install resolved        'EMFILE',
+1308 silly install resolved        'EAGAIN',
+1308 silly install resolved        'EINVAL',
+1308 silly install resolved        'EPERM',
+1308 silly install resolved        'EACCESS' ],
+1308 silly install resolved     license: 'BSD',
+1308 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-graceful-fs/issues' },
+1308 silly install resolved     _id: 'graceful-fs@1.2.3',
+1308 silly install resolved     dist:
+1308 silly install resolved      { shasum: '15a4806a57547cb2d2dbf27f42e89a8c3451b364',
+1308 silly install resolved        tarball: 'http://registry.npmjs.org/graceful-fs/-/graceful-fs-1.2.3.tgz' },
+1308 silly install resolved     _from: 'graceful-fs@>=1.0.0 <2.0.0',
+1308 silly install resolved     _npmVersion: '1.3.2',
+1308 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1308 silly install resolved     maintainers: [ [Object] ],
+1308 silly install resolved     _shasum: '15a4806a57547cb2d2dbf27f42e89a8c3451b364',
+1308 silly install resolved     _resolved: 'https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.2.3.tgz',
+1308 silly install resolved     readme: 'ERROR: No README data found!',
+1308 silly install resolved     homepage: 'https://github.com/isaacs/node-graceful-fs' } ]
+1309 info install graceful-fs@1.2.3 into /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1310 info installOne graceful-fs@1.2.3
+1311 verbose installOne of graceful-fs to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf not in flight; installing
+1312 verbose lock using /Users/tomomi/.npm/_locks/graceful-fs-7b9e1f2974db69de.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1313 silly install write writing graceful-fs 1.2.3 to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1314 silly cache addNamed cb graceful-fs@1.2.3
+1315 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1316 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1317 verbose tar unpack /Users/tomomi/.npm/graceful-fs/1.2.3/package.tgz
+1318 verbose tar unpacking to /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1319 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1320 silly gunzTarPerm modes [ '755', '644' ]
+1321 silly gunzTarPerm extractEntry package.json
+1322 silly gunzTarPerm extractEntry .npmignore
+1323 silly gunzTarPerm extractEntry README.md
+1324 silly gunzTarPerm extractEntry LICENSE
+1325 silly gunzTarPerm extractEntry graceful-fs.js
+1326 silly gunzTarPerm extractEntry test/open.js
+1327 silly gunzTarPerm extractEntry test/ulimit.js
+1328 info preinstall graceful-fs@1.2.3
+1329 silly install resolved []
+1330 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1331 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1332 verbose linkStuff [ false,
+1332 verbose linkStuff   false,
+1332 verbose linkStuff   false,
+1332 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules' ]
+1333 info linkStuff graceful-fs@1.2.3
+1334 verbose linkBins graceful-fs@1.2.3
+1335 verbose linkMans graceful-fs@1.2.3
+1336 verbose rebuildBundles graceful-fs@1.2.3
+1337 info install graceful-fs@1.2.3
+1338 info postinstall graceful-fs@1.2.3
+1339 verbose unlock done using /Users/tomomi/.npm/_locks/graceful-fs-7b9e1f2974db69de.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf/node_modules/graceful-fs
+1340 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1341 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1342 verbose linkStuff [ false,
+1342 verbose linkStuff   false,
+1342 verbose linkStuff   false,
+1342 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules' ]
+1343 info linkStuff rimraf@2.1.4
+1344 verbose linkBins rimraf@2.1.4
+1345 verbose linkMans rimraf@2.1.4
+1346 verbose rebuildBundles rimraf@2.1.4
+1347 verbose rebuildBundles [ 'graceful-fs' ]
+1348 info install rimraf@2.1.4
+1349 info postinstall rimraf@2.1.4
+1350 verbose unlock done using /Users/tomomi/.npm/_locks/rimraf-928498d67028fc14.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp/node_modules/rimraf
+1351 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1352 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1353 verbose linkStuff [ false,
+1353 verbose linkStuff   false,
+1353 verbose linkStuff   false,
+1353 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules' ]
+1354 info linkStuff temp@0.5.1
+1355 verbose linkBins temp@0.5.1
+1356 verbose linkMans temp@0.5.1
+1357 verbose rebuildBundles temp@0.5.1
+1358 verbose rebuildBundles [ 'rimraf' ]
+1359 info install temp@0.5.1
+1360 info postinstall temp@0.5.1
+1361 verbose unlock done using /Users/tomomi/.npm/_locks/temp-4d8ad628e39a516a.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync/node_modules/temp
+1362 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+1363 info build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+1364 verbose linkStuff [ false,
+1364 verbose linkStuff   false,
+1364 verbose linkStuff   false,
+1364 verbose linkStuff   '/Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules' ]
+1365 info linkStuff execSync@1.0.2
+1366 verbose linkBins execSync@1.0.2
+1367 verbose linkMans execSync@1.0.2
+1368 verbose rebuildBundles execSync@1.0.2
+1369 verbose rebuildBundles [ 'temp' ]
+1370 info install execSync@1.0.2
+1371 info raspi-pwm@1.3.1 Failed to exec install script
+1372 verbose unsafe-perm in lifecycle false
+1373 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-pwm-d341ceb4dafac9e0.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+1374 info raspi-gpio@1.2.1 Failed to exec install script
+1375 verbose unsafe-perm in lifecycle false
+1376 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-gpio-8c631012304f3251.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+1377 info i2c-bus@0.11.1 Failed to exec install script
+1378 verbose unsafe-perm in lifecycle false
+1379 verbose unlock done using /Users/tomomi/.npm/_locks/i2c-bus-be584179e20bd243.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1380 info postinstall execSync@1.0.2
+1381 verbose unlock done using /Users/tomomi/.npm/_locks/execSync-e6563b0ff6874e22.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/execSync
+1382 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+1383 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-i2c-4d16279ed51d85c8.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+1384 verbose about to build /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+1385 verbose unlock done using /Users/tomomi/.npm/_locks/raspi-io-9292c7d5756d346b.lock for /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+1386 verbose stack Error: raspi-wiringpi@1.0.4 install: `sh install-wiringpi.sh`
+1386 verbose stack Exit status 1
+1386 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+1386 verbose stack     at EventEmitter.emit (events.js:110:17)
+1386 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+1386 verbose stack     at ChildProcess.emit (events.js:110:17)
+1386 verbose stack     at maybeClose (child_process.js:1008:16)
+1386 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+1387 verbose pkgid raspi-wiringpi@1.0.4
+1388 verbose cwd /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs
+1389 error Darwin 14.1.0
+1390 error argv "node" "/usr/local/bin/npm" "install"
+1391 error node v0.12.0
+1392 error npm  v2.5.1
+1393 error code ELIFECYCLE
+1394 error raspi-wiringpi@1.0.4 install: `sh install-wiringpi.sh`
+1394 error Exit status 1
+1395 error Failed at the raspi-wiringpi@1.0.4 install script 'sh install-wiringpi.sh'.
+1395 error This is most likely a problem with the raspi-wiringpi package,
+1395 error not with npm itself.
+1395 error Tell the author that this fails on your system:
+1395 error     sh install-wiringpi.sh
+1395 error You can get their info via:
+1395 error     npm owner ls raspi-wiringpi
+1395 error There is likely additional logging output above.
+1396 verbose exit [ 1, true ]
+1397 verbose unbuild node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+1398 info preuninstall raspi-wiringpi@1.0.4
+1399 info uninstall raspi-wiringpi@1.0.4
+1400 verbose unbuild rmStuff raspi-wiringpi@1.0.4 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1401 verbose unbuild rmStuff in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules
+1402 info postuninstall raspi-wiringpi@1.0.4
+1403 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+1404 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules/raspi-wiringpi
+1405 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi/node_modules
+1406 verbose unbuild node_modules/raspi-io/node_modules/raspi
+1407 info preuninstall raspi@1.3.0
+1408 info uninstall raspi@1.3.0
+1409 verbose unbuild rmStuff raspi@1.3.0 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1410 verbose unbuild rmStuff in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1411 info postuninstall raspi@1.3.0
+1412 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+1413 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi
+1414 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1415 verbose unbuild node_modules/raspi-io/node_modules/raspi-pwm
+1416 info preuninstall raspi-pwm@1.3.1
+1417 info uninstall raspi-pwm@1.3.1
+1418 verbose unbuild rmStuff raspi-pwm@1.3.1 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1419 verbose unbuild rmStuff in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1420 info postuninstall raspi-pwm@1.3.1
+1421 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+1422 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-pwm
+1423 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1424 verbose unbuild node_modules/raspi-io/node_modules/raspi-gpio
+1425 info preuninstall raspi-gpio@1.2.1
+1426 info uninstall raspi-gpio@1.2.1
+1427 verbose unbuild rmStuff raspi-gpio@1.2.1 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1428 verbose unbuild rmStuff in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1429 info postuninstall raspi-gpio@1.2.1
+1430 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+1431 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-gpio
+1432 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1433 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1434 info preuninstall i2c-bus@0.11.1
+1435 info uninstall i2c-bus@0.11.1
+1436 verbose unbuild rmStuff i2c-bus@0.11.1 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1437 verbose unbuild rmStuff in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules
+1438 info postuninstall i2c-bus@0.11.1
+1439 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1440 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules/i2c-bus
+1441 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c/node_modules
+1442 verbose unbuild node_modules/raspi-io/node_modules/raspi-i2c
+1443 info preuninstall raspi-i2c@1.0.0
+1444 info uninstall raspi-i2c@1.0.0
+1445 verbose unbuild rmStuff raspi-i2c@1.0.0 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1446 verbose unbuild rmStuff in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1447 info postuninstall raspi-i2c@1.0.0
+1448 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+1449 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules/raspi-i2c
+1450 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io/node_modules
+1451 verbose unbuild node_modules/raspi-io
+1452 info preuninstall raspi-io@3.1.0
+1453 info uninstall raspi-io@3.1.0
+1454 verbose unbuild rmStuff raspi-io@3.1.0 from /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules
+1455 info postuninstall raspi-io@3.1.0
+1456 verbose gentlyRm vacuuming /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+1457 silly gentlyRm purging /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules/raspi-io
+1458 silly gentlyRm quitting because other entries in /Users/tomomi/Dev/workshop-raspberrypi/projects-nodejs/node_modules

@@ -1,0 +1,16 @@
+{
+	"name": "pi-node-led",
+	"version": "0.0.1",
+	"description": "LED demo with Raspberry Pi in node.js using Johnny-Five",
+	"dependencies": {
+		"johnny-five": "^0.8.50",
+		"pubnub": "^3.7.8",
+		"raspi-io": "^3.0.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Tomomi Imura",
+	"license": "MIT"
+}

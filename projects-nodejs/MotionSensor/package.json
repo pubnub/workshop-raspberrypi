@@ -1,7 +1,7 @@
 {
-	"name": "pi-node-projects",
+	"name": "pi-node-motion",
 	"version": "0.0.1",
-	"description": "demos with sensors with Raspberry Pi in node.js using Johnny-Five",
+	"description": "demos with PIR sensors with Raspberry Pi in node.js using Johnny-Five",
 	"dependencies": {
 		"johnny-five": "^0.8.50",
 		"pubnub": "^3.7.8",
