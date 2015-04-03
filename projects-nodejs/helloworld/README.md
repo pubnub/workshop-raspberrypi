@@ -3,7 +3,7 @@
 
 Open Python 2 IDE (although it is not the ideal IED for JavaScript. Let's use it for now!)
 
-![image](../images/python-ide.png)
+![image](../../images/python-ide.png)
 
 Then, in Python Shell,  **File** > **New Window**
 
@@ -23,5 +23,5 @@ This sends a Hello World message to PubNub data stream.
 2. Type `hello_world` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
 3. Click **Subscribe**
 
-![image](../images/pubnub-console.png)
+![image](../../images/pubnub-console.png)
 
