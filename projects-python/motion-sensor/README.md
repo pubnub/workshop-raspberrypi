@@ -9,7 +9,9 @@ The PIR sensor measures the IR radiation emitted by objects. The sensor is able 
 
 ![image](../../images/PIR/pir-fullview.jpg)
 
-## Assemble the Circuit
+
+
+## Step 1 : The hardware
 
 ### What You Need:
 
@@ -40,7 +42,7 @@ Now, plus the other ends of the wires to a breadborad:
 
 ![image](../../images/PIR/pir-breadboard.jpg)
 
-### Wireing up Pi
+### Wiring up Pi
 
 Take another pair of red, black and brown wire.
 
@@ -61,7 +63,68 @@ Then, plug into one end to the breadborad:
 
 ![image](../../images/PIR/pir-breadboard-pi.jpg)
 
-## Programming with Python
+## Step 2 : The software
 
-Blah
+
+The motion sensor is designed to send a web based alarm, when it detects motion. To do this, the overall setup has to do detect motion and then publish a message using PubNub.
+
+### The code
+
+**Accesing the code from other modules. The following modules are used in the code:**
+
+ - GPIO to access the GPIO(general purpose input output)pins on the Raspberry Pi. This library lets handles the interfacing with the pins.
+ - sys module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available.
+ - Pubnub allows you to access the PubNub APIs to publish the messages over the internet.
+ 
+ ```python
+import RPi.GPIO as GPIO
+import sys
+from Pubnub import Pubnub
+```
+
+**Setting up the keys for Pubnub**
+
+```python
+publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
+subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'demo'
+secret_key = len(sys.argv) > 3 and sys.argv[3] or 'demo'
+cipher_key = len(sys.argv) > 4 and sys.argv[4] or ''
+ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
+```
+
+**Initiate Pubnub State**
+
+```python
+pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
+channel = 'motionsensor'
+message = {['Motion', 1]}
+```
+
+**Setting up variables for the pins on Pi**
+
+
+**Asynchronous usage of Pubnub publish API**
+
+```python
+def callback(message):
+  print(message)
+def MOTION(PIR_PIN):
+  pubnub.publish(channel, message, callback=callback, error=callback)
+```
+
+print “PIR Module Test (CTRL+C to exit)”
+time.sleep(2)
+print “Ready”
+
+**The logic that determines when the sensor has sensed motion**
+
+```python
+try:
+  GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)
+  while 1:
+    time.sleep(100)
+except KeyboardInterrupt:
+  print “ Quit”
+GPIO.cleanup()
+```
 
