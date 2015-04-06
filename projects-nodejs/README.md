@@ -45,7 +45,7 @@ Now, let's connect some sensors to Raspberry Pi, and learn more about sending an
 
 Using a IR motion sensor to detect when some object is near the sensor.
 
-- [Sending realtime data using a motion sensor](motion.md)
+- [Sending realtime data using a motion sensor](motion-sensor/)
 
 ### Using Ultrasonic Rangefinder Sensor
 
