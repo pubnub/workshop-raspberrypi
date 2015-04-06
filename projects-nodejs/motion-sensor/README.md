@@ -6,7 +6,7 @@ Let's try using a PIR sensor with PubNub to send the realtime data of motions ar
 
 ![image](../../images/PIR/pir-fullview.jpg)
 
-## Assemble the Circuit
+## Wiring up PIR Sensor
 
 ### What You Need:
 
@@ -16,7 +16,7 @@ Let's try using a PIR sensor with PubNub to send the realtime data of motions ar
 - 6x M-to-F jumper wires, 3 colors with 2 of each
 
 
-### Wiring up PIR Sensor
+### Assemble the Circuit
 
 Your PIR sensor should have 3-pin connection. 
 Wire up to the sensor as following:
