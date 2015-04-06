@@ -69,16 +69,24 @@ Go to **Menu** > **Preference** > **WiFi Configuration**
 
 When you do not have an access to work directly on your Pi, you may need to access to your Pi from another computer.
 
-To obtain an IP address of your Pi, type this command in terminal:
+#### Getting Pi's IP Address
+
+First, open LXTerminal:
+ 
+![image](images/LXTerminal.png)
+
+Obtain an IP address of your Pi:
 
 `$ sudo ifconfig`
 
 ![image](images/ip.png)
 
+#### Remote Connect Methods
+
 There are multiple ways to connect you Pi from your own laptop:
 
-1. [Using VNC Server and Client](remote-vnc.md)
-2. [Using SSH (with Mac FUSE and SSHFS)](remote-ssh.md)
+- [Using VNC Server and Client](remote-vnc.md)
+- [Using SSH (with Mac FUSE and SSHFS)](SSHFS%2BMacFUSE.md)
 
 ---
 
