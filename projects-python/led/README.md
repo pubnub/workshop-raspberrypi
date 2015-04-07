@@ -12,7 +12,7 @@ To get started with wires and breadboard, let's make an LED light up by simply w
 - Breadboard
 - 2 M-to-F jumper wires, 2 colors
 
-![image](../../images/LED tutorial/led_01.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_01.jpg?raw=true)
 
 ### Assemble the Circuit
 
