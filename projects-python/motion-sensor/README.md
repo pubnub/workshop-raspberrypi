@@ -92,11 +92,11 @@ Once you have a [PubNub account](https://www.pubnub.com/get-started/), replace t
 
 
 ```python
-publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
-subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'demo'
-secret_key = len(sys.argv) > 3 and sys.argv[3] or 'demo'
-cipher_key = len(sys.argv) > 4 and sys.argv[4] or ''
-ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
+publish_key = 'demo'
+subscribe_key = 'demo'
+secret_key = 'demo'
+cipher_key = ''
+ssl_on = False
 ```
 
 **Initiate Pubnub State**
