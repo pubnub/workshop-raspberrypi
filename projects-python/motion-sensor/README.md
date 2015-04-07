@@ -66,7 +66,7 @@ Then, plug into one end to the breadborad:
 ## Step 2 : The software
 
 
-The motion sensor is designed to send a web based alarm, when it detects motion. To do this, the overall setup has to do detect motion and then publish a message using PubNub.
+The motion sensor is designed to send a web based alarm, when it detects motion. To do this, the overall setup has to detect motion and then publish a message using PubNub.
 
 ### Breaking up the code
 
