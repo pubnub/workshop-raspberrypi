@@ -2,7 +2,7 @@
 
 ## Wiring an LED
 
-To get started with wires and breadboard, let's make an LED light up by simply wiring to the 3.3V.
+To get started with wires and a breadboard, we'll first make a simple circuit that connects a Pi's 3.3v pin to an LED, causing it to light up. After covering the fundamentals, we'll introduce control over hardware by modifying our circuitry and writing simple code to manually turn the light on and off.
 
 ### What You Need
 
