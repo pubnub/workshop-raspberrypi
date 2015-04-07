@@ -108,6 +108,14 @@ for i in range(6):
     print("Hello World")
 ```
 
+
+To run the code, save it as a file with an intuitive name, like "lightblink.py." 
+In the Pi's command line, type:
+
+    sudo python lightblink.py
+
+You should soon see your light blink and your messages print.  
+  
 ####Further Possibilities
 
 Now, you're ready to build devices with more complicated circuits and functionality.
