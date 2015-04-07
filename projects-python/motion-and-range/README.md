@@ -21,6 +21,7 @@ As a next step, what if you could do more when motion is detected, than just sen
 
 
 
+
 **Setting up the keys for the combined project**
 You have to set up the following keys with your keys or simply use 'demo'. Also, set the channel name. 
 
