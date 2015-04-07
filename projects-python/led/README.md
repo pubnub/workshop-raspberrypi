@@ -68,3 +68,50 @@ Referencing the diagram above, you'll see that this is GPIO-4, or Pin 7.
 
 [Full Code Here]()
 
+1. First, import the libraries we'll use in the code. **RPi.GPIO** is a library of commands used to easily control the Pi's GPIO pins. **time** is a common library, used here to create delays of specific length.
+
+```python
+import RPi.GPIO as GPIO
+import time
+```
+
+2. Set the pin designation type. In this case, we use BCM- the GPIO number- rather than the pin number itself.
+
+```python
+GPIO.setmode (GPIO.BCM)
+```
+3. So that you don't need to manage non-descriptive numbers, set "LIGHT" to 4 so that our code can easily reference the correct pin.
+
+```python
+LIGHT = 4
+```
+
+4. Because GPIO pins can act as either digital inputs or outputs, we need to designate a pin as one or the other. This allows functions in the GPIO library to easily recognize and use a given pin, all in order to properly send and receive signals.
+
+    In this case, we want to use the Pi to switch the pin from LOW to HIGH, outputting a signal. So, we set the pin LIGHT to be an output.
+
+```python
+GPIO.setup(LIGHT,GPIO.OUT)
+```
+
+5. Out actual function will be rather simple: cause the light to blink 7 times and print a message each time.
+To blink the light, we call GPIO.output and pass as parameters the pin number (LIGHT) and the state we want.
+"True" sets the pin to HIGH (sending a signal), while "False" sets it to LOW. 
+
+To achieve a blink, we set the pin to High, wait for a fraction of a second, then set it to Low.
+
+```python
+for i in range(6):
+    GPIO.output(LIGHT,True)
+    time.sleep(0.03)
+    GPIO.output(LIGHT,False)
+    print("Hello World")
+```
+
+####Further Possibilities
+
+Now, you're ready to build devices with more complicated circuits and functionality.
+
+With a [Motion sensor](https://github.com/pubnub/workshop-raspberrypi/tree/master/projects-python/motion-sensor), you'll be able to flip a pin and send a message whenever the device's infrared field is disturbed by nearby motion.
+
+With a [Range Funder](https://github.com/pubnub/workshop-raspberrypi/tree/master/projects-python/range-finder), you can measure the range of nearby objects based on the speed of reflected ultrasonic waves.
