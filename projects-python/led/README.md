@@ -23,7 +23,7 @@ To get started with wires and a breadboard, we'll first make a simple circuit th
     The pins aren't labeled on the Pi directly, so this diagram will prove useful for any Pi + Hardware experiment       you work on:
     ![image](https://camo.githubusercontent.com/ca1ff23008fb7000828355b50768ae7ce2b83936/687474703a2f2f7777772e72617370626572727970692d7370792e636f2e756b2f77702d636f6e74656e742f75706c6f6164732f323031322f30362f5261737062657272792d50692d4750494f2d4c61796f75742d4d6f64656c2d422d506c75732d726f74617465642d32373030783930302d31303234783334312e706e67)
 
-    Here's how it looks on a Pi:
+    In our case, **White** is PWR and **Brown** is GND. Here's how it looks on a Pi:
     [need image]
 
 2. Connect your GND wire to the first row of the breadboard. On a nearby row, plug in your 3.3v power wire.
