@@ -166,7 +166,7 @@ print “Ready”
 
 **Exiting your program cleanly**
 
-RPi.GPIO provides a built-in function GPIO.cleanup() to clean up all the ports you’ve used. But be very clear what this does. It only affects any ports you have set in the current program. It resets any ports you have used in this program back to input mode. 
+RPi.GPIO provides a built-in function GPIO.cleanup() to clean up all the ports you’ve used. It only affects any ports you have set in the current program. It resets any ports you have used in this program back to input mode. 
 
 ```python
 GPIO.cleanup()
