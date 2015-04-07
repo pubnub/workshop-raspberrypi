@@ -27,17 +27,17 @@ To get started with wires and breadboard, let's make an LED light up by simply w
     [need image]
 
 2. Connect your GND wire to the first row of the breadboard. On a nearby row, plug in your 3.3v power wire.
-    ![image](../../images/LED tutorial/led_02)
+    ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_02.jpg?raw=true)
     We'll be building a circuit from the 3.3v pin, through the breadboard, and back to the GND pin. 
 
 3. Connect the long pin of your LED to the same row as your power wire. Plug the short pin into the last row on a blank rail, preferably that between your power and GND rows.
-    ![image](../../images/LED_tutorial/led_04) 
+    ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_04.jpg?raw=true) 
 
 4. With your resistor, connect one pin to the LED and the other to the GND wire's row, completing the circuit.
-    ![image](../../images/LED_tutorial/led_05)
+    ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_05.jpg?raw=true)
 
 When you simply power on your Pi, your light will turn on, like so:
-![image](../../images/LED_tutorial/led_06)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led-06.jpg?raw=true)
 
 
 
