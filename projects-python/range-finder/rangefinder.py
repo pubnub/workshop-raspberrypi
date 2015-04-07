@@ -62,10 +62,11 @@ while True:
     # "Time" is there and back; divide by 2 to get time-to-object only.
     # So: 34300 = Distance/(Time/2) >>> speed of sound = distance/one-way time
 
-    distance = pulse_duration*17150  # Simplify + Flip it: distance = pulse_duration x 17150
+    # Simplify + Flip it: distance = pulse_duration x 17150
+    distance = pulse_duration*17150
 
-
-    distance = round(distance, 2)  # Round out distance for simplicity and print.
+    # Round out distance for simplicity and print.
+    distance = round(distance, 2)
     loopcount+=1
     
     # Use the distance measurement as a proximity alarm.
@@ -92,8 +93,8 @@ while True:
         
     time.sleep(1)
 
-
-GPIO.cleanup()  # Clean up GPIO pins + reset
+# Clean up GPIO pins + reset
+GPIO.cleanup()
 sys.exit()
 
 
