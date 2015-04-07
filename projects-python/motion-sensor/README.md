@@ -121,7 +121,7 @@ GPIO.setmode(GPIO.BCM)
 The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, rather than to the pin number. The BCM numbers are those after the "GPIO" in the board overview diagram: 
 ![image](https://camo.githubusercontent.com/ca1ff23008fb7000828355b50768ae7ce2b83936/687474703a2f2f7777772e72617370626572727970692d7370792e636f2e756b2f77702d636f6e74656e742f75706c6f6164732f323031322f30362f5261737062657272792d50692d4750494f2d4c61796f75742d4d6f64656c2d422d506c75732d726f74617465642d32373030783930302d31303234783334312e706e67)
 
-In our code, we have set up pin 7 (TO BE REVISITED) to be the input pin receiving the sensor information.  
+In our code, we have set up pin 7 (GPIO 4) to be the input pin receiving the sensor information.  
 
 ```python
 PIR_PIN = 7
