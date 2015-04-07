@@ -68,7 +68,9 @@ Then, plug into one end to the breadborad:
 
 The motion sensor is designed to send a web based alarm, when it detects motion. To do this, the overall setup has to do detect motion and then publish a message using PubNub.
 
-### The code
+### Breaking up the code
+
+#### Line by line explanation of what the code does:
 
 **Accesing the code from other modules. The following modules are used in the code:**
 
