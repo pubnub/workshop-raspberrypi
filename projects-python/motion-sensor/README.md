@@ -140,7 +140,7 @@ We want the Pi to publish a message when motion is detected. This is done by add
 
 ```python
 try:
-  GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)
+  GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=motion)
   while 1:
     time.sleep(100)
 except KeyboardInterrupt:
@@ -154,7 +154,7 @@ The callback function, MOTION, calls pubnub.publish which sends the message over
 ```python
 def callback(message):
   print(message)
-def MOTION(PIR_PIN):
+def motion(PIR_PIN):
   pubnub.publish(channel, message, callback=callback, error=callback)
 ```
 
