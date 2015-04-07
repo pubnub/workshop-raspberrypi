@@ -146,6 +146,7 @@ except KeyboardInterrupt:
 ```
 
 **Asynchronous usage of Pubnub publish API**
+
 The callback function, MOTION, calls pubnub.publish which sends the message over the channel, and also prints the message that is sent so you can see this on your screen as well. 
 
 ```python
@@ -164,6 +165,7 @@ print “Ready”
 ```
 
 **Exiting your program cleanly**
+
 RPi.GPIO provides a built-in function GPIO.cleanup() to clean up all the ports you’ve used. But be very clear what this does. It only affects any ports you have set in the current program. It resets any ports you have used in this program back to input mode. 
 
 ```python
