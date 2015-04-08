@@ -70,7 +70,6 @@ Here's the diagram again:
 In this case, we simply want to write code that, when executed, will blink the LED 7 times.
 
 To change the circuit to be controllable, we simply unplug the power wire from the Pi's 3.3v pin and attach it to one of the GPIO pins, as below:
-[Need image]
 
 Referencing the diagram above, you'll see that this is GPIO-4, or Pin 7. 
 
@@ -100,21 +99,24 @@ Install raspi-io:
 
 ### Strobe.js - Lighting up LED
 
-If you are already familiar with Johnny-Five, using it with raspi-io is pretty straightforward, although does take an extra step compared to the Arduino Uno.
+Using it with raspi-io is pretty straightforward (If you are already familiar with Johnny-Five, you notice it take an extra step compared to the Arduino Uno).
+
+1. Import modules
+2. Set GPIO pin number (using a pin number in string as 'P1-7')
+3. Let the LED strobe for 200 ms
 
 ```
 var raspi = require('raspi-io');
 var five = require('johnny-five');
-var board = new five.Board({
-  io: new raspi()
-});
+var board = new five.Board({io: new raspi()});
 
 board.on('ready', function() {
 
-  // Create an Led on pin 7 (GPIO4) on P1 and strobe it on/off
-  var led = new five.Led('P1-7'));
-  
-  led.strobe();
+	// Create an led on pin 7 (GPIO 4) and strobe it on/off  
+  	new led = five.Led('P1-7');
+
+  	// Optionally set the speed; Leave blank to set the default, 100ms
+  	led.strobe(200);
 
 });
 ```
