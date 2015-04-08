@@ -12,7 +12,7 @@ To get started with wires and a breadboard, we'll first make a simple circuit th
 - Breadboard
 - 2 M-to-F jumper wires, 2 colors
 
-![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_01.jpg?raw=true)
+![image](../../images/LED/led_01.jpg)
 
 ### Assemble the Circuit
 
@@ -21,23 +21,23 @@ To get started with wires and a breadboard, we'll first make a simple circuit th
     *In the abstract, you could use one of the Pi's 5v pins to power an LED. However, the Pi's GPIO pins, which we  will use later to actually control the LED, output to 3.3v- so using the basic 3.3v pin in this step will allow you to accurately calibrate your circuit for later use.*  
 
     The pins aren't labeled on the Pi directly, so this diagram will prove useful for any Pi + Hardware experiment       you work on:
-    ![image](https://camo.githubusercontent.com/ca1ff23008fb7000828355b50768ae7ce2b83936/687474703a2f2f7777772e72617370626572727970692d7370792e636f2e756b2f77702d636f6e74656e742f75706c6f6164732f323031322f30362f5261737062657272792d50692d4750494f2d4c61796f75742d4d6f64656c2d422d506c75732d726f74617465642d32373030783930302d31303234783334312e706e67)
+    ![image](../../images/pi-modelb-gpio.png)
 
     In our case, **White** is PWR and **Brown** is GND. Here's how it looks on a Pi:
     [need image]
 
 2. Connect your GND wire to the first row of the breadboard. On a nearby row, plug in your 3.3v power wire.
-    ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_02.jpg?raw=true)
+    ![image](../../images/LED/led_02.jpg)
     We'll be building a circuit from the 3.3v pin, through the breadboard, and back to the GND pin. 
 
 3. Connect the long pin of your LED to the same row as your power wire. Plug the short pin into the last row on a blank rail, preferably that between your power and GND rows.
-    ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_04.jpg?raw=true) 
+    ![image](../../images/LED/led_04.jpg) 
 
 4. With your resistor, connect one pin to the LED and the other to the GND wire's row, completing the circuit.
-    ![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led_05.jpg?raw=true)
+    ![image](../../images/LED/led_05.jpg)
 
 When you simply power on your Pi, your light will turn on, like so:
-![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/LED%20Images/led-06.jpg?raw=true)
+![image](../../images/LED/led-06.jpg)
 
 
 
@@ -53,7 +53,7 @@ The Raspberry Pi's pins, and those for GPIO in particular, have two designations
 When using pins in code, you have to pick a designation. Throughout the code in our workshop, we will refer to pins by their **BCM designation.** 
 
 Here's the diagram again:
-![image](https://camo.githubusercontent.com/ca1ff23008fb7000828355b50768ae7ce2b83936/687474703a2f2f7777772e72617370626572727970692d7370792e636f2e756b2f77702d636f6e74656e742f75706c6f6164732f323031322f30362f5261737062657272792d50692d4750494f2d4c61796f75742d4d6f64656c2d422d506c75732d726f74617465642d32373030783930302d31303234783334312e706e67)
+![image](../../images/pi-modelb-gpio.png)
 
 ###Building the Circuit
 
@@ -120,6 +120,6 @@ You should soon see your light blink and your messages print.
 
 Now, you're ready to build devices with more complicated circuits and functionality.
 
-With a [Motion sensor](https://github.com/pubnub/workshop-raspberrypi/tree/master/projects-python/motion-sensor), you'll be able to flip a pin and send a message whenever the device's infrared field is disturbed by nearby motion.
+With a [Motion sensor](../motion-sensor), you'll be able to flip a pin and send a message whenever the device's infrared field is disturbed by nearby motion.
 
-With a [Range Funder](https://github.com/pubnub/workshop-raspberrypi/tree/master/projects-python/range-finder), you can measure the range of nearby objects based on the speed of reflected ultrasonic waves.
+With a [Range Funder](../range-finder), you can measure the range of nearby objects based on the speed of reflected ultrasonic waves.
