@@ -39,7 +39,7 @@ To get started with wires and breadboard, let's make an LED light up by simply w
 When you simply power on your Pi, your light will turn on, like so:
 ![image](../../images/LED/led-06.jpg)
 
-If you are using a 400-point breadborad, your circuit should look similar to this:
+If you are using a mini breadborad, your circuit should look similar to this:
 
 ![image](../../images/LED/fritzing-led-3v-sm.png)
 
@@ -120,3 +120,7 @@ board.on('ready', function() {
 
 });
 ```
+
+Run it as root:
+
+`pi@raspberrypi ~$ sudo node strobe.js`

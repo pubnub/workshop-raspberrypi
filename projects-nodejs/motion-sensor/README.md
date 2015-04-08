@@ -58,6 +58,12 @@ Then, plug into one end to the breadborad:
 
 ![image](../../images/PIR/pir-breadboard-pi.jpg)
 
+If you are using a mini breadborad, your circuit should look similar to this:
+
+![image](../../images/PIR/fritzing-pir-sm.png)
+
+If you are using 400-point breadboard as seen in the photo below, [see this diagram](../../images/PIR/fritzing-pir-400.png).
+
 ## Programming with Node.js
 
 Blah
