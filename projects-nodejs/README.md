@@ -31,22 +31,28 @@ Then, install PubNub:
 
 `pi@raspberrypi ~$ npm install pubnub`
 
-### Hello World
-
-- [Publishing messages using PubNub](hello-world/)
 
 ---
 
-## Pi Projects
+## "Hello World" with PubNub
+
+Learn how to use PubNub Python APIs by publishing simple messages.
+
+- [Publishing messages using PubNub](helloworld/)
+
+
+## "Hello World" of Hardware
+
+Learn how to assemble circuit with wires and breadboard using a LED.
+
+- The first project: [Blinking LED](led/)
+
+---
+
+## Pi Projects with Sensors
 
 Now, let's connect some sensors to Raspberry Pi, and learn more about sending and receiving data to/from the sensors using PubNub APIs!
 
-### Blinking LED Light
-
-Your first wiring experience with LED
-
-- Strobe LED ("hello world" of hardware)
-- Receiving data using PubNub Subscribe API and blink LED
 
 ### Using Motion Sensor
 

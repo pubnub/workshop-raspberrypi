@@ -7,8 +7,8 @@ To get started with wires and a breadboard, we'll first make a simple circuit th
 ### What You Need
 
 - Raspberry Pi 2 (Set up properly. See [Setting up Raspberry Pi](../README.md))
-- 1 LED light (Somewhere around 1.9V - 3.2V)
-- 1 Resistor 200Ω ~ 270Ω
+- 1 LED light (Somewhere around 1.9V - 3.2V, depending on the color of your choice)
+- 1 Resistor ~200Ω
 - Breadboard
 - 2 M-to-F jumper wires, 2 colors
 
@@ -40,10 +40,15 @@ When you simply power on your Pi, your light will turn on, like so:
 ![image](../../images/LED/led-06.jpg)
 
 
+If you are using a mini breadborad (as seen in the photos), your circuit should look similar to this:
+
+![image](../../images/LED/fritzing-led-3v-sm.png)
+
+If you are using 400-point breadboard, [see this diagram](../../images/LED/fritzing-led-3v-400.png).
 
 ## Controlling the LED with Python
 
-####A Word About pins
+#### A Word About pins
 Now that we've built a complete circuit using the Pi's GND and 3.3v PWR pins, it's time to make modifications and build some modest hardware control.
 
 To make the LED programmable, we will use one of the Pi's many GPIO pins. Through code, we can designate these pins as either digital inputs or outputs. When a pin turns  from LOW (0) to HIGH (1), it supplies a 3.3v signal. This functionality is used to trigger, or respond to, sensors and actuators. 
@@ -63,6 +68,10 @@ To change the circuit to be controllable, we simply unplug the power wire from t
 [Need image]
 
 Referencing the diagram above, you'll see that this is GPIO-4, or Pin 7. 
+
+![image](../../images/LED/fritzing-led-gpio-sm.png)
+
+If you are using 400-point breadboard, [see this diagram](../../images/LED/fritzing-led-gpio-400.png).
 
 ###Writing the Code
 

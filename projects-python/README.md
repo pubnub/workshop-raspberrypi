@@ -14,9 +14,21 @@ Install pip
 Then, install PubNub
 `pi@raspberrypi ~$ sudo pip install pubnub`
 
-## Hello World
+---
+
+## "Hello World" with PubNub
+
+Learn how to use PubNub Python APIs by publishing simple messages.
 
 - [Publishing messages using PubNub](helloworld/)
+
+## "Hello World" of Hardware
+
+Learn how to assemble circuit with wires and breadboard using a LED.
+
+- The first project: [Blinking LED](led/)
+
+
 
 ## Pi Projects with Sensors
 

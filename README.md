@@ -100,11 +100,14 @@ Let's write your first PubNub *publish* program:
 
 ## Hello World with Hardware
 
-- [Blinking LED](led/)
+- [Blinking LED with Python](projects-python/led/)
+- [Blinking LED with Node.js](projects-nodejs/led/)
 
 ## More Projects
 
 Now, let's connect some sensors to Raspberry Pi, and learn more about sending and receiving data to/from the sensors using PubNub APIs!
+
+Check out more projects under:
 
 - [Using sensors and program with Python](https://github.com/pubnub/workshop-raspberrypi/tree/master/examples-python)
 - [Using sensors and program with Node.js](https://github.com/pubnub/workshop-raspberrypi/tree/master/examples-nodejs)
