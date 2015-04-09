@@ -69,29 +69,14 @@ while True:
     distance = round(distance, 2)
     loopcount+=1
     
-    # Use the distance measurement as a proximity alarm.
-    # Set 'distance' in if-loop to desired alarm distance.
-    # When the alarm is tripped, the distance and a note are sent as a dictionary in a PubNub message, and the sensor stops searching.
+    # Publish the measured distance to PubNub
 
-    if distance <= 10:
-        print("Distance:",distance,"cm")
-        print("Proximity Detected")
-
-        message = {'distance': distance, 'Proximity': "True"}
-        print pubnub.publish(channel, message)
-        time.sleep(1)
-       
-
-    # If nothing is detected, the sensor continuously sends and listens for a signal, and publishes the distance to your PubNub channel.
-    else:
-        print("Time", pulse_duration)
-        print("Distance", distance, "cm")
-        print("Too Far")
-
-        message = {'distance': distance, 'Proximity' : 'False'}
-        print pubnub.publish(channel, message)
-        
+    print("Distance:",distance,"cm")
+    print("Proximity Detected")
+    message = {'distance': distance, 'Proximity': "True"}
+    print pubnub.publish(channel, message)
     time.sleep(1)
+
 
 # Clean up GPIO pins + reset
 GPIO.cleanup()
