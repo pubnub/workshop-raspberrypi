@@ -216,8 +216,8 @@ After waiting for 10 microseconds, we call GPIO.output again, but this time set 
 Just after we send the pulse, we will create the variable "pulse_start" and set it equal to the current time, all in order to mark the beginning of the time between signal sent and recieved. 
 
 ```python
-    print("before pulse start")
-    pulse_start = time.time()  # debug statement
+    print("before pulse start")  # debug statement
+    pulse_start = time.time()  
     while GPIO.input(ECHO)==0:
         pulse_start = time.time()
 ```
