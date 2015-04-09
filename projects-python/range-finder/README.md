@@ -18,7 +18,7 @@ Run the script
 On terminal:
 `$ sudo python rangefinder.py`
 
-This sends a message to PubNub data stream when motion is detected.
+This sends a message to PubNub data stream comprising the distance of the sensor and an object in front of it.
 
 ### Monitoring PubNub Data Stream on Console
 
