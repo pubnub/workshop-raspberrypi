@@ -30,6 +30,7 @@ This sends a message to PubNub data stream when motion is detected.
 
 ![image](../../images/pubnub-console.png)
 
+# Description of the project
 
 ## Using a Pyroelectric IR Motion Detector
 
