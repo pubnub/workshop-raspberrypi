@@ -221,7 +221,9 @@ Just after we send the pulse, we will create the variable "pulse_start" and set 
     while GPIO.input(ECHO)==0:
         #print("waiting for pulse signal")
         pulse_start = time.time()
+```
 
+```python
     while GPIO.input(ECHO)==1:
         pulse_end = time.time()
     print("after pulse")
@@ -257,32 +259,16 @@ We then round out the value, for neatness, and print it with the current "shot" 
 Finally, we publish the distance data over our PubNub channel, which was defined in Step 1. At this point, we can easily integrate the functionality of a proximity alarm and send two types of messages, depending on the final value of "distance."  
 
 ```python
-      if distance <= 10:
-        print("Distance:",distance,"cm")
-        print("Proximity Detected")
-
-        message = {'colummns':[['distance', distance],['Proximity', "True"]]}
-        print pubnub.publish(channel, message)
-        time.sleep(1)
-
-     else:
-        print("Time", pulse_duration)
-        print("Distance", distance, "cm")
-        print("Too Far")
-
-        message = {'colummns':[['distance', distance],['Proximity', "False"]]}
-        print pubnub.publish(channel, message)
-        
-    time.sleep(1)
+  print("Distance:",distance,"cm")
+  print("Measured distance")
+  message = {['distance', distance]}
+  print pubnub.publish(channel, message)
+  time.sleep(1)
 ```
-In both cases, we publish distance and proximity data to our own log.
 
-Because we want the messages to be easily readable by the graphing library used on the dashboard, we package our data in 'message' as a dictionary. The key 'columns' is a pointer for the library. The duple ['distance', distance] contains the raw measurement, and the duple ['Proximity','True'/'False'] (depending on distance) allows us to visualize the alarm.  
-
-When distance is less than or equal to 10, a message is sent with the distance data and Proximity's value set to True. Otherwise, a message is sent with Proximity set to False.
+We publish distance to our own log.
 
 We use the function pubnub.publish to publish to our channel, which is passed via the variable we created as an argument. 
-
 
 The very, very last step is to clean out the pins and halt the process:
 
@@ -292,7 +278,7 @@ sys.exit()
 ```
 
 On the Pi terminal, run the code with the command:
-`sudo python codetitle.py`, and enjoy!
+`sudo python your-program-name.py`, and enjoy!
 
 
 
