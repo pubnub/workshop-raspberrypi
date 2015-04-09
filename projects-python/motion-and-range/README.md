@@ -1,4 +1,4 @@
-# Communication between 2 Pis
+# Communication between 2 Raspberry Pis
 
 As a next step, what if you could do more when motion is detected, than just send an alarm to a user. One possibility is to send a message to a range finder (also connected to a Pi - [Range Finder Pi](../motion-and-range/RF+Motion Detector.py)). The other is to click a picture using the Pi camera module when motion is detected - [Spicam](../Spicam/SpiCamMotion.py). Here, the former project has been described in detail with the code.
 
@@ -12,14 +12,13 @@ As a next step, what if you could do more when motion is detected, than just sen
  - This is where PubNub comes in, providing you with the ability to send messages instaneously. With PubNub, you don't have to limit yourself to just the Raspberry Pi; we support 70+ SDKs and platforms and easy to use APIs.
 
 ## Step 2 : The code
+ 
+
+### Modifications to the *Motion sensor* code
 
  - This code just builds on the previous basic example.
  - The publish key, subscribe key and the channel for both the Pis have to be the same so they can bidirectionally talk to each other. 
- - This is the only change to make. (line 17 and 18 in the [Motionsensor_rangefinder.py](../motion-and-range/Motionsensor_rangefinder.py)) 
-
-### Modifications to the Motion sensor code
-
-
+ - This is the only change to make. (line 17 and 18 in the [Motionsensor_rangefinder.py](../motion-and-range/Motionsensor_rangefinder.py))
 
 
 **Setting up the keys for the combined project**
@@ -35,13 +34,12 @@ channel = 'motionsensor'
 ```
 
 
-### Modifications to the Rangefinder sensor code
+### Modifications to the *Rangefinder sensor* code
 
-For the purposes of this workshop, we'll connect our rangefinder through PubNub to a motion detector. When that machine detects motion, the rangefinder will fire, sending an alert when an object gets too close.
+When the motion sensor detects motion, the rangefinder will fire, sending an alert when an object gets too close.
 
 Whereas in the above code [(Simple Range Finder)](../range-finder/rangefinder.py) we run the rangefinding code automatically and only *published* to a PubNub channel, we now want to detect range **only** after receiving a flagged message from another device. 
 
-[Full Code](https://github.com/pubnub/workshop-raspberrypi/blob/master/examples-python/RF%2BMotion%20Detector.py)
 
 ###1. Setting up subscription###
 
