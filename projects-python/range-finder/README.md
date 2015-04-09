@@ -11,7 +11,7 @@ Open Python 2 IDE
 
 Then, in Python Shell,  **File** > **New Window**
 
-In the new window, copy and paste [rangefinder.py](../motion-sensor/rangefinder.py), and save as `rangefinder.py`
+In the new window, copy and paste [rangefinder.py](../range-finder/rangefinder.py), and save as `rangefinder.py`
 
 Run the script
 
