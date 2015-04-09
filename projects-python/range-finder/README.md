@@ -131,7 +131,7 @@ import time
 import sys
 
 
-loopcount = 0'
+loopcount = 0
 ```
 
 b. PubNub setup
@@ -204,8 +204,8 @@ Because we want to continuously check for range, we nest the entirety of the ran
 ```python
 while True:
    GPIO.output(TRIG, True)
-    time.sleep(0.00001)
-    GPIO.output(TRIG, False)
+   time.sleep(0.00001)
+   GPIO.output(TRIG, False)
 ```
 Here, we're calling GPIO.output to control a previously defined output pin. In this case, we first pass 'TRIG' as an argument to the function. By calling "True" as the second argument, we turn the pin to HIGH and send a signal.
 
@@ -217,16 +217,15 @@ Just after we send the pulse, we will create the variable "pulse_start" and set 
 
 ```python
     print("before pulse start")
-    pulse_start = time.time()
+    pulse_start = time.time()  # debug statement
     while GPIO.input(ECHO)==0:
-        #print("waiting for pulse signal")
         pulse_start = time.time()
 ```
 
 ```python
     while GPIO.input(ECHO)==1:
         pulse_end = time.time()
-    print("after pulse")
+    print("after pulse")  # debug statement
     pulse_duration = pulse_end - pulse_start
 ```
     
@@ -252,8 +251,7 @@ We then round out the value, for neatness, and print it with the current "shot" 
 
 ```python
   distance = round(distance, 2)
-    loopcount+=1
-    print('shot #'+str(loopcount))
+  loopcount+=1
 ```
 
 Finally, we publish the distance data over our PubNub channel, which was defined in Step 1. At this point, we can easily integrate the functionality of a proximity alarm and send two types of messages, depending on the final value of "distance."  
