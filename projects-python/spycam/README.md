@@ -61,7 +61,7 @@ The `python-picamera` library is available in the Raspbian archives. Install wit
 `sudo apt-get update
 sudo apt-get install python-picamera`
 
-### Breaking up the code
+### Breaking up the code : 
 
 #### Line by line explanation of what the code does:
 
