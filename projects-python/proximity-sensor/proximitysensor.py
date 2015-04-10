@@ -20,7 +20,7 @@ cipher_key = len(sys.argv) > 4 and sys.argv[4] or ''
 ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
 
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key,secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
-channel = 'Rangefinder'
+channel = 'proximitysensor'
 
 # Interacting with the hardware:
 

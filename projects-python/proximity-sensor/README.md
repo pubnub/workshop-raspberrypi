@@ -22,6 +22,14 @@ On terminal:
 `$ sudo python proximitysensor.py`
 
 This sends a message to PubNub data stream when motion is detected.
+
+### Monitoring PubNub Data Stream on Console
+
+1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
+2. Type `proximitysensor`(or the name of your channel in the Motionsensor.py) into the **Channel** field, `demo` into both **publish key** and **subscribe key** (unless you registered for a PubNub account, in which case you use your personal pub and sub keys)
+3. Click **Subscribe**
+
+![image](../../images/pubnub-console.png)
  
 ## How the code works : 
 
