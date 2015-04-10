@@ -52,6 +52,36 @@ NEED A PHOTO OF THE ENTIRE SETUP HERE.
 
 The motion sensor is designed to send a web based alarm, when it detects motion. In addition to sending the alarm to the user, it turns on the camera module, which records a video immediately. 
 
+### Installation of the camera module : 
+
+`python-picamera` is a pure Python interface to the Raspberry Pi camera module for Python 2.7 (or above).
+
+The `python-picamera` library is available in the Raspbian archives. Install with apt:
+
+`sudo apt-get update
+sudo apt-get install python-picamera`
+
 ### Breaking up the code
 
 #### Line by line explanation of what the code does:
+
+
+The following will make the camera library available to the program.
+
+`import picamera`
+
+
+This will create an instance of the PiCamera class. 
+
+`camera = picamera.PiCamera()`
+
+Now, when the sensor actually detects motion, the camera will start recording a video for 5 seconds and then stop recording. This will save a file in the same directory where you are running a program from. 
+
+```python
+def MOTION(PIR_PIN):
+    pubnub.publish(channel, message, callback=callback, error=callback)
+    camera.start_recording('video.h264')
+    sleep(5)
+    camera.stop_recording()
+```
+
