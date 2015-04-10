@@ -90,6 +90,12 @@ There are multiple ways to connect you Pi from your own laptop:
 
 ---
 
+## Getting started with Programming Pi
+
+- Get started with [Python](projects-python/)
+- Get started with [Node.js](projects-nodejs/)
+
+
 ## Hello World with PubNub
 
 Let's write your first PubNub *publish* program:
