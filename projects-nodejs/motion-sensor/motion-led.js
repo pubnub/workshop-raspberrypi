@@ -1,6 +1,6 @@
 /* 
- * Using a PIR motion sensor with Pi 
- * 
+ * Using a PIR motion sensor with Pi (add-on to motion.js)
+ * When motion is detected a LED lights up as a visual signal
  */
 
 var raspi = require('raspi-io');
@@ -17,7 +17,8 @@ var pubnub = require('pubnub').init({
 board.on('ready', function() {
 	console.log('board is ready');
 
-	// Create a new `motion` hardware instance.
+	// Create hardware instances
+	var led = new five.IR.LED('P1-11'); //pin 11 (GPIO 17)
 	var motion = new five.IR.Motion('P1-7'); //pin 7 (GPIO 4)
 
 	// 'calibrated' occurs once, at the beginning of a session,
@@ -29,6 +30,8 @@ board.on('ready', function() {
 	// proximal area is disrupted, generally by some form of movement
 	motion.on('motionstart', function() {
 		console.log('motionstart');
+		led.on();
+
 		pubnub.publish({
 			channel: channel,
 			message: 'Motion detected',
@@ -40,5 +43,6 @@ board.on('ready', function() {
 	// when no movement has occurred in X ms
 	motion.on('motionend', function() {
 		console.log('motionend');
+		led.off();
 	});
 });
