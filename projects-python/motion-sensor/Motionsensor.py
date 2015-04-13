@@ -16,7 +16,7 @@ ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
 ## -----------------------------------------------------------------------
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
 channel = 'motionsensor'
-message = {'data', 1}
+message = {'motion': 1}
 
 
 # Asynchronous usage
@@ -25,7 +25,7 @@ def callback(message):
 
  
 GPIO.setmode(GPIO.BCM)
-PIR_PIN = 7
+PIR_PIN = 4
 GPIO.setup(PIR_PIN, GPIO.IN)
   
 def MOTION(PIR_PIN):
