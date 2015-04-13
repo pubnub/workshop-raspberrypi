@@ -2,6 +2,8 @@
 
 Remote access to the Pi's graphical interface, viewed in a window on another computer.
 
+Make sure that your Pi is running (power cable is attached), and Wi-Fi is connected. You can disconnect a monitor, keyboard, and mouse.
+
 
 ## VNC Server on Pi
 
@@ -9,8 +11,7 @@ On your computer, SSH to your Pi:
 
 `you@Mac $ ssh 10.96.70.1 -l pi` // use your Pi's IP address
 
-Or you can operate the followings directly on Pi.
-
+(Or you can operate the followings directly on Pi.)
 
 Install the TightVNC package
 
