@@ -4,7 +4,7 @@ import sys
 from Pubnub import Pubnub
 
 pubnub = Pubnub(publish_key='demo', subscribe_key='demo')
-channel = 'motionsensor'
+channel = 'motionsensorled'
 message = 'Motion detected'
 
 def callback(message):
@@ -21,6 +21,7 @@ GPIO.setup(LED_PIN, GPIO.OUT)
 def MOTION(PIR_PIN):
     if PIR_PIN:
         print 'Motion Detected!'
+        print 'Light on'
         GPIO.output(LED_PIN, True)
         pubnub.publish(channel, message, callback=callback, error=callback)
     else:
