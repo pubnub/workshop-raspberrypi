@@ -46,7 +46,7 @@ This sends a message to PubNub data stream when motion is detected.
 - Raspberry Pi 2 (Set up properly. See [Setting up Raspberry Pi](../README.md))
 - [PIR sensor](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
 - Breadboard
-- 6x M-to-F jumper wires, 3 colors with 2 of each
+- 6x M-to-F jumper wires, 3 colors (red, black, and brown in this doc) with 2 of each
 
 
 ### Wiring up PIR Sensor
