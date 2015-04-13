@@ -16,7 +16,7 @@ ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
 ## -----------------------------------------------------------------------
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
 channel = 'motionsensor'
-message = {columns: [['data', 1]]}
+message = {'data', 1}
 
 
 # Asynchronous usage
@@ -31,9 +31,9 @@ GPIO.setup(PIR_PIN, GPIO.IN)
 def MOTION(PIR_PIN):
   pubnub.publish(channel, message, callback=callback, error=callback)
 
-print “PIR Module Test (CTRL+C to exit)”
+print 'PIR Module Test (CTRL+C to exit)'
 time.sleep(2)
-print “Ready”
+print 'Ready'
 
 try:
   GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)
@@ -41,6 +41,6 @@ try:
     time.sleep(100)
 
 except KeyboardInterrupt:
-  print “ Quit”
+  print 'Quit'
   
 GPIO.cleanup()
