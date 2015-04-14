@@ -40,8 +40,9 @@ Take another pair of red, black and yellow wire.
 First, plug into one end to Pi:
 
 - Red wire to GPIO 5V (Pin 2)
-- Black wire to GPIO GND (Pin 9)
+- Black wire to GPIO GND (Pin 6)
 - yellow wire to GPIO 17 (Pin 11)
+- second black wire from the LED to GPIO GND (pin 20)
 
 ### Wiring up the breadboard
 
@@ -51,9 +52,12 @@ First, plug into one end to Pi:
 - The positive end of the LED(anode) to the other end of the resistor, and the cathode to any other rail.
 - From the same rail as the yellow wire from the sensor, insert another yellow wire that sits on pin 11 from the Pi.
 
-INSERT IMAGE HERE
+![image](../../images/PIR-LED/breadboard.png)
+
 
 If you are using a mini breadborad, your circuit should look similar to this:
+
+![image](../../images/PIR-LED/led.png)
 
 ![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
 
