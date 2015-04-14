@@ -12,18 +12,18 @@ The LED is used as a visual indicator of the motion sensor: when a motion is det
 - LED (1.9 - 3.2V)
 - Resistor (~200Ω)
 - Breadboard
-- 6x M-to-F jumper wires, 3 colors with 2 of each
+- 7x M-to-F jumper wires, 3 colors with 2 of each, and 1 extra color
 
 
 ### Assemble the Circuit
 
 Addition to the circuit you have wired a PIR sensor, you connect a LED output to another GPIO (We are using GPIO-17 / Pin 11 for the diagram and the code) with an appropriate resistor. We are using 200Ω to be safe. (also, we have a lot of them for everybody!)
 
-400-pin:
+Circuit on Mini breadboard:
 
- ![image](../../images/PIR-LED/fritzing-pir-led-400.png)
+ ![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
  
- Mini circuit TBD
+[If you are using a 400-pin, the circuit should look something like this.](../../images/PIR-LED/fritzing-pir-led-400.png)
 
 
 ## Running the program
