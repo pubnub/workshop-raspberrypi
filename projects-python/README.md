@@ -14,6 +14,22 @@ Install pip
 Then, install PubNub
 `pi@raspberrypi ~$ sudo pip install pubnub`
 
+### Using Python IDE
+
+
+Open Python 2 IDE
+
+![image](../images/python-ide.png)
+
+### Running a Script
+
+
+On terminal:
+`$ sudo python your-script.py`
+
+OK, now you are ready to code on Pi.
+Let's learn how to use PubNub next!
+
 ---
 
 ## "Hello World" with PubNub
@@ -36,6 +52,8 @@ Now, let's connect some sensors to Raspberry Pi, and learn more about sending an
 
 - Motion Sensor
   * [Motion Sensor](motion-sensor/) The basic code that detects motion and sends a notification to a browser or a mobile phone.
+  * [Motion Sensor with an LED indicator](motion-led/) Adding an LED to the motion sensor project above.
   * [Motion Sensor and Range Finder](motion-and-range) This program lets you notify a range finder when you detect motion.
   * [Spicam](Spicam/) This example switches on the camera to capture a picture when motion is detected.
 - [Ultrasonic Rangefinder](range-finder/) Using HC-SR04 ultrasonic rangefinder to sense a nearby object's proximity range.
+

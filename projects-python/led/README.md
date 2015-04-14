@@ -75,7 +75,7 @@ If you are using 400-point breadboard, [see this diagram](../../images/LED/fritz
 
 ###Writing the Code
 
-[Full Code Here]()
+[Full Code Here](led.py)
 
 1. First, import the libraries we'll use in the code. **RPi.GPIO** is a library of commands used to easily control the Pi's GPIO pins. **time** is a common library, used here to create delays of specific length.
 

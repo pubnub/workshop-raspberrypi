@@ -64,8 +64,8 @@ If you are using a mini breadborad, your circuit should look similar to this:
 
 If you are using 400-point breadboard as seen in the photo below, [see this diagram](../../images/PIR/fritzing-pir-400.png).
 
-## Programming with Node.js
+## Add-on Project: Motion Sensor with LED
 
-Blah
+If you would like to modify this project with an LED as a visual indicator, [read on](../motion-led)!
 
 
