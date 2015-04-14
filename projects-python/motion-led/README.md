@@ -55,7 +55,7 @@ INSERT IMAGE HERE
 
 If you are using a mini breadborad, your circuit should look similar to this:
 
-![image](../../images/PIR/fritzing-pir-led-mini.png)
+![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
 
 
 
