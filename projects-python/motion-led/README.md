@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Motion sensor with a visual indicator
 
 Here we will modify the circuit from the [motion sensor](../motion-sensor/motionsensor.py) to add an LED that will only light up when motion is detected. 
@@ -11,55 +10,78 @@ Wire up the circuit in the following manner. The LED will blink for 30 seconds o
 
 ### What you need 
 
-## Running the program
-
-Open Python 2 IDE.
-=======
-# Adding an LED to the Motion Detector
-
-This project is an add-on for the [PIR Motion detector project](README.md)).
-The LED is used as a visual indicator of the motion sensor: when a motion is detected, the LED turns on.
-
-## Wiring up PIR Sensor and LED
-
-### What You Need:
 
 - Raspberry Pi 2 (Set up properly. See [Setting up Raspberry Pi](../README.md))
 - [PIR sensor](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
-- LED (1.9 - 3.2V)
-- Resistor (~200Ω)
 - Breadboard
-- 7x M-to-F jumper wires, 3 colors with 2 of each, and 1 extra color
+- 220 ohm resistor
+- LED
+- 5x M-to-F jumper wires, 2 red, 2 black and 2 of any color(we have brown) of your choice.
+
+### Wiring up PIR Sensor
+
+Your PIR sensor should have 3-pin connection. 
+Wire up to the sensor as following:
+
+- Red wire to PIR-VCC (3-5VDC voltage power)
+- Black wire to PIR-GND (ground power)
+- Brown wire to PIR-OUT (signal out)
+
+Now, plug the other ends of the wires to a breadborad:
+
+- Red wire (PIR-VCC) to any point on the bread board
+- Black wire (PIR-GND) to any other point on the board, as long as its not on the same rail as the red wire.
+- Brown wire (PIR-OUT) to any blank rail 
+
+### Wiring up Pi
+
+Take another pair of red, black and brown wire.
+
+First, plug into one end to Pi:
+
+- Red wire to GPIO 5V (Pin 4)
+- Black wire to GPIO GND (Pin 6)
+- Brown wire to GPIO 4 (Pin 7)
+
+### Wiring up the breadboard
+
+- Red wire (GPIO 5V) to any point on the same rail as the red wire from the sensor.
+- Black wire (GPIO GND) to any point on the same rail as the black wire from the sensor.
+- connect one end of the 220 ohm resistor to the same rail as the brown wire from the sensor. The other end can sit on any other rail. 
+- The positive end of the LED(anode) to the other end of the resistor, and the cathode to any other rail.
+- From the same rail as the brown wire from the sensor, insert another brown wire that sits on pin GET THE NUMBERS BASED ON TOMOMIS DIAGRAM ******
+
+![image](../../images/PIR/pir-breadboard-pi.jpg)
+
+If you are using a mini breadborad, your circuit should look similar to this:
+
+![image](../../images/PIR/fritzing-pir-sm.png)
 
 
-### Assemble the Circuit
-
-Addition to the circuit you have wired a PIR sensor, you connect a LED output to another GPIO (We are using GPIO-17 / Pin 11 for the diagram and the code) with an appropriate resistor. We are using 200Ω to be safe. (also, we have a lot of them for everybody!)
-
-Circuit on Mini breadboard:
->>>>>>> origin/master
-
- ![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
- 
-[If you are using a 400-pin, the circuit should look something like this.](../../images/PIR-LED/fritzing-pir-led-400.png)
 
 
 ## Running the program
 
-1. Open Python 2 IDE
+Open Python 2 IDE
 
-2. Then, in Python Shell,  **File** > **New Window**
+Then, in Python Shell,  **File** > **New Window**
 
-3. In the new window, copy and paste [motion-led.py](https://github.com/pubnub/workshop-raspberrypi/blob/master/projects-python/motion-led/motion-led.py), and save as `motion-led.py`
+In the new window, copy and paste [motion-led.py](https://github.com/pubnub/workshop-raspberrypi/blob/master/projects-python/motion-led/motion-led.py), and save as `motion-led.py`
 
-4. Run the script
+Run the script
 
 On terminal:
 `$ sudo python motion-led.py`
 
 This will run the program to detect motion and switch on an LED when motion is detected.
 
+### Monitoring PubNub Data Stream on Console
 
+1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
+2. Type `motionsensor-led` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+3. Click **Subscribe**
+
+![image](../../images/pubnub-console.png)
 
 ## What is happening behind the scenes
 
