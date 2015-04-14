@@ -17,7 +17,7 @@ Wire up the circuit in the following manner. The LED will blink for 30 seconds o
 - Breadboard
 - 220 ohm resistor
 - LED
-- 5x M-to-F jumper wires, 2 red, 2 black and 2 of any color(we have yellow) of your choice.
+- 7x M-to-F jumper wires, 2 red, 3 black and 2 of any color(we have yellow) of your choice.
 
 ### Wiring up PIR Sensor
 
