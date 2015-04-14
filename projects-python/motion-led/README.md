@@ -4,11 +4,12 @@ Here we will modify the circuit from the [motion sensor](../motion-sensor/motion
 
 ## Hardware
 
-ADD A PICTURE HERE OF THE HW WITH THE TINY KIT
+![image](../../images/PIR-LED/led.png)
+
 
 Wire up the circuit in the following manner. The LED will blink for 30 seconds or so when the Raspberry Pi is powering on. Wait for it to settle, and run the program as explained below. You will notice how everytime motion is detected, the LED turns on and when there is nothing in front of the motion sensor, it turns off. At the same time motion is detected, a message is published to PubNub as well. 
 
-### What you need 
+## What you need 
 
 
 - Raspberry Pi 2 (Set up properly. See [Setting up Raspberry Pi](../README.md))
@@ -16,7 +17,7 @@ Wire up the circuit in the following manner. The LED will blink for 30 seconds o
 - Breadboard
 - 220 ohm resistor
 - LED
-- 5x M-to-F jumper wires, 2 red, 2 black and 2 of any color(we have brown) of your choice.
+- 7x M-to-F jumper wires, 2 red, 3 black and 2 of any color(we have yellow) of your choice.
 
 ### Wiring up PIR Sensor
 
@@ -25,37 +26,40 @@ Wire up to the sensor as following:
 
 - Red wire to PIR-VCC (3-5VDC voltage power)
 - Black wire to PIR-GND (ground power)
-- Brown wire to PIR-OUT (signal out)
+- yellow wire to PIR-OUT (signal out)
 
-Now, plug the other ends of the wires to a breadborad:
+Now, plug the other ends of the wires to a breadboard:
 
 - Red wire (PIR-VCC) to any point on the bread board
 - Black wire (PIR-GND) to any other point on the board, as long as its not on the same rail as the red wire.
-- Brown wire (PIR-OUT) to any blank rail 
+- yellow wire (PIR-OUT) to any blank rail 
 
 ### Wiring up Pi
 
-Take another pair of red, black and brown wire.
+Take another pair of red, black and yellow wire.
 
 First, plug into one end to Pi:
 
-- Red wire to GPIO 5V (Pin 4)
+- Red wire to GPIO 5V (Pin 2)
 - Black wire to GPIO GND (Pin 6)
-- Brown wire to GPIO 4 (Pin 7)
+- yellow wire to GPIO 17 (Pin 11)
+- second black wire from the LED to GPIO GND (pin 20)
 
 ### Wiring up the breadboard
 
 - Red wire (GPIO 5V) to any point on the same rail as the red wire from the sensor.
 - Black wire (GPIO GND) to any point on the same rail as the black wire from the sensor.
-- connect one end of the 220 ohm resistor to the same rail as the brown wire from the sensor. The other end can sit on any other rail. 
+- connect one end of the 220 ohm resistor to the same rail as the yellow wire from the sensor. The other end can sit on any other rail. 
 - The positive end of the LED(anode) to the other end of the resistor, and the cathode to any other rail.
-- From the same rail as the brown wire from the sensor, insert another brown wire that sits on pin GET THE NUMBERS BASED ON TOMOMIS DIAGRAM ******
+- From the same rail as the yellow wire from the sensor, insert another yellow wire that sits on pin 11 from the Pi.
 
-![image](../../images/PIR/pir-breadboard-pi.jpg)
+![image](../../images/PIR-LED/breadboard.png)
+
 
 If you are using a mini breadborad, your circuit should look similar to this:
 
-![image](../../images/PIR/fritzing-pir-sm.png)
+
+![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
 
 
 
