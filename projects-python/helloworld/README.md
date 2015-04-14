@@ -20,7 +20,7 @@ This sends a Hello World message to PubNub data stream.
 ## Monitoring PubNub Data Stream on Console
 
 1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `hello_world` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+2. Type `hello` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
 3. Click **Subscribe**
 
 ![image](../../images/pubnub-console.png)
@@ -49,12 +49,12 @@ pubnub = Pubnub(publish_key="demo", subscribe_key="demo")
 ```python
 def callback(message):
      print(message)
- pubnub.publish('hello_world', 'Hello PubNub', callback=callback, error=callback)
+ pubnub.publish('hello', 'Hello PubNub', callback=callback, error=callback)
 ```
  
 Also, you can `subscribe` all messages that have been published to the channel. 
 
-this block of code is not included in the `hello.py`, so try creating a new file, or add the code to your hello.py to subscribe all other messages coming to the channel, **hello_world**.
+this block of code is not included in the `hello.py`, so try creating a new file, or add the code to your hello.py to subscribe all other messages coming to the channel, **hello**.
 
 ```python
 def _callback(message, channel):

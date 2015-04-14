@@ -3,12 +3,19 @@ var pubnub = require('pubnub').init({
 	subscribe_key : 'demo'
 });
 
-var channel = 'hello_world';
-var message = 'Hello World from Raspberry Pi 2!';
+var channel = 'hello';
+
+var username = 'Your name';
+var message = 'Hello World from Pi!';
+
+data = {
+    'username': username,
+    'message': message
+}
 
 pubnub.publish({
 	channel : channel,
-	message : message,
+	message : data,
 	callback : function(m) {
 		var success = m[0], response = m[1];
 

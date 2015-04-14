@@ -20,7 +20,7 @@ This sends a Hello World message to PubNub data stream.
 ### Monitoring PubNub Data Stream on Console
 
 1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `hello_world` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+2. Type `hello` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
 3. Click **Subscribe**
 
 ![image](../../images/pubnub-console.png)
