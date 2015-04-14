@@ -15,6 +15,16 @@ On terminal:
 
 This sends a Hello World message to PubNub data stream.
 
+
+
+## Monitoring PubNub Data Stream on Console
+
+1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
+2. Type `hello_world` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+3. Click **Subscribe**
+
+![image](../../images/pubnub-console.png)
+
 ## The Quick Code Walk-though 
 
 Now we’ll quickly walk through using the PubNub API for Python SDK. Just follow the steps…
@@ -42,9 +52,9 @@ def callback(message):
  pubnub.publish('hello_world', 'Hello PubNub', callback=callback, error=callback)
 ```
  
-Also, you can `subscribe1 all messages that have been published, although this block of code is not included in the `hello.py`.
+Also, you can `subscribe` all messages that have been published to the channel. 
 
-Try creating a new file, and subscribe all other messages coming to the channel, **hello_world**.
+this block of code is not included in the `hello.py`, so try creating a new file, or add the code to your hello.py to subscribe all other messages coming to the channel, **hello_world**.
 
 ```python
 def _callback(message, channel):
@@ -56,15 +66,3 @@ def _callback(message, channel):
  pubnub.subscribe(channels='hello_world', callback=_callback, error=_error)
 ```
  
-# Initialize with Publish & Subscribe Keys
- 
- pubnub = Pubnub(publish_key="demo", subscribe_key="demo")
-```
-
-## Monitoring PubNub Data Stream on Console
-
-1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `hello_world` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
-3. Click **Subscribe**
-
-![image](../../images/pubnub-console.png)
