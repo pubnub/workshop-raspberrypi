@@ -4,7 +4,8 @@ Here we will modify the circuit from the [motion sensor](../motion-sensor/motion
 
 ## Hardware
 
-ADD A PICTURE HERE OF THE HW WITH THE TINY KIT
+![image](../../images/PIR-LED/led.png)
+
 
 Wire up the circuit in the following manner. The LED will blink for 30 seconds or so when the Raspberry Pi is powering on. Wait for it to settle, and run the program as explained below. You will notice how everytime motion is detected, the LED turns on and when there is nothing in front of the motion sensor, it turns off. At the same time motion is detected, a message is published to PubNub as well. 
 
@@ -57,7 +58,6 @@ First, plug into one end to Pi:
 
 If you are using a mini breadborad, your circuit should look similar to this:
 
-![image](../../images/PIR-LED/led.png)
 
 ![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
 
