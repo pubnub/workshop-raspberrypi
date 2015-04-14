@@ -53,7 +53,7 @@ Note that not all sensor has thr 3-pin connection in the same order, so make sur
  
 ![image](../../images/PIR/pir-sensor.jpg)
 
-Now, plus the other ends of the wires to a breadborad:
+Now, plug the other ends of the wires to a breadborad:
 
 - Red wire (PIR-VCC) to a positive rail (in the photo below, row 7, but you can use any positive rail)
 - Black wire (PIR-GND) to a negative rail, next to the red wire
