@@ -209,5 +209,7 @@ GPIO.cleanup()
 ```
 
 
+## Add-on Project: Motion Sensor with LED
 
+If you would like to modify this project with an LED as a visual indicator, [read on](../motion-led)!
 
