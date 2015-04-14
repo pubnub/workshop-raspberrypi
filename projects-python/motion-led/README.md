@@ -28,7 +28,7 @@ Wire up to the sensor as following:
 - Black wire to PIR-GND (ground power)
 - yellow wire to PIR-OUT (signal out)
 
-Now, plug the other ends of the wires to a breadborad:
+Now, plug the other ends of the wires to a breadboard:
 
 - Red wire (PIR-VCC) to any point on the bread board
 - Black wire (PIR-GND) to any other point on the board, as long as its not on the same rail as the red wire.
