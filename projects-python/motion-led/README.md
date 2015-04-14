@@ -1,10 +1,18 @@
-# Hello World with PubNub Python APIs
+# Motion sensor with a visual indicator
+
+Here we will modify the circuit from the [motion sensor](../motion-sensor/motionsensor.py) to add an LED that will only light up when motion is detected. 
+
+## Hardware
+
+ADD A PICTURE HERE OF THE HW WITH THE TINY KIT
+
+Wire up the circuit in the following manner. The LED will blink for 30 seconds or so when the Raspberry Pi is powering on. Wait for it to settle, and run the program as explained below. You will notice how everytime motion is detected, the LED turns on and when there is nothing in front of the motion sensor, it turns off. At the same time motion is detected, a message is published to PubNub as well. 
+
+### What you need 
 
 ## Running the program
 
-Open Python 2 IDE
-
-![image](../../images/python-ide.png)
+Open Python 2 IDE.
 
 Then, in Python Shell,  **File** > **New Window**
 
@@ -32,9 +40,9 @@ This project builds on the existing Motion sensor project, by adding the LED ele
 ### The code 
 
 
-We want to switch on the LED when motion is detected, but switch off when there is nothing moving. For this we need to monitor the pin receiving the output from the sensor, and see if its **RISING** or **FALLING**. GPIO.BOTH lets you detect edges in either changing direction(rising or falling). 
+We want to switch on the LED when motion is detected, but switch off when there is nothing moving. For this we need to monitor the pin receiving the output from the sensor, and see if its **RISING**. GPIO.RISING lets you detect this change. The hardware circuit associated with the Pi and the LED will ensure that it switches on only motion is detected, but not otherwise.
 
-`GPIO.add_event_detect(PIR_PIN, GPIO.BOTH, callback=MOTION)`
+`GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)`
 
 Once in the callback function, we actually check if it RISING in which case we switch on the LED. And if its FALLING, we switch it off. 
 
@@ -43,9 +51,5 @@ def MOTION(PIR_PIN):
     if PIR_PIN:
         print 'Motion Detected!'
         print 'Light on'
-        GPIO.output(LED_PIN, True)
         pubnub.publish(channel, message, callback=callback, error=callback)
-    else:
-        print 'No Motion!'
-        GPIO.output(LED_PIN, False)
 ```
