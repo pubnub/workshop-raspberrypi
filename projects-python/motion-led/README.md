@@ -9,7 +9,7 @@ Here we will modify the circuit from the [motion sensor](../motion-sensor/motion
 
 Wire up the circuit in the following manner. The LED will blink for 30 seconds or so when the Raspberry Pi is powering on. Wait for it to settle, and run the program as explained below. You will notice how everytime motion is detected, the LED turns on and when there is nothing in front of the motion sensor, it turns off. At the same time motion is detected, a message is published to PubNub as well. 
 
-### What you need 
+## What you need 
 
 
 - Raspberry Pi 2 (Set up properly. See [Setting up Raspberry Pi](../README.md))
