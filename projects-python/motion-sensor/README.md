@@ -7,28 +7,19 @@ The PIR sensor measures the IR radiation emitted by objects. The sensor is able 
 
 In case you want to jump to the exciting part and run the program, then just follow the below steps. 
 
-Open Python 2 IDE
+1. Open Python 2 IDE
 
-![image](../../images/python-ide.png)
+2. Then, in Python Shell,  **File** > **New Window**
 
-Then, in Python Shell,  **File** > **New Window**
+3. In the new window, copy and paste [Motionsensor.py](../motion-sensor/Motionsensor.py), and save as `Motionsensor.py`
 
-In the new window, copy and paste [Motionsensor.py](../motion-sensor/Motionsensor.py), and save as `Motionsensor.py`
-
-Run the script
+4. Run the script
 
 On terminal:
 `$ sudo python Motionsensor.py`
 
 This sends a message to PubNub data stream when motion is detected.
 
-### Monitoring PubNub Data Stream on Console
-
-1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `motionsensor`(or the name of your channel in the Motionsensor.py) into the **Channel** field, `demo` into both **publish key** and **subscribe key** (unless you registered for a PubNub account, in which case you use your personal pub and sub keys)
-3. Click **Subscribe**
-
-![image](../../images/pubnub-console.png)
 
 # Description of the project
 
