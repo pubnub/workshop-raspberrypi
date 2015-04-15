@@ -135,4 +135,4 @@ Now, you're ready to build devices with more complicated circuits and functional
 
 With a [Motion sensor](../motion-sensor), you'll be able to flip a pin and send a message whenever the device's infrared field is disturbed by nearby motion.
 
-With a [Range Funder](../range-finder), you can measure the range of nearby objects based on the speed of reflected ultrasonic waves.
+With a [Range Finder](../range-finder), you can measure the range of nearby objects based on the speed of reflected ultrasonic waves.
