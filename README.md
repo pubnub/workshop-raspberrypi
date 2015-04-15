@@ -120,5 +120,5 @@ Now, let's connect some sensors to Raspberry Pi, and learn more about sending an
 
 Check out more projects under:
 
-- [Using sensors and program with Python](https://github.com/pubnub/workshop-raspberrypi/tree/master/examples-python)
-- [Using sensors and program with Node.js](https://github.com/pubnub/workshop-raspberrypi/tree/master/examples-nodejs)
+- [Using sensors and program with Python](projects-python)
+- [Using sensors and program with Node.js](projects-nodejs)
