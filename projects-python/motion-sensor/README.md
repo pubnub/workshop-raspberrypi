@@ -11,12 +11,12 @@ In case you want to jump to the exciting part and run the program, then just fol
 
 2. Then, in Python Shell,  **File** > **New Window**
 
-3. In the new window, copy and paste [Motionsensor.py](../motion-sensor/Motionsensor.py), and save as `Motionsensor.py`
+3. In the new window, copy and paste [motionsensor.py](../motion-sensor/motionsensor.py), and save as `motionsensor.py`
 
 4. Run the script
 
 On terminal:
-`$ sudo python Motionsensor.py`
+`$ sudo python motionsensor.py`
 
 This sends a message to PubNub data stream when motion is detected.
 
@@ -26,7 +26,7 @@ This sends a message to PubNub data stream when motion is detected.
 ## Using a Pyroelectric IR Motion Detector
 
 
-![image](../../images/PIR/motionfull.png)
+![image](../../images/PIR/motionbread3.png)
 
 
 
@@ -61,13 +61,13 @@ You can plug them anywhere, as long as they aren't on the same rail.
 
 ### Wiring up Pi
 
-Take another pair of red, black and brown wire.
+Take another set of red, black and yellow wire.
 
 First, plug into one end to Pi:
 
 - Red wire to GPIO 5V (Pin 4)
 - Black wire to GPIO GND (Pin 6)
-- Brown wire to GPIO 4 (Pin 7)
+- Yellow wire to GPIO 4 (Pin 7)
 
 
 ![image](../../images/PIR/motionbread3.png)
@@ -98,9 +98,9 @@ The motion sensor is designed to send a web based alarm, when it detects motion.
 
 **Accesing the code from other modules. The following modules are used in the code:**
 
- - GPIO to access the GPIO(general purpose input output)pins on the Raspberry Pi. This library lets handles the interfacing with the pins.
- - sys module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available.
- - Pubnub allows you to access the PubNub APIs to publish the messages over the internet.
+ - **GPIO** to access the GPIO (general purpose input output)pins on the Raspberry Pi. This library lets handles the interfacing with the pins.
+ - **sys** module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available.
+ - **Pubnub** allows you to access the PubNub APIs to publish the messages over the internet.
  
  ```python
 import RPi.GPIO as GPIO
@@ -110,9 +110,9 @@ from Pubnub import Pubnub
 
 **Setting up the keys for Pubnub**
 
-Every one who signs up for PubNub, gets a unique set of keys. This way, you can choose the devices that can send and receive messages from your device. 
+Every one who signs up for [PubNub](https://www.pubnub.com/get-started/), gets a unique set of keys. This way, you can choose the devices that can send and receive messages from your device. 
 
-Once you have a [PubNub account](https://www.pubnub.com/get-started/), replace the string 'demo' in Publish_key and subscribe_key, with your own keys. If not, you can use 'demo,' but common use of this key may result in throttled message speeds.
+Once you have a PubNub account, replace the string 'demo' in Publish_key and subscribe_key, with your own keys. If not, you can use 'demo,' but common use of this key may result in throttled message speeds.
 
 
 ```python
@@ -132,12 +132,12 @@ ssl_on = False
 ```python
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
 channel = 'motionsensor'
-message = {['Motion', 1]}
+message = {'Motion': 1}
 ```
 
 **Setting up variables for the pins on Pi**
 
-The sensor module communicates with the Pi by sending electrical signals to specific pins. When recieving no signal, a pin is read as LOW. When a signal is recieved, that pin switches to HIGH. This binary operation is at the heart of any digital I/O device, including LEDs and stepper motors. For now, we'll deal with it in its simplest form.
+The sensor module communicates with the Pi by sending electrical signals to specific pins. When receiving no signal, a pin is read as LOW. When a signal is recieved, that pin switches to HIGH. This binary operation is at the heart of any digital I/O device, including LEDs and stepper motors. For now, we'll deal with it in its simplest form.
 
 First, we have to point our code to the pins we're using. To do so, add the following to your code:
 

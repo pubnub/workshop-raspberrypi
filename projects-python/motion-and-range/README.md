@@ -5,7 +5,7 @@ As a next step, what if you could do more when motion is detected, than just sen
 ## Step 1 : The idea behind it 
 
  - So far we have a device publishing data to the internet. But in an ideal case, you want it to be able to subscribe/receive data as well, and to consume  that data. 
- - So say have two Raspberry Pis(you can collaborate with the person next to you and become friends); one which powers the [motion sensor](../motion-sensor/Motionsensor.py) and one for the [range finder](../range-finder/rangefinder.py).
+ - So say have two Raspberry Pis (you can collaborate with the person next to you and become friends); one which powers the [motion sensor](../motion-sensor/Motionsensor.py) and one for the [range finder](../range-finder/rangefinder.py).
  - Your motion sensor code detects motion and publishes a message to "motionrange" channel to notify the range finder to capture the distance between the moving object and itself.
  - This way, the range finder is listening to data from one device, and acting upon the received data. 
  - In a real world scenario, think of how you can have several devices all talking to each other, and making smart decisions based on the information. 
@@ -17,8 +17,8 @@ As a next step, what if you could do more when motion is detected, than just sen
 ### Modifications to the *Motion sensor* code
 
  - This code just builds on the previous basic example.
- - The publish key, subscribe key and the channel for both the Pis have to be the same so they can bidirectionally talk to each other. 
- - This is the only change to make. (line 17 and 18 in the [Motionsensor_rangefinder.py](../motion-and-range/Motionsensor_rangefinder.py))
+ - **The publish key, subscribe key and the channel for both the Pis have to be the same so they can bidirectionally talk to each other.**
+ - This is the only change to make. (line 17 and 18 in the [motion.py](../motion-and-range/motion.py))
 
 
 **Setting up the keys for the combined project**

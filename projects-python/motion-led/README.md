@@ -1,6 +1,6 @@
 # Motion sensor with a visual indicator
 
-Here we will modify the circuit from the [motion sensor](../motion-sensor/motionsensor.py) to add an LED that will only light up when motion is detected. 
+Here we will modify the circuit from the [motion sensor](../motion-sensor) to add an LED that will only light up when motion is detected. 
 
 ## Hardware
 
@@ -36,7 +36,7 @@ Now, plug the other ends of the wires to a breadboard:
 
 ### Wiring up Pi
 
-Take another pair of red, black and yellow wire.
+Take another set of red, black and yellow wire.
 
 First, plug into one end to Pi:
 
@@ -82,10 +82,10 @@ This will run the program to detect motion and switch on an LED when motion is d
 ### Monitoring PubNub Data Stream on Console
 
 1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `motionsensor-led` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+2. Type `motionsensor-led` into the **Channel** field, `demo` into both **publish key** and **subscribe key**, unless you have your own keys, in which case fill them here as well as in the code. 
 3. Click **Subscribe**
 
-![image](../../images/pubnub-console.png)
+
 
 ## What is happening behind the scenes
 

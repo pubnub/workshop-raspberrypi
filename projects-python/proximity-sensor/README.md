@@ -10,8 +10,6 @@ In case you want to jump to the exciting part and run the program, then just fol
 
 Open Python 2 IDE
 
-![image](../../images/python-ide.png)
-
 Then, in Python Shell,  **File** > **New Window**
 
 In the new window, copy and paste [proximitysensor.py](../proximity-sensor/proximitysensor.py), and save as `proximitysensor.py`
@@ -29,7 +27,6 @@ This sends a message to PubNub data stream when motion is detected.
 2. Type `proximitysensor`(or the name of your channel in the Motionsensor.py) into the **Channel** field, `demo` into both **publish key** and **subscribe key** (unless you registered for a PubNub account, in which case you use your personal pub and sub keys)
 3. Click **Subscribe**
 
-![image](../../images/pubnub-console.png)
  
 ## How the code works : 
 

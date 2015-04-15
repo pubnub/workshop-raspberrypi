@@ -9,7 +9,6 @@ import sys
 
 ##Set up variables and RF##
 i = 0
-loopcount = 0
 
 
 #Set GPIO pins used on breadboard.
@@ -36,7 +35,7 @@ ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
 
 pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key,secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
 
-##Define Pub and Sub channels. Pub channel can be anything; Sub channel must match that of the device you're listening to. 
+##Define Pub and Sub channels. Pub channel can be anything; Sub channel must match that of the device you're listening to, in this case from the motion detector.
 channel = 'Rangefinder'
 subchannel = 'MotionDetector'
 
@@ -46,7 +45,6 @@ subchannel = 'MotionDetector'
 # Asynchronous usage
 def callback(submessage, channel):
     print(submessage)
-    #loopcount = 0 
     ##Check to see if motion has been detected##
     ##This line will depend on the nature of the message recieved.
     ##This demo code assumes that the motion detector will send a dicitonary with one item: 
@@ -65,7 +63,6 @@ def callback(submessage, channel):
         #Instatiate a time stamp for when a signal is detected by setting beginning + end values.
         #Then subtract beginning from end to get duration value.
 
-            print("before pulse start")
             pulse_start = time.time()
             while GPIO.input(ECHO)==0:
                 #print("waiting for pulse signal")
@@ -73,7 +70,6 @@ def callback(submessage, channel):
 
             while GPIO.input(ECHO)==1:
                 pulse_end = time.time()
-            print("after pulse")
             pulse_duration = pulse_end - pulse_start
 
             ##Simplify + Flip it: distance = pulse_duration x 17150
@@ -82,9 +78,6 @@ def callback(submessage, channel):
         ##Round out distance for simplicity and print.
 
             distance = round(distance, 2)
-            
-            #loopcount += 1
-            #print('shot #'+str(loopcount))
 
         ##Use the distance measurement as a proximity alarm.
         ##Set 'distance' in if-loop to desired alarm distance.
