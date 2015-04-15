@@ -12,13 +12,13 @@ Skip the Step 0 and go to Step 1, if you have a preloaded SD Card from CanaKit o
 
 The following steps are done on your computer.
 
-1. Download [SD Formatter 4.0](https://www.sdcard.org/downloads/formatter_4) and install on your computer
-2. Insert it in SD card reader to the computer. If you need, use a Micro SD adapter (photo).
+1. Download [SD Formatter 4.0](https://www.sdcard.org/downloads/formatter_4) and install on your computer.
+2. Insert it in SD card reader in the computer. If you need, use a Micro SD adapter (photo).
 ![image](images/sd-adapter.jpg)
-3. Run SD Card Formatter
+3. Run the SD Card Formatter.
 ![image](images/sd-formatter.png)
-4. Download **Noobs** zip file from [raspberrypi.org](http://www.raspberrypi.org/downloads/) and extract.
-5. Open up the drive, and drag-drop the unzipped **Noobs** contents (not the entire folder!) you just downloaded into the SD card. Then remove the SD card.
+4. Download the **Noobs** zip file from [raspberrypi.org](http://www.raspberrypi.org/downloads/) and extract to a desired location.
+5. Open up the SD card drive, and drag-drop the unzipped **Noobs** contents (not the entire folder!) you just downloaded, into the SD card. Then eject the SD card.
 ![image](images/noobs.png)
 
 ### 1. Installing Raspbian on Raspberry Pi
