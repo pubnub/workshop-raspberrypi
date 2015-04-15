@@ -5,15 +5,13 @@
 
 In case you want to jump to the exciting part and run the program, then just follow the below steps. 
 
-Open Python 2 IDE
+1. Open Python 2 IDE
 
-![image](../../images/python-ide.png)
+2. Then, in Python Shell,  **File** > **New Window**
 
-Then, in Python Shell,  **File** > **New Window**
+3. In the new window, copy and paste [rangefinder.py](../range-finder/rangefinder.py), and save as `rangefinder.py`
 
-In the new window, copy and paste [rangefinder.py](../range-finder/rangefinder.py), and save as `rangefinder.py`
-
-Run the script
+4. Run the script
 
 On terminal:
 `$ sudo python rangefinder.py`
@@ -26,7 +24,6 @@ This sends a message to PubNub data stream comprising the distance of the sensor
 2. Type `Rangefinder`(or the name of your channel in the Motionsensor.py) into the **Channel** field, `demo` into both **publish key** and **subscribe key** (unless you registered for a PubNub account, in which case you use your personal pub and sub keys)
 3. Click **Subscribe**
 
-![image](../../images/pubnub-console.png)
 
 
 # Description of the project
@@ -133,6 +130,10 @@ Actually building the voltage divider:
 **That's the entirety of our hardware construction. Now, you're ready to write some code!**
 
 *Based on ["HC-SR04 Ultrasonic Range Sensor on the Raspberry Pi"](http://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi)*
+
+If you are using a mini breadboard, your circuit should look like this:
+
+![image](../../images/rangefinder/fritzing-ultrasonic-mini.png)
 
 
 ##Section 2: Writing the Code##
