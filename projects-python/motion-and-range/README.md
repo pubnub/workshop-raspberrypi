@@ -18,7 +18,7 @@ As a next step, what if you could do more when motion is detected, than just sen
 
  - This code just builds on the previous basic example.
  - **The publish key, subscribe key and the channel for both the Pis have to be the same so they can bidirectionally talk to each other.**
- - This is the only change to make. (line 17 and 18 in the [Motionsensor_rangefinder.py](../motion-and-range/Motionsensor_rangefinder.py))
+ - This is the only change to make. (line 17 and 18 in the [motion.py](../motion-and-range/motion.py))
 
 
 **Setting up the keys for the combined project**
