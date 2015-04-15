@@ -67,7 +67,7 @@ First, plug into one end to Pi:
 
 - Red wire to GPIO 5V (Pin 4)
 - Black wire to GPIO GND (Pin 6)
-- Brown wire to GPIO 4 (Pin 7)
+- Yellow wire to GPIO 4 (Pin 7)
 
 
 ![image](../../images/PIR/motionbread3.png)
