@@ -73,7 +73,7 @@ while True:
 
     print("Distance:",distance,"cm")
     print("Proximity Detected")
-    message = {'distance': distance, 'Proximity': "True"}
+    message = {'distance': distance}
     print pubnub.publish(channel, message)
     time.sleep(1)
 
