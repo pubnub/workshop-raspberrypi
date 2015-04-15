@@ -51,10 +51,21 @@ def callback(message):
      print(message)
  pubnub.publish('hello', 'Hello PubNub', callback=callback, error=callback)
 ```
+
+Usually, you might want to send more than just a string. In Python, we do this by sending dictionaries represented by a key-value pair in the following manner. 
+
+```python
+data = {
+    'username': 'Bob',
+    'message': 'Hi'
+}
+
+pubnub.publish(channel, data, callback=callback, error=callback)
+```
  
 Also, you can `subscribe` all messages that have been published to the channel. 
 
-this block of code is not included in the `hello.py`, so try creating a new file, or add the code to your hello.py to subscribe all other messages coming to the channel, **hello**.
+This block of code is not included in the `hello.py`, so try creating a new file, or add the code to your hello.py to subscribe all other messages coming to the channel, **hello**.
 
 ```python
 def _callback(message, channel):
