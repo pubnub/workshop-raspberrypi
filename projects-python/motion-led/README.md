@@ -82,7 +82,7 @@ This will run the program to detect motion and switch on an LED when motion is d
 ### Monitoring PubNub Data Stream on Console
 
 1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `motionsensor-led` into the **Channel** field, `demo` into both **publish key** and **subscribe key**
+2. Type `motionsensor-led` into the **Channel** field, `demo` into both **publish key** and **subscribe key**, unless you have your own keys, in which case fill them here as well as in the code. 
 3. Click **Subscribe**
 
 
