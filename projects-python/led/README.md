@@ -64,7 +64,7 @@ When using pins in code, you have to pick a designation. Throughout the code in 
 Here's the diagram again:
 ![image](../../images/pi-modelb-gpio.png)
 
-###Building the Circuit
+### Building the Circuit
 
 In this case, we simply want to write code that, when executed, will blink the LED 7 times.
 
@@ -77,7 +77,7 @@ Referencing the diagram above, you'll see that this is GPIO-4, or Pin 7.
 
 If you are using 400-point breadboard, [see this diagram](../../images/LED/fritzing-led-gpio-400.png).
 
-###Writing the Code
+### Writing the Code
 
 [Full Code Here](led.py)
 
