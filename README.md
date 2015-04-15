@@ -30,7 +30,7 @@ From now on you are working directly on your Raspberry Pi.
 3. Plug in your Wi-Fi adapter.
 4. Plug a USB power, and turn your Pi on.
 
-(Maybe adding a nice photo of Pi with everything attatched here)
+![image](images/piperipherals.png)
 
 After connecting to a monitor:
 
