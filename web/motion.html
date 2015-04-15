@@ -51,7 +51,7 @@
 		font-size: 8em;
 		font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 		text-align: center;
-		margin-top: 1em;
+		margin: 1em;
 		padding: .25em;
 		color: #fff;
 		text-shadow: rgba(0,0,0,.5) 0 -1px 0, rgba(0,0,10,.6) 0 2px 1px;
@@ -109,7 +109,7 @@
 	p.subscribe({
 		channel  : channel,
 		callback : function(m) { 
-			console.log(m);
+			console.log(m.motion);
 
 			if(m.motion === 1) {
 				output.className = 'occupied';
