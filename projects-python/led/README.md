@@ -2,7 +2,8 @@
 
 ## Wiring an LED
 
-To get started with wires and a breadboard, we'll first make a simple circuit that connects a Pi's 3.3v pin to an LED, causing it to light up. After covering the fundamentals, we'll introduce control over hardware by modifying our circuitry and writing simple code to manually turn the light on and off.
+To get started with wires and a breadboard, we'll first make a simple circuit that connects a Pi's 3.3v pin to an LED, causing it to light up. 
+After covering the fundamentals, we'll introduce control over hardware by modifying our circuitry and writing simple code to wirelessly turn the light on and off, over the internet.
 
 ### What You Need
 
@@ -24,7 +25,7 @@ To get started with wires and a breadboard, we'll first make a simple circuit th
     ![image](../../images/pi-modelb-gpio.png)
 
     In our case, **White** is PWR and **Brown** is GND. Here's how it looks on a Pi:
-    [need image]
+    ![image](../../images/LED/led-hw1.png)
 
 2. Connect your GND wire to the first row of the breadboard. On a nearby row, plug in your 3.3v power wire.
     ![image](../../images/LED/led_02.jpg)
@@ -35,6 +36,9 @@ To get started with wires and a breadboard, we'll first make a simple circuit th
 
 4. With your resistor, connect one pin to the LED and the other to the GND wire's row, completing the circuit.
     ![image](../../images/LED/led_05.jpg)
+    
+5. This is how the whole cicuit looks like.  
+	![image](../../images/LED/led-hw-full.png)
 
 When you simply power on your Pi, your light will turn on, like so:
 ![image](../../images/LED/led-06.jpg)
@@ -65,7 +69,7 @@ Here's the diagram again:
 In this case, we simply want to write code that, when executed, will blink the LED 7 times.
 
 To change the circuit to be controllable, we simply unplug the power wire from the Pi's 3.3v pin and attach it to one of the GPIO pins, as below:
-[Need image]
+![image](../../images/LED/ledsw.png)
 
 Referencing the diagram above, you'll see that this is GPIO-4, or Pin 7. 
 
