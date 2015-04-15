@@ -11,12 +11,12 @@ In case you want to jump to the exciting part and run the program, then just fol
 
 2. Then, in Python Shell,  **File** > **New Window**
 
-3. In the new window, copy and paste [Motionsensor.py](../motion-sensor/Motionsensor.py), and save as `Motionsensor.py`
+3. In the new window, copy and paste [motionsensor.py](../motion-sensor/motionsensor.py), and save as `motionsensor.py`
 
 4. Run the script
 
 On terminal:
-`$ sudo python Motionsensor.py`
+`$ sudo python motionsensor.py`
 
 This sends a message to PubNub data stream when motion is detected.
 
