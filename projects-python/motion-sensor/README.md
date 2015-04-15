@@ -1,7 +1,7 @@
 # Motion Sensor with Raspberry Pi and PubNub
 
 
-The PIR sensor measures the IR radiation emitted by objects. The sensor is able to measure changes in the IR signature around it(when an object moves) and hence detect motion. This message can be sent to any device in the world using PubNub. With PubNub, all you need to do is to **publish** on a channel to the PubNub network, which can be **subscribed** to by any other device any where else in the world.
+The PIR sensor measures the IR radiation emitted by objects. The sensor is able to measure changes in the IR signature around it (when an object moves) and hence detect motion. This message can be sent to any device in the world using PubNub. With PubNub, all you need to do is to **publish** on a channel to the PubNub network, which can be **subscribed** to by any other device any where else in the world.
 
 ##How to run this program
 
@@ -26,7 +26,7 @@ This sends a message to PubNub data stream when motion is detected.
 ## Using a Pyroelectric IR Motion Detector
 
 
-![image](../../images/PIR/pir-fullview.jpg)
+![image](../../images/PIR/motionfull.png)
 
 
 
@@ -37,7 +37,7 @@ This sends a message to PubNub data stream when motion is detected.
 - Raspberry Pi 2 (Set up properly. See [Setting up Raspberry Pi](../README.md))
 - [PIR sensor](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
 - Breadboard
-- 6x M-to-F jumper wires, 3 colors (red, black, and brown in this doc) with 2 of each
+- 6x M-to-F jumper wires, 3 colors (red, black, and yellow in this doc) with 2 of each
 
 
 ### Wiring up PIR Sensor
@@ -47,19 +47,17 @@ Wire up to the sensor as following:
 
 - Red wire to PIR-VCC (3-5VDC voltage power)
 - Black wire to PIR-GND (ground power)
-- Brown wire to PIR-OUT (signal out)
+- Yellow wire to PIR-OUT (signal out)
 
-Note that not all sensor has thr 3-pin connection in the same order, so make sure you wire in the correct pins. The easy way to find out is that look for a power protection IC (looks red in the picture), and one pin next to it should be VCC.
+Note that not all sensor has the 3-pin connection in the same order, so make sure you wire in the correct pins. The easy way to find out is that look for a power protection IC (looks red in the picture), and one pin next to it should be VCC.
  
 ![image](../../images/PIR/pir-sensor.jpg)
 
 Now, plug the other ends of the wires to a breadborad:
 
-- Red wire (PIR-VCC) to a positive rail (in the photo below, row 7, but you can use any positive rail)
-- Black wire (PIR-GND) to a negative rail, next to the red wire
-- Brown wire (PIR-OUT) to any blank rail (row 7, column b, but you can pick any blank)
+You can plug them anywhere, as long as they aren't on the same rail. 
 
-![image](../../images/PIR/pir-breadboard.jpg)
+![image](../../images/PIR/motionbread1.png)
 
 ### Wiring up Pi
 
@@ -71,16 +69,17 @@ First, plug into one end to Pi:
 - Black wire to GPIO GND (Pin 6)
 - Brown wire to GPIO 4 (Pin 7)
 
-![image](../../images/pi-modelb-gpio.png)
+
+![image](../../images/PIR/motionbread3.png)
 
 
 Then, plug into one end to the breadborad:
 
-- Red wire (GPIO 5V) to a positive rail (in the photo below, raw 1, but you can use any positive rail)
-- Black wire (GPIO GND) to a negative rail, next to the red wire
-- Brown wire (GPIO 4) to the same rail as your PIR-OUT
+- Red wire (GPIO 5V) on the same rail as the red wire from the sensor.
+- Black wire (GPIO GND) to the same rail as the black wire from the sensor.
+- Yellow wire (GPIO 4) to the same rail as your PIR-OUT
 
-![image](../../images/PIR/pir-breadboard-pi.jpg)
+![image](../../images/PIR/motionbread2.png) 
 
 If you are using a mini breadborad, your circuit should look similar to this:
 
