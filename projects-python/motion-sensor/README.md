@@ -26,7 +26,7 @@ This sends a message to PubNub data stream when motion is detected.
 ## Using a Pyroelectric IR Motion Detector
 
 
-![image](../../images/PIR/motionfull.png)
+![image](../../images/PIR/motionbread3.png)
 
 
 
@@ -61,7 +61,7 @@ You can plug them anywhere, as long as they aren't on the same rail.
 
 ### Wiring up Pi
 
-Take another pair of red, black and brown wire.
+Take another set of red, black and yellow wire.
 
 First, plug into one end to Pi:
 
@@ -90,7 +90,7 @@ If you are using 400-point breadboard as seen in the photo below, [see this diag
 ## Step 2 : The software
 
 
-The motion sensor is designed to send a web based alarm, when it detects motion. To do this, the overall setup has to detect motion and then publish a message using PubNub.
+The motion sensor is designed to send a web based alarm(../../web/motion.html), when it detects motion. To do this, the overall setup has to detect motion and then publish a message using PubNub.
 
 ### Breaking up the code
 
