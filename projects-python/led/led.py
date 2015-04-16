@@ -21,8 +21,9 @@ GPIO.setup(LIGHT,GPIO.OUT)
 # True sets the pin to HIGH (sending a signal), False sets it to LOW.
 # To achieve a blink, we set the pin to High, wait for a fraction of a second, then set it to Low.
 
-for i in range(6):
+while True:
     GPIO.output(LIGHT,True)
-    time.sleep(0.03)
+    time.sleep(1)
     GPIO.output(LIGHT,False)
+    time.sleep(1)
     print("blink")
