@@ -107,17 +107,18 @@ LIGHT = 4
 GPIO.setup(LIGHT,GPIO.OUT)
 ```
 
-5. Out actual function will be rather simple: cause the light to blink 7 times and print a message each time.
+5. Out actual function will be rather simple: cause the light to blink till you quit the program and print a message each time.
 To blink the light, we call GPIO.output and pass as parameters the pin number (LIGHT) and the state we want.
 "True" sets the pin to HIGH (sending a signal), while "False" sets it to LOW. 
 
-To achieve a blink, we set the pin to High, wait for a fraction of a second, then set it to Low.
+To achieve a blink, we set the pin to High, wait for a second, then set it to Low.
 
 ```python
-for i in range(6):
+while True:
     GPIO.output(LIGHT,True)
-    time.sleep(0.03)
+    time.sleep(1)
     GPIO.output(LIGHT,False)
+    time.sleep(1)
     print("Hello World")
 ```
 
