@@ -6,7 +6,7 @@ from Pubnub import Pubnub
 # Initiate Pubnub State
 pubnub = Pubnub(publish_key='demo', subscribe_key='demo')
 
-channel = 'hello'
+channel = 'hello-pi'
 
 username = 'Your name'
 message = 'Hello World from Pi!'
