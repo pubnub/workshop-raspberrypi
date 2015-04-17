@@ -21,8 +21,9 @@ def _callback(m, channel):
 	if m['led'] == 1:
 		for i in range(6):
 		    GPIO.output(LED_PIN,True)
-		    time.sleep(0.03)
+		    time.sleep(0.5)
 		    GPIO.output(LED_PIN,False)
+		    time.sleep(0.5)
 		    print('blink')
 
 def _error(m):

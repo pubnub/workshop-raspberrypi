@@ -23,7 +23,7 @@ GPIO.setup(LIGHT,GPIO.OUT)
 
 while True:
     GPIO.output(LIGHT,True)
-    time.sleep(1)
+    time.sleep(0.5)
     GPIO.output(LIGHT,False)
-    time.sleep(1)
+    time.sleep(0.5)
     print("blink")
