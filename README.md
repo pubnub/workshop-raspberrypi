@@ -78,13 +78,9 @@ First, open LXTerminal:
 
 Obtain an IP address of your Pi:
 
-`$ sudo ifconfig`
-
-![image](images/ip.png)
-
-You can also use the following command to directly get your IP address: 
-
 `$ hostname -I`
+
+You will need the IP address in the next step. (Remotely connecting your Pi)
 
 #### Remote Connect Methods
 
