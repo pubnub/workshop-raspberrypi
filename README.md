@@ -4,6 +4,11 @@ Step-by-step guide of building a realtime Internet of Things application using s
 
 ---
 
+Walk-through slide deck:
+https://docs.google.com/a/pubnub.com/presentation/d/1vZjXzukePJ8GqFoad-aB8o603FAE6_bjuErdvZ2dpto/edit?usp=sharing
+
+---
+
 ## Setting up Raspberry Pi
 
 Skip the Step 0 and go to Step 1, if you have a preloaded SD Card from CanaKit or elsewhere.
