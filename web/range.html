@@ -134,7 +134,7 @@ p strong {
 	
 	<script>
 (function(){
-	var proximal = 20;
+	var proximal = 40;
 	var ad = document.getElementById('ad');
 
 	var person = document.getElementById('person');
@@ -152,9 +152,9 @@ p strong {
 
 			document.getElementById('distance').textContent = m.distance + ' cm';
 
-			if(m.distance <= 90) {
+			if(m.distance <= 100) {
 			  	person.style.left = m.distance + '%';
-			  	slider.style.width = m.distance + 15 + '%';
+			  	slider.style.width = m.distance + '%';
 			} else {
 				person.style.left = '100%';
 			  	slider.style.width = '100%';
@@ -176,3 +176,4 @@ p strong {
 	</script>
 </body>
 </html>
+ml>
