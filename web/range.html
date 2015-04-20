@@ -62,6 +62,7 @@ p strong {
 }
 .slider {
 	width: 100%;
+	display: -webkit-flex; // for Pi
 	display: flex;
 	align-items: center;
 }
@@ -70,6 +71,7 @@ p strong {
 }
 .dottedLine {
   	border-bottom: 6px dashed #666;
+  	-webkit-flex-grow: 1;
   	flex-grow: 1;
 }
 .fa {
@@ -135,6 +137,9 @@ p strong {
 	var proximal = 20;
 	var ad = document.getElementById('ad');
 
+	var person = document.getElementById('person');
+	var slider = document.querySelector('.slider');
+
 	pubnub = PUBNUB.init({
 		publish_key   :'demo',
 	  	subscribe_key :'demo'
@@ -148,8 +153,11 @@ p strong {
 			document.getElementById('distance').textContent = m.distance + ' cm';
 
 			if(m.distance <= 90) {
-			  	document.getElementById('person').style.left = m.distance + '%';
-			  	document.querySelector('.slider').style.width = m.distance + 15 + '%';
+			  	person.style.left = m.distance + '%';
+			  	slider.style.width = m.distance + 15 + '%';
+			} else {
+				person.style.left = '100%';
+			  	slider.style.width = '100%';
 			}
 			
 			
