@@ -99,21 +99,17 @@ There are multiple ways to connect you Pi from your own laptop:
 ## Getting started with Programming Pi
 
 - Get started with [Python](projects-python/)
-- Get started with [Node.js](projects-nodejs/)
-
 
 ## Hello World with PubNub
 
 Let's write your first PubNub *publish* program:
 
 - Hello World with [Python](projects-python/helloworld/)
-- Hello World with [Node.js](projects-nodejs/hello-world/)
 
 
 ## Hello World with Hardware
 
 - [Blinking LED with Python](projects-python/led/)
-- [Blinking LED with Node.js](projects-nodejs/led/)
 
 ## More Projects
 
@@ -122,4 +118,3 @@ Now, let's connect some sensors to Raspberry Pi, and learn more about sending an
 Check out more projects under:
 
 - [Using sensors and program with Python](projects-python)
-- [Using sensors and program with Node.js](projects-nodejs)
