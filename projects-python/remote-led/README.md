@@ -4,7 +4,7 @@ Let's create a super simple remote-controllable LED wth PubNub APIs.
 
 ## Wiring an LED & Assemble the Circuit
 
-You are using the same circit you have created at [the previous exercise with LED](../led).
+You are using the same circuit you have created at [the previous exercise with LED](../led).
 
 ## Writing Code
 
