@@ -129,11 +129,8 @@ In the Pi's command line, type:
     sudo python lightblink.py
 
 You should soon see your light blink and your messages print.  
-  
-####Further Possibilities
 
-Now, you're ready to build devices with more complicated circuits and functionality.
+### Next Project
 
-With a [Motion sensor](../motion-sensor), you'll be able to flip a pin and send a message whenever the device's infrared field is disturbed by nearby motion.
-
-With a [Range Finder](../range-finder), you can measure the range of nearby objects based on the speed of reflected ultrasonic waves.
+Let's make this into Internet of Things!
+Next, you are making this [LED a remote controllable](../remote-led/).
