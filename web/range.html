@@ -51,14 +51,11 @@ footer {
 p {
 	font-size: 1.5rem;
 }
-p strong {
-	color: #ce1126;
-}
 .container {
   margin: 4em;
 }
 .hidden {
-	display: none;
+	//display: none;
 }
 .slider {
 	width: 100%;
@@ -83,15 +80,14 @@ p strong {
 .dist-label {
 	
 }
-#ad {
- 	margin-top: 20px;
-}
 .message {
- 	padding: 25px;
-  	box-shadow: 0 0 2px 0 rgba(0,0,0,.8);
   	position: relative;
-  	background: rgb(213, 239, 171);
-  	border-radius: 20px;
+  	width: 800px;
+  	margin: 20px auto;
+}
+.message strong, .message h3 {
+	color: #ce1126;
+	text-transform: uppercase;
 }
 .close {
 	position: absolute;
@@ -123,8 +119,7 @@ p strong {
 		<div class='hidden' id='ad'>
 			<div class='message'>
 				<button type='button' class='close' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
-				<h3>COFFEE SALE</h3>
-				<p><strong>50% OFF</strong> All Coffee!</p>
+				<img src="images/ad.png">
 			</div>
 		</div>
 	</div>
@@ -170,6 +165,13 @@ p strong {
 	});
 
 	document.querySelector('.close').addEventListener('click', function(){
+		ad.classList.add('hidden');
+	});
+})();
+	</script>
+</body>
+</html>
+tListener('click', function(){
 		ad.classList.add('hidden');
 	});
 })();
