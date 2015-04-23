@@ -4,7 +4,7 @@ Step-by-step guide of building a realtime Internet of Things application using s
 
 ---
 
-Walk-through slide deck:
+Workshop Walk-through slide deck used on April 21 & 22:
 
 https://docs.google.com/presentation/d/1edIz6OUgDnmFKiACKiL6hcl7GrnW0DHFeGt8KE5dsAw/edit?usp=sharing
 
