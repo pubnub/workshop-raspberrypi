@@ -38,6 +38,8 @@ To stream the data that you published from a sensor (or just an object with stri
 
 When the connection is succesful, the success `callback` is called. You can display or visualize, or whatever you would like to do with the data, upon the callback call.
 
+For an easy example, let's just display the data you send from the motion sensor, in DOM as text.
+
 ```javascript
 p.subscribe({
   channe: channel,
@@ -47,12 +49,13 @@ p.subscribe({
   callback: function(m) { 
     console.log(m);
     // Display in DOM
-    // For example, just display the data you send from the motion sensor,
     document.getElementById('output').textContent = m.motion;
   }
 });
+```
 
-In this case, your HTML should contain the DOM:
+In this case, your HTML should contain the corresponding DOM tree:
+
 ```
 <div id="output"></div>
 ```
