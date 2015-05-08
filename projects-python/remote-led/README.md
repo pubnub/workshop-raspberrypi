@@ -1,6 +1,6 @@
-# IoT-fying Your LED: Remote-controlling LED
+# IoT-fying Your LED: Remote-controlling LED from Web Interface
 
-Let's create a super simple remote-controllable LED wth PubNub APIs.
+Let's create a super simple remote-controllable LED with PubNub APIs.
 
 ## Wiring an LED & Assemble the Circuit
 
@@ -17,7 +17,8 @@ The [remote-led.py](remote-led.py) uses the same code as the previous example [l
 
 ### Publishing Data from Web
 
-The Web UI simple contains a button for this exercise.
+You are creating a simple web UI that contains a button for this exercise.
+
 Using JavaScript, add a click event handler to the button, and when the event is fired, send the data to PubNub, so the python code to talk to Raspberry Pi gets the signal.
 
 ```javascript
