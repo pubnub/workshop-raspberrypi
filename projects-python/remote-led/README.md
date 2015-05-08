@@ -1,4 +1,4 @@
-# IoT-fying and LED: Remote-controlling LED
+# IoT-fying Your LED: Remote-controlling LED
 
 Let's create a super simple remote-controllable LED wth PubNub APIs.
 
