@@ -21,7 +21,7 @@ Before you start, you'll want to check out some resources for getting started wi
 *Measure distances and trigger an alarm using PubNub Pub/Sub Messaging and Raspberry Pi*
 
 ### What You'll Need:
-![image](../../images/rangefinder/Rangefinder.Full%20View.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Full%20View.jpg)
 
 1. Raspberry Pi 2, set-up, with accessories (power, wifi, m+kb, monitor, or setup via SSH) (See ReadMe)
 2. An HC-SR04 ultrasonic rangefinder
@@ -30,7 +30,7 @@ Before you start, you'll want to check out some resources for getting started wi
 5. 1 2.2k Ohm resistor
 5. A browser or internet-capable smartphone 
 
-![image](../../images/rangefinder/Rangefinder.Step%200.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step%200.jpg)
 ### What You're Building and How It Works:
 
 In this project, you'll build Pi-based ultrasonic rangefinder, which can be easily turned into a proximity alert with PubNub. We'll get to that later.
@@ -48,7 +48,7 @@ Electronically, there are a few quirks to be aware of when building our circuit.
 ### Step 1: Wiring up the Range Finder
 
 Take a bit to check out the circuit diagram for the whole device:
-![image](../../images/rangefinder/Circuit%20Diagram.png)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Circuit%20Diagram.png)
 
 Paying attention only to the top section for now, you'll see that the rangefinder sensor has four pins: Vcc (power), TRIG, ECHO, and GND  (ground).  
 
@@ -60,7 +60,7 @@ Paying attention only to the top section for now, you'll see that the rangefinde
 
 For now, pick four male-female jumper wires, each a different color, and attach them to the sensor. It should look similar to this: 
 
-![image](../../images/rangefinder/Rangefinder.Step1.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step1.jpg)
 
 ### Step 2: Wiring Power and Ground Pins on the Pi 
 
@@ -72,7 +72,7 @@ This is a useful diagram for reading the Pi's pin layout:
 ![image](http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/06/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900-1024x341.png)
 
 One configuration may look like this: 
-![image](../../images/rangefinder/Rangefinder.Step%202.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step%202.jpg)
 
 ### Step 3: Wiring Input and Output Pins on the Pi
 
@@ -80,10 +80,10 @@ Next, we will attach wires to two GPIO pins in order to send and recieve signals
 Select a wire that matches that attached to the sensor's ECHO pin, and attach it to pin 37 (GPIO26). Next, match your TRIG wire and attach it to pin 38 (GPIO20).
 
 It should look something like this (ECHO = blue; GPIO26, TRIG = green; GPIO20):
-![image](../../images/rangefinder/Rangefinder.Step%203.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step%203.jpg)
 
 #### After steps 2 and 3, check to make sure your Pi's GPIO pins resemble this layout:
-![image](../../images/rangefinder/Rangefinder.Step%202+3.jpg?raw=true)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step%202%2B3.jpg)
 
 ### Step 4: Linking PWR and Ground from the Pi to the Sensor 
 
@@ -93,13 +93,13 @@ Once that's done, connect your Pi's **Ground wire** to the first row of the nega
 
 It should look something like this: 
 
-![image](../../images/rangefinder/Rangefinder.Step%205.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step%205.jpg)
 
 ### Step 5: Linking TRIG to GPIO
 
 Find a blank rail on the breadboard, and plug in your TRIG wire (from the sensor) and GPIO20 wire (from the Pi). These should be the same color. 
 
-![image](../../images/rangefinder/Rangefinder%20Step%206.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder%20Step%206.jpg)
 
 ### Step 6: Linking ECHO to GPIO
 
@@ -119,7 +119,7 @@ Actually building the voltage divider:
   2. Use your R1 resistor (1k) to link that rail to another blank rail. 
   3. Link this rail to the breadboard's Ground with your R2 resistor (2.2k), leaving at least one space between your R1 and R2 elements. 
   4. In the blank space between resistors, plug in the Pi's GPIO26 wire, linking ECHO to your Pi. 
-![image](../../images/rangefinder/Rangefinder.Step%207c.jpg)
+![image](https://github.com/pubnub/workshop-raspberrypi/blob/master/images/rangefinder/Rangefinder.Step%207c.jpg)
 
 
 **That's the entirety of our hardware construction. Now, you're ready to write some code!**
@@ -147,7 +147,7 @@ To get there, the overall design of our device has to accomplish 3 main tasks:
 
 With PubNub and GPIO libraries, this is simpler than it seems. 
 
-**Full Code can be found [here.](https://github.com/pubnub/workshop-raspberrypi/blob/master/examples/rangefinder.py)**
+**Full Code can be found [here.](https://github.com/pubnub/workshop-raspberrypi/blob/master/projects-python/range-finder/rangefinder.py)**
 
 ####1. Setting up the Code####
 
