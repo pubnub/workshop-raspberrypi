@@ -2,7 +2,7 @@
 
 # import Pubnub, GPIO and time libraries
 
-from Pubnub import Pubnub
+from pubnub import Pubnub
 import RPi.GPIO as GPIO
 import time
 
