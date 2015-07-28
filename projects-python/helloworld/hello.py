@@ -1,7 +1,7 @@
 ## Hello World, PubNub
 
 import sys
-from Pubnub import Pubnub
+from pubnub import Pubnub
 
 # Initiate Pubnub State
 pubnub = Pubnub(publish_key='demo', subscribe_key='demo')

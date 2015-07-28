@@ -3,7 +3,7 @@
 import RPi.GPIO as GPIO
 import time
 import sys
-from Pubnub import Pubnub
+from pubnub import Pubnub
 
 GPIO.setmode (GPIO.BCM)
 

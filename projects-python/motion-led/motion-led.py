@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 import sys
-from Pubnub import Pubnub
+from pubnub import Pubnub
 
 #Setting up the keys for Pubnub
 publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
