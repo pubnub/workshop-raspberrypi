@@ -19,7 +19,10 @@
   <body>
     
     <h1 align="center">Temperature Readings</h1>
-    <div id="chart"></div>
+    <div id="temp-chart"></div>
+
+    <h1 align="center" style="margin-top:1.5em">Humidity Readings</h1>
+    <div id="hum-chart"></div>
 
     <script src="http://cdn.pubnub.com/pubnub-3.7.7.min.js"></script>
     <script type="text/javascript" src="http://pubnub.github.io/eon/lib/eon.js"></script>
@@ -30,7 +33,7 @@
       publish_key:   'demo'
     });
 
-    eon.chart({
+    var temperatuer = eon.chart({
       history: true,
       channel: 'tempeon',
       padding: {
@@ -40,7 +43,7 @@
         duration: 10
       },
       generate: {
-        bindto: '#chart',
+        bindto: '#temp-chart',
         data: {
           x: 'x',
           labels: false
@@ -51,6 +54,30 @@
             tick: {
               format: '%H:%M:%S'
             }
+          }
+        }
+      },
+      connect: function(m) {
+        console.log('eon connected to: '+ m);
+      },
+      pubnub: pubnub
+    });
+
+    var humidity = eon.chart({
+      channel: 'humeon',
+      generate: {
+        bindto: '#hum-chart',
+        data: {
+          type: 'gauge',
+        },
+        gauge: {
+          min: 0,
+          max: 100
+        },
+        color: {
+          pattern: ['#FF0000', '#F6C600', '#60B044'],
+          threshold: {
+            values: [30, 60, 90]
           }
         }
       },
