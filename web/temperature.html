@@ -1,0 +1,67 @@
+<html>
+  <head>
+
+    
+    <link type="text/css" rel="stylesheet" href="http://pubnub.github.io/eon/lib/eon.css" />
+
+    <style>
+      * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+      body {
+          font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto Light', 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', Helvetica, Arial, sans-serif; 
+          margin: 1em;
+      }
+      .c3-region-1 {
+        fill: #dd3333;
+        fill-opacity: 0.8
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1 align="center">Temperature Readings</h1>
+    <div id="chart"></div>
+
+    <script src="http://cdn.pubnub.com/pubnub-3.7.7.min.js"></script>
+    <script type="text/javascript" src="http://pubnub.github.io/eon/lib/eon.js"></script>
+
+    <script>
+    var pubnub = PUBNUB.init({
+      subscribe_key: 'demo',
+      publish_key:   'demo'
+    });
+
+    eon.chart({
+      history: true,
+      channel: 'tempeon',
+      padding: {
+        left: 100
+      },
+      flow: {
+        duration: 10
+      },
+      generate: {
+        bindto: '#chart',
+        data: {
+          x: 'x',
+          labels: false
+        },
+        axis : {
+          x : {
+            type : 'timeseries',
+            tick: {
+              format: '%H:%M:%S'
+            }
+          }
+        }
+      },
+      connect: function(m) {
+        console.log('eon connected to: '+ m);
+      },
+      pubnub: pubnub
+    });
+    </script>
+    
+    
+    
+  </body>
+</html>
