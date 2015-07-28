@@ -74,7 +74,12 @@ The Python code to work with Adafruit's DHT sensors is available on [Github](htt
 **Downloading the Adafruit DHT liibrary:**
 
 `pi@raspberrypi ~$ git clone https://github.com/adafruit/Adafruit_Python_DHT.git`
+
 `pi@raspberrypi ~$ cd Adafruit_Python_DHT`
+
+**Installing the library
+
+`pi@raspberrypi ~$ sudo python setup.py install`
 
 #### Code walk through
 
