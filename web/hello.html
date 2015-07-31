@@ -1,95 +1,106 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Hello World, PubNub!</title>
-	<meta name="description" content="Simple Chat Room">
-	<meta name="author" content="Tomomi Imura  @girlie_mac">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  <title>Hello World, PubNub!</title>
+  <meta name="description" content="Simple Chat Room">
+  <meta name="author" content="Tomomi Imura  @girlie_mac">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-	body {
-	    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
-	    margin: 1em;
-	    background: #272727;
-	    color: #ecf0f0;
-	}
-	header {
-		margin-bottom: 2em;
-	}
-	h1, h2, h3 {
-		margin: 0;
-		text-rendering: optimizeLegibility;
-	}
-	h1 {
-		font-size: 2.4em;
-		line-height: 1.4em;
-		text-transform: lowercase;
-		font-weight: normal;
-		/*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
-	}
-	h2 {
-		font-size: 1em;
-		text-transform: uppercase;
-		font-weight: normal;
-		/*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);*/
-	}
-	#presence { color: pink;}
-	</style>
+  body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
+    margin: 1em;
+    background: #272727;
+    color: #ecf0f0;
+  }
+  header {
+    margin-bottom: 2em;
+  }
+  h1, h2, h3 {
+    margin: 0;
+    text-rendering: optimizeLegibility;
+  }
+  h1 {
+    font-size: 2.4em;
+    line-height: 1.4em;
+    text-transform: lowercase;
+    font-weight: normal;
+    /*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
+  }
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);*/
+  }
+  #presence { color: pink;}
+  </style>
 </head>
 
 <body>
-	<header>
-		<h1>Hello World, PubNub!</h1>
-		<h2>Subscribing your "hello world" with JavaScript</h2>
-	</header>
+  <header>
+    <h1>Hello World, PubNub!</h1>
+    <h2>Subscribing your "hello world" with JavaScript</h2>
+  </header>
 
-	<section id="main" role="main">
-		<p id="presence"></p>
-		<div id="output">
-			<!-- print out the messages from PubNub data stream -->
-		</div>
-	</section>
+  <section id="main" role="main">
+    <p id="presence"></p>
+    <div id="output">
+      <!-- print out the messages from PubNub data stream -->
+    </div>
+  </section>
 
-	<!-- including the latest PubNub JavaScript SDK -->
-	<script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
-	<script>
+  <!-- including the latest PubNub JavaScript SDK -->
+  <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
+  <script>
 (function() {
 
-	// DOM
-	var output = document.getElementById('output'); 
-    var presence = document.getElementById('presence');
+  // DOM
+  var output = document.getElementById('output'); 
+  var presence = document.getElementById('presence');
 
-	// This is the channel name you are using when you publish your messages in hello.py (or hello.js if you are using node.js)
-	var channel = 'hello-pi';
+  // This is the channel name you are using when you publish your messages in hello.py (or hello.js if you are using node.js)
+  var channel = 'hello-pi';
 
-	// Init
-	var p = PUBNUB.init({
-        subscribe_key: 'demo',
-        publish_key:   'demo'
-    });
+  // Init
+  var p = PUBNUB.init({
+    subscribe_key: 'demo',
+    publish_key:   'demo'
+  });
 
-	p.subscribe({
-        channel  : channel,
-        callback : function(m) { 
-        	console.log(m);
-            output.innerHTML = '<p><i>' + m.username + '</i><span>: ' +  m.message.replace( /[<>]/ig, '' ) + '</span></p>' + output.innerHTML; 
-        },
-        presence: function(m){ 
-        	console.log(m);
+  // Receiving data from PubNub data stream
+  p.subscribe({
+    channel  : channel,
+    callback : function(m) { 
+      console.log(m);
 
-            if(m.occupancy > 1) {
-                presence.textContent = m.occupancy + ' people online';
-            } else {
-                presence.textContent = 'Only you are currently online';
-            }
-        }
-    });
+      if(typeof(m.message) !== 'string' || typeof(m.username) !== 'string') {
+        console.log('Hey, it looks like you are experienting by passing non-string username or message! But I am not printing anything unless you give simple strings!')
+        return;
+      }
+
+      // stripping off html tags
+      var safeText = m.message.replace(/\&/g, '&amp;').replace( /</g,  '&lt;').replace(/>/g,  '&gt;');
+
+      output.innerHTML = '<p><i>' + m.username + '</i><span>: ' +  safeText + '</span></p>' + output.innerHTML; 
+    },
+    presence: function(m){ 
+      console.log(m);
+
+      // Displaying how many users/devices are online
+      if(m.occupancy > 1) {
+          presence.textContent = m.occupancy + ' people online';
+      } else {
+          presence.textContent = 'Only you are currently online';
+      }
+    }
+  });
 })();
-	</script>
-	
+  </script>
+  
 </body>
 </html>
