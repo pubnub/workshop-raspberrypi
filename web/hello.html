@@ -68,26 +68,37 @@
 
 	// Init
 	var p = PUBNUB.init({
-        subscribe_key: 'demo',
-        publish_key:   'demo'
-    });
+    subscribe_key: 'demo',
+    publish_key:   'demo'
+  });
 
+  // Receiving data from PubNub data stream
 	p.subscribe({
-        channel  : channel,
-        callback : function(m) { 
-        	console.log(m);
-            output.innerHTML = '<p><i>' + m.username + '</i><span>: ' +  m.message.replace( /[<>]/ig, '' ) + '</span></p>' + output.innerHTML; 
-        },
-        presence: function(m){ 
-        	console.log(m);
+    channel  : channel,
+    callback : function(m) { 
+    	console.log(m);
 
-            if(m.occupancy > 1) {
-                presence.textContent = m.occupancy + ' people online';
-            } else {
-                presence.textContent = 'Only you are currently online';
-            }
-        }
-    });
+      if(typeof(m.message) !== 'string' || typeof(m.username) !== 'string') {
+        console.log('Hey, it looks like you are experienting by passing non-string username or message! But I am not printing anything unless you give simple strings!')
+        return;
+      }
+
+      // stripping off html tags
+      var safeText = m.message.replace(/\&/g, '&amp;').replace( /</g,  '&lt;').replace(/>/g,  '&gt;');
+
+      output.innerHTML = '<p><i>' + m.username + '</i><span>: ' +  safeText + '</span></p>' + output.innerHTML; 
+    },
+    presence: function(m){ 
+    	console.log(m);
+
+      // Displaying how many users/devices are online
+      if(m.occupancy > 1) {
+          presence.textContent = m.occupancy + ' people online';
+      } else {
+          presence.textContent = 'Only you are currently online';
+      }
+    }
+  });
 })();
 	</script>
 	
