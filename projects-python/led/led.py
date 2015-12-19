@@ -20,7 +20,7 @@ GPIO.setup(LIGHT,GPIO.OUT)
 # To blink the light, we call GPIO.output and pass as parameters the pin number (LIGHT) and the state we want.
 # True sets the pin to HIGH (sending a signal), False sets it to LOW.
 # To achieve a blink, we set the pin to High, wait for a fraction of a second, then set it to Low.
-
+# Adding keyboard interrupt with try and except so that program terminates when user presses Ctrl+C.
 try:
     while True:
         GPIO.output(LIGHT,True)
