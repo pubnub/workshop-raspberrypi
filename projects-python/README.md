@@ -55,4 +55,5 @@ Now, let's connect some sensors to Raspberry Pi, and learn more about sending an
   * [Motion Sensor with an LED indicator](motion-led/) Adding an LED to the motion sensor project to include a visual indicator when motion is detected.
   * [Motion Sensor and Range Finder](motion-and-range) This program lets you notify a range finder when you detect motion, to detect the distance between the moving object and yourself.
 - [Ultrasonic Rangefinder](range-finder/) Using HC-SR04 ultrasonic rangefinder to sense a nearby object's proximity range.
-
+- Temperature and Humidity Sensor
+  * [Data Visualization using DHT22 sensor](dht22) 
