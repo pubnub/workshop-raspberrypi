@@ -66,25 +66,7 @@ If you are using a mini breadborad, your circuit should look similar to this:
 
 ## Running the program
 
-Open Python 2 IDE
-
-Then, in Python Shell,  **File** > **New Window**
-
-In the new window, copy and paste [motion-led.py](https://github.com/pubnub/workshop-raspberrypi/blob/master/projects-python/motion-led/motion-led.py), and save as `motion-led.py`
-
-Run the script
-
-On terminal:
-`$ sudo python motion-led.py`
-
-This will run the program to detect motion and switch on an LED when motion is detected.
-
-### Monitoring PubNub Data Stream on Console
-
-1. On web browser, go to [http://www.pubnub.com/console/](http://www.pubnub.com/console/)
-2. Type `motionsensor-led` into the **Channel** field, `demo` into both **publish key** and **subscribe key**, unless you have your own keys, in which case fill them here as well as in the code. 
-3. Click **Subscribe**
-
+User the same code from the PIR sensor only example at [/motion-sensor/motionsensor.py](../motion-sensor/motionsensor.py)
 
 
 ## What is happening behind the scenes

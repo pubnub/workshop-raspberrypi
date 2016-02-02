@@ -5,11 +5,9 @@ import sys
 from pubnub import Pubnub
 
 #Setting up the keys for Pubnub
-publish_key = len(sys.argv) > 1 and sys.argv[1] or 'demo'
-subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'demo'
-secret_key = len(sys.argv) > 3 and sys.argv[3] or 'demo'
-cipher_key = len(sys.argv) > 4 and sys.argv[4] or ''
-ssl_on = len(sys.argv) > 5 and bool(sys.argv[5]) or False
+publish_key = len(sys.argv) > 1 and sys.argv[1] or 'pub-c-156a6d5f-22bd-4a13-848d-b5b4d4b36695'
+subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'sub-c-f762fb78-2724-11e4-a4df-02ee2ddab7fe'
+
 
 ## -----------------------------------------------------------------------
 ## Initiate Pubnub State
