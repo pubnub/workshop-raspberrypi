@@ -92,8 +92,9 @@ You will need the IP address in the next step. (Remotely connecting your Pi)
 
 There are multiple ways to connect you Pi from your own laptop:
 
-- [Using VNC Server and Client](remote-vnc.md)
-- [Using SSH (with Mac FUSE and SSHFS)](SSHFS%2BMacFUSE.md)
+- [Using Virtual Network Computing (VNC) Server and Client](remote-vnc.md)
+- [Using SSH (with Cyberduck)](SSH-cyberduck.md)
+
 
 ---
 
