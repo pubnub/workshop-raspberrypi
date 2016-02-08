@@ -71,6 +71,22 @@ Go to **Menu** > **Preference** > **WiFi Configuration**
 
 ---
 
+### Update and Upgrade Raspbian
+
+First, update your system's package list, by using this command on a terminal:
+
+```bash
+sudo apt-get update
+```
+
+Next, upgrade all your installed packages to the latest versions:
+
+```bash
+sudo apt-get upgrade
+```
+
+---
+
 ## Remote Connect Your Raspberry Pi from Your Laptop
 
 When you do not have an access to work directly on your Pi, you may need to access to your Pi from another computer.
