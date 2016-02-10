@@ -56,11 +56,15 @@ First, plug into one end to Pi:
 ![image](../../images/PIR-LED/breadboard.png)
 
 
-If you are using a mini breadborad, your circuit should look similar to this:
+With a mini breadborad, your circuit should look similar to this:
 
 
 ![image](../../images/PIR-LED/fritzing-pir-led-mini.png)
 
+
+Alternatively, you can use a few F/F wires to simplify the wiring:
+
+![image](../../images/PIR-LED/fritzing-pir-led-mini-03_bb.png)
 
 
 

@@ -12,7 +12,7 @@ subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'sub-c-f762fb78-2724-11e4-a
 ## -----------------------------------------------------------------------
 ## Initiate Pubnub State
 ## -----------------------------------------------------------------------
-pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key, secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
+pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key)
 channel = 'motionsensor'
 message = {'motion': 1}
 
