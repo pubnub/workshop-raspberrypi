@@ -81,11 +81,15 @@ Then, plug into one end to the breadborad:
 
 ![image](../../images/PIR/motionbread2.png) 
 
-If you are using a mini breadborad, your circuit should look similar to this:
+When you are using M/F wires with a breadborad, your circuit should look similar to this:
 
 ![image](../../images/PIR/fritzing-pir-sm.png)
 
-If you are using 400-point breadboard as seen in the photo below, [see this diagram](../../images/PIR/fritzing-pir-400.png).
+If you have female/female wires, you can directly wire them up without a breadboard:
+
+![image](../../images/PIR/fritzing-pir-no-breadboard_bb.png)
+
+
 
 ## Step 2 : The software
 
