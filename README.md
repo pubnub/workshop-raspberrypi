@@ -8,6 +8,9 @@ For Workshop attendees, please fill this out after the session. Thank you :-)
 
 [**Feedback form** (https://goo.gl/0WeZQb)](https://docs.google.com/a/pubnub.com/forms/d/1IClKgCneGgiPH62GHrc4z6fbk7OyFZ-X2YbyEdaPxp8/edit?ts=56b8f8f7)
 
+The workshop slide deck is available at:
+[https://docs.google.com/presentation/d/1kHjN8CIbggBlr44m2JpsRpR6IHB-Yu7b5bECC-_ntK4/edit?usp=sharing](https://docs.google.com/presentation/d/1kHjN8CIbggBlr44m2JpsRpR6IHB-Yu7b5bECC-_ntK4/edit?usp=sharing)
+
 ---
 
 ## Setting up Raspberry Pi
