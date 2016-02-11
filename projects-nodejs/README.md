@@ -7,29 +7,45 @@ Open LXTerminal:
 
 Make sure your Pi is up-to-date:
 
-`pi@raspberrypi ~$ sudo apt-get update`
+```bash
+pi@raspberrypi ~$ sudo apt-get update
+```
 
 then,
 
-`pi@raspberrypi ~$ sudo apt-get upgrade`
+```bash
+pi@raspberrypi ~$ sudo apt-get upgrade
+```
 
-Download Node:
+Download Node (v0.12.6):
 
-`pi@raspberrypi ~$ wget http://node-arm.herokuapp.com/node_latest_armhf.deb`
+```bash
+pi@raspberrypi ~$ wget http://node-arm.herokuapp.com/node_archive_armhf.deb
+```
+
+*Note: I am not sute if the post-merge version of node (v4+) works with Jonny-Five and Raspi-io, but if you would like to download and install the latest node, get `http://node-arm.herokuapp.com/node_latest_armhf.deb` instead.*
 
 once downloaded, install Node:
 
-`pi@raspberrypi ~$ sudo dpkg -i node_latest_armhf.deb`
+```bash
+pi@raspberrypi ~$ sudo dpkg -i node_archive_armhf.deb
+```
+
+*or `node_latest_armhf.deb` when you are installing the lasted node.*
 
 Check if node is successfully installed:
 
-`pi@raspberrypi ~$ node -v`
+```bash
+pi@raspberrypi ~$ node -v
+```
 
 You should see the Node version number, if it is installed correctly.
 
 Then, install PubNub:
 
-`pi@raspberrypi ~$ npm install pubnub`
+```bash
+pi@raspberrypi ~$ npm install pubnub
+```
 
 
 ---
