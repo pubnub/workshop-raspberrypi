@@ -16,7 +16,7 @@ publish_key = len(sys.argv) > 1 and sys.argv[1] or 'pub-c-156a6d5f-22bd-4a13-848
 subscribe_key = len(sys.argv) > 2 and sys.argv[2] or 'sub-c-f762fb78-2724-11e4-a4df-02ee2ddab7fe'
 
 
-pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key,secret_key=secret_key, cipher_key=cipher_key, ssl_on=ssl_on)
+pubnub = Pubnub(publish_key=publish_key, subscribe_key=subscribe_key)
 channel = 'Rangefinder'
 
 # Interacting with the hardware:
