@@ -125,7 +125,7 @@ while True:
         })
 ```
 
-You can find the entire code to run on your Pi on [Github](projects-python/dht22/temp-hum.py).
+You can find [the entire code to run on your Pi](temp-hum.py).
 
 ### Realtime Graphs
 
