@@ -63,7 +63,7 @@ Open LXTerminal, and download and install the followings:
 **install PubNub:**
 `pi@raspberrypi ~$ sudo pip install pubnub`
 
-For an in depth introduction to the Pi and PubNub, check this [blog](http://www.pubnub.com/blog/internet-of-things-101-getting-started-w-raspberry-pi/) by [Tomomi](ADD LINK TO HER BIO HERE)
+For an in depth introduction to the Pi and PubNub, check this [blog](http://www.pubnub.com/blog/internet-of-things-101-getting-started-w-raspberry-pi/) by [Tomomi](http://twitter.com/girlie_mac)
 
 Make sure you have [signed up for PubNub](https://www.pubnub.com/get-started/) to obtain your pub/sub keys.
 
@@ -125,7 +125,7 @@ while True:
         })
 ```
 
-You can find the entire code to run on your Pi on [Github](/python/temp_hum_eon.py).
+You can find the entire code to run on your Pi on [Github](projects-python/dht22/temp-hum.py).
 
 ### Realtime Graphs
 
